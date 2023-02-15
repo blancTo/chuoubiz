@@ -1,0 +1,1909 @@
+@charset "utf-8";
+/*==================================================
+	スマホのみに適用
+==================================================*/
+@media only screen and (max-width: 640px){
+	body { font-size: 100%; }
+	.fm { font-size: 105%; }
+	.dsp_hp, .dsp_hpt { display: none!important; }
+
+	/* ヘッダ */
+	#header { height: 56px;} 
+	#header p.title img {
+		max-height: 22px;
+	}
+	#header p.title {
+		padding: 0 4px;
+	}
+	#header p.title span {
+		display: block;
+		color: #901003;
+		font-size: 12px;
+	}
+	#header .contact {
+		width: 100%;
+		left: 0;
+	}
+	#sticky {
+		padding: 3%;
+	}
+	#overlay ul {
+		padding-top: 56px;
+	}
+	#overlay ul li ul { padding-top: 0;}
+	.smp_nav ul li a { padding: 15px; }
+	.smpnav-label { padding: 15px;}
+	/* コンテナ */
+	#toppage #container {
+		padding-top: 0;
+	}
+	#wrap, #footer {
+		min-width: 320px;
+	}
+	#container h3.sub {
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
+	#container h3.line, #container h3.line2 span {
+		font-size: 18px;
+	}
+	#container h3.line2 span:after {
+		height: 12px;
+	}
+	#container h3.headline {
+		font-size: 25px;
+		background-size: 40px auto;
+		background-position: left top 15px;
+		padding: 10px 0 5px 45px;
+		margin-bottom: 20px;
+	}
+	/* フッター */
+	#header h1 {
+		background: none;
+		color: #DDD;
+	}
+	#header .contact {
+		padding: 5px;
+	}
+	#header .contact .all_hour {
+		border-radius: 5px;
+		font-size: 13px;
+		width: 80px;
+	}
+	#header .contact .txt_area {
+		font-size: 12px;
+		width: calc(100% - 150px);
+	}
+	#header .contact .txt_area .tel {
+		font-size: 12px;
+	}
+	#header .contact .txt_area .tel a {
+		display: block;
+		font-size: 25px;
+		background-size: 26px auto;
+		margin-left: 0;
+		padding-left: 30px;
+	}
+	@media only screen and (max-width: 374px){
+		#header .contact .txt_area .tel a {
+			font-size: 18px;
+		}
+	}
+	#rwdMenuWrap ul li span,
+	#rwdMenuWrap ul li a {
+		font-size: 16px;
+	}
+	/* フッター */
+	#footer {
+		padding-bottom: 118px
+	}
+	@media only screen and (max-width: 320px){
+		#footer {
+			padding-bottom: 104px
+		}
+	}
+	#footer .contact .in h3 {
+		font-size: 15px;
+	}
+	#footer .contact .in h3 span {
+		font-size: 18px;
+	}
+	#footer .contact .in .box {
+		padding: 10px;
+	}
+	#footer .contact .in .box h4 {
+		font-size: 14px;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	#footer .contact .in .box .wrap {
+		width: 100%;
+		display: block;
+	}
+	#footer .contact .in .box .wrap .shikaku {
+		width: 170px;
+		border-radius: 10px;
+		margin-bottom: 15px;
+		font-size: 23px;
+		padding: 10px 0;
+	}
+	#footer .contact .in .box .wrap .shikaku span {
+		font-size: 16px;
+	}
+	#footer .contact .in .box .wrap .tel_area {
+		width: 100%;
+	}
+	#footer .contact .in .box .wrap .free {
+		text-align: left;
+		margin: 0 auto;
+		width: 290px;
+		margin-bottom: 10px;
+	}
+	#footer .contact .in .box .wrap .free a {
+		font-size: 28px;
+		background-size: 45px auto;
+		padding-left: 50px;
+		letter-spacing: 0;
+	}
+	#footer .contact .in .box .wrap .free2 {
+		margin: 0 auto;
+		width: 290px;
+		text-align: left;
+	}
+	#footer .contact .in .box .wrap .free2 .mp {
+		margin-right: 0;
+		display: block;
+	}
+	#footer .contact .in .box .wrap .free2 a {
+		font-size: 28px;
+		background-size: 45px auto;
+		padding-left: 50px;
+	}
+	#footer .contact .in .box .txt2 {
+		font-size: 18px;
+		margin: 0 auto;
+		width: 275px;
+		text-align: center;
+	}
+	#footer .contact .in .box .txt2 span {
+		font-size: 16px;
+	}
+	#footer .contact .in .box .nm {
+		text-align: center;
+		font-size: 75%;
+	}
+	#copyright {
+		height: auto;
+		line-height: 1.6;
+		padding: 5px 0;
+		font-size: 9px;
+	}
+	/**/
+	#footer_btn ul {
+		padding: 5px 5px 0;
+	}
+	#footer_btn ul li {
+		margin-bottom: 5px;
+	}
+	#footer_btn ul li.line a::before {
+		width: 15px;
+		height: 15px;
+		line-height: 15px;
+	}
+	/* 枠のマージン・パディング */
+	.mb { margin-bottom: 30px; }
+	.pt { padding-top: 30px; }
+	.pb { padding-bottom: 30px; }
+	p.link a {
+		width: 100%;
+		font-size: 18px;
+		line-height: 40px
+	}
+	p.link.full a {
+		font-size: 16px;
+	}
+	p.link a::before {
+		top: 18px;
+	}
+	p.link.full a span::after {
+		top: 16px;
+	}
+	
+	.investigation_case .box .bg {
+		padding: 30px 10px 10px;
+	}
+	.investigation_case .box .head .txt_area {
+		padding-right: 0;
+	}
+	.investigation_case .box .head .b {
+		font-size: 16px;
+	}
+	.investigation_case .box .head .btn {
+		text-align: center;
+	}
+	.investigation_case .box .head .btn a {
+		position: relative;
+		right: auto;
+	}
+	.investigation_case .box .info .hito {
+		margin-bottom: 10px;
+	}
+	.investigation_case .box .info .hito span {
+		margin-bottom: 10px;
+	}
+	.investigation_case .box .info dl.content dt {
+		font-size: 16px;
+	}
+	.investigation_case .box .info dl.content dd {
+		line-height: 1.6;
+	}
+	.investigation_case .box .info .comment .sec dl dt {
+		width: 40px;
+		height: 40px;
+		padding-top: 10px;
+	}
+	.investigation_case .box .info .comment .sec dl dt img {
+		width: 15px;
+	}
+	.investigation_case .box .info .comment .sec dl dd {
+		padding: 8px;
+		margin-left: 55px;
+	}
+	.investigation_case .box .info .comment .sec.chu dl dd {
+		margin-right: 55px;
+	}
+	.investigation_case .box .info .comment .sec dl dd:before {
+		left: -20px;
+		top: 10px;
+		border: 10px solid transparent;
+		border-right: 15px solid #fff;
+	}
+	.investigation_case .box .info .comment .sec.chu dl dd:before {
+		right: -20px;
+		border: 10px solid transparent;
+		border-left: 15px solid #fff;
+	}
+	ul.chk li {
+		margin-bottom: 10px;
+		font-size: 15px;
+	}
+	.bg_dia dl dt {
+		background-position: left 10px top 15px, center;
+		font-size: 18px;
+		padding-left: 50px;
+	}
+	.bg_dia dl dt a {
+		font-size: 12px;
+		padding: 0 5px;
+		position: relative;
+	}
+	.bg_dia dl dd {
+		padding: 5px;
+	}
+	.bg_dia dl dd .bg_gray {
+		padding: 10px;
+	}
+	.cmn_example dl {
+		padding: 20px 10px 10px 10px;
+	}
+	.cmn_example dl dt {
+		border-radius: 5px;
+		width: 80px;
+		height: auto;
+		padding: 5px 0;
+	}
+	.cmn_example dl dt span {
+		display: inline;
+		font-size: 20px;
+	}
+	.chk_box dl dt {
+		font-size: 18px;
+		padding-left: 0;
+		text-align: center;
+	}
+	.chk_box dl dd {
+		padding: 10px 10px 0 10px;
+	}
+
+	.acd-check:checked + .acd-label + .acd-content,
+.acd-check1:checked + .acd-label + .acd-content,
+.acd-check2:checked + .acd-label + .acd-content,
+.acd-check3:checked + .acd-label + .acd-content,
+.acd-check4:checked + .acd-label + .acd-content,
+.acd-check5:checked + .acd-label + .acd-content,
+.acd-check6:checked + .acd-label + .acd-content,
+.acd-check7:checked + .acd-label + .acd-content,
+.acd-check8:checked + .acd-label + .acd-content,
+.acd-check9:checked + .acd-label + .acd-content
+{
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+	.jirei-check:checked + .jirei-label + .jirei-content,
+.jirei-check1:checked + .jirei-label + .jirei-content,
+.jirei-check2:checked + .jirei-label + .jirei-content,
+.jirei-check3:checked + .jirei-label + .jirei-content,
+.jirei-check4:checked + .jirei-label + .jirei-content,
+.jirei-check5:checked + .jirei-label + .jirei-content
+{
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+	/*--------------------------------------------------
+		ページタイトル
+	--------------------------------------------------*/
+	#page_title .sub {
+		font-size: 25px;
+	}
+	/*--------------------------------------------------
+		トップページ
+	--------------------------------------------------*/
+	#menu_sp {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		flex-wrap: wrap;/* 改行 */
+	}
+	#menu_sp ul {
+		width: 50%;
+	}
+	
+	#menu_sp ul li, #menu_sp ul li:nth-child(2), #menu_sp ul li:nth-child(5) {
+		width: 100%;
+		border-left: 1px solid #ddd;
+		border-right: 1px solid #ddd;
+	}
+	#menu_sp ul li a {
+		font-size: 16px;
+	}
+
+	#menu_sp.ehime ul,#menu_sp.shimane ul,#menu_sp.okayama ul,#menu_sp.yamaguchi ul {
+		width: 100%;
+	}
+	#menu_sp.ehime ul li,#menu_sp.shimane ul li,#menu_sp.okayama ul li,#menu_sp.yamaguchi ul li { width: calc(100% / 2);}
+
+	#img_top_msg {
+		padding: 17px 0;
+	}
+	#img_top_msg .mp {
+		font-size: 15px;
+	}
+	#img_top_msg p.txt {
+		display: none;
+	}
+	/*#img_bottom_msg {
+		padding: 5px 0;
+	}
+	#img_bottom_msg p {
+		font-size: 11px;
+		line-height: 1.5em;
+	}*/
+	#img_bottom_msg {
+		display: none;
+	}
+	#top_comment {
+		margin-bottom: 0 !important;
+	}
+	#top_comment a {
+		display: block;
+		padding: 5px 0;
+		background: #900000;
+		color: #fff;
+		text-align: center;
+		font-size: 15px;
+	}
+	#top_comment a img {
+		border: none;
+		vertical-align: middle;
+	}
+	/*#top_comment a:before {
+		content: url("../img/top/medal.png");
+		position: relative;
+		top: 4px;
+		margin-right: 5px;
+	}*/
+	#top_menu .head {
+		margin-bottom: 15px;
+	}
+	#top_menu .head .maru {
+		top: -17px;
+	}
+	#top_menu .head .maru .in {
+		width: 70px;
+		height: 70px;
+		font-size: 20px;
+		padding: 12px 0 0 2px;
+	}
+	#top_menu .head .maru .in .fs {
+		font-size: 12px;
+	}
+	#top_menu .head h2 {
+		text-align: left;
+		font-size: 19px;
+		padding-left: 89px;
+		padding-top: 10px;
+	}
+	#top_menu .head .star {
+		/*margin-left: 47px;*/
+		float: right;
+	}
+	#top_menu .head .comment {
+		display: none;
+	}
+	#top_menu .title_new {
+		margin-bottom: 10px;
+		background: #fff;
+		padding-left: 15px;
+		padding-top: 3px;
+		font-weight: bold;
+		border-bottom: 1px solid #14AAD5;
+		border-left: 10px solid #14AAD5;
+		font-size: 20px;
+	}
+	#top_menu .wrap a {
+		width: 100%;
+		/*margin-bottom: 10px;*/
+	}
+	#top_menu .wrap a dl dt img {
+		width: 100%;
+	}
+	#top_menu .wrap a dl dd.mp {
+		font-size: 18px;
+		/*line-height: 30px;*/
+	}
+	#top_menu .wrap a dl dd.txt {
+		padding: 5px;
+		font-size: 10px;
+	}
+	#top_evidence h2 {
+		font-size: 25px;
+		position: relative;
+		top: -15px;
+		margin-bottom: 0;
+	}
+	#top_evidence .mp.b {
+		font-size: 16px;
+	}
+	#top_evidence .sub {
+		font-size: 17px;
+	}
+	#top_evidence .sample .wrap {
+		display: none;
+	}
+	.top_column h3 {
+		text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+		font-size: 20px;
+	}
+	.top_column .box {
+		padding: 10px;
+	}
+	.top_column .box dl dt {
+		float: none;
+	}
+	.top_column .box dl dd {
+		margin-left: 0;
+	}
+	#top_plan h3 {
+		font-size: 25px;
+	}
+	#top_plan h3 .fs {
+		font-size: 14px;
+		line-height: 0.5em;
+	}
+	#top_plan .box dl.head dt.mp span.in {
+		padding: 10px;
+		font-size: 18px;
+	}
+	#top_plan .box dl.head dd, #top_plan .box .wrap {
+		padding: 10px;
+	}
+	#top_plan .box .wrap {
+		padding-top: 0;
+	}
+	#top_plan .box .wrap dl.plan, #top_plan .box .wrap dl.plan.w3 {
+		width: 100%;
+	}
+	#top_plan .box .wrap dl.plan dt {
+		font-size: 16px;
+		padding: 5px 0 5px 40px;
+		background: url(../img/top/bg_dia.png) no-repeat left 5px center, url(../img/top/bg_dt.png) no-repeat right top, -webkit-linear-gradient(left, rgba(20, 170, 213, 1) 0%, rgba(10, 132, 185, 1) 100%);
+    background: url(../img/top/bg_dia.png) no-repeat left 5px center, url(../img/top/bg_dt.png) no-repeat right top, -o-linear-gradient(left, rgba(20, 170, 213, 1) 0%, rgba(10, 132, 185, 1) 100%);
+    background: url(../img/top/bg_dia.png) no-repeat left 5px center, url(../img/top/bg_dt.png) no-repeat right top, linear-gradient(to right, rgba(20, 170, 213, 1) 0%, rgba(10, 132, 185, 1) 100%);
+	}
+	#top_plan .box .wrap dl.plan.w3 dt {
+		background: url(../img/top/bg_dia.png) no-repeat left 5px center, -webkit-linear-gradient(left, rgba(20, 170, 213, 1) 0%, rgba(10, 132, 185, 1) 100%);
+    background: url(../img/top/bg_dia.png) no-repeat left 5px center, -o-linear-gradient(left, rgba(20, 170, 213, 1) 0%, rgba(10, 132, 185, 1) 100%);
+    background: url(../img/top/bg_dia.png) no-repeat left 5px center, linear-gradient(to right, rgba(20, 170, 213, 1) 0%, rgba(10, 132, 185, 1) 100%);
+	}
+	#top_plan .box .wrap dl.plan dd {
+		padding: 10px 5px;
+	}
+	#top_plan .box .wrap dl.plan dd .komi {
+		font-size: 15px;
+	}
+	#top_plan .box .wrap dl.plan dd .red_waku {
+		padding: 5px;
+		font-size: 17px;
+		margin-right: 5px;
+	}
+	#top_plan .box .wrap dl.plan dd span.fs_smt {
+		font-size: 11px;
+	}
+	#top_plan .box dl.head dt.mp.w2 span.in {
+		padding: 10px;
+		line-height: 1.2;
+	}
+	#top_plan .box dl.head dt.mp.w2 span.in .txt {
+		font-size: 20px;
+	}
+	#top_plan .box dl.head dt.mp.w2 span.in .txt .smt_fs {
+		font-size: 13px;
+	}
+	#top_plan .box.price_box dl.head dd {
+		padding: 10px;
+		display: block;
+	}
+	#top_plan .box.price_box dl.head dd p.icon {
+		margin-right: 0;
+		width: 100%;
+		padding: 5px;
+		box-sizing: border-box;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	#top_plan .box.price_box dl.head dd p.icon img {
+		height: 20px;
+		width: auto;
+		margin: 0 2px;
+	}
+	#top_plan .box.price_box dl.head dd p.link a {
+		width: 100%;
+		font-size: 18px;
+	}
+	
+	/**/
+	#creditcard.box dl.head dt.mp span.in {
+		padding: 10px;
+		font-size: 18px;
+	}
+	#creditcard.box.price_box dl.head dd {
+		padding: 10px;
+		display: block;
+	}
+	#creditcard.box.price_box dl.head dd p.icon {
+		margin-right: 0;
+		width: 100%;
+		padding: 5px;
+		box-sizing: border-box;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	#creditcard.box.price_box dl.head dd p.icon img {
+		height: 20px;
+		width: auto;
+		margin: 0 2px;
+	}
+	#creditcard.box.price_box dl.head dd p.link a {
+		width: 100%;
+		font-size: 18px;
+	}
+	
+	#top_plan .smt_fs {
+		font-size: 80%;
+	}
+	#top_profile h3 {
+		font-size: 17px;
+		padding: 17px 0 17px 30px;
+		background-size: 25px auto;
+	}
+	#top_profile dl {
+		margin-bottom: 15px;
+	}
+	#top_profile dl dt {
+		font-size: 20px;
+		padding: 10px;
+	}
+	#top_profile dl dt .mp .fs {
+		font-size: 17px;
+	}
+	#top_profile dl dt .mp {
+		width: 100%;
+	}
+	#top_profile dl dd {
+		padding: 10px;
+	}
+	#top_promise h3 {
+		font-size: 20px;
+		background-size: 100px auto;
+		padding: 15px 0 10px 30px;
+	}
+	#top_promise h3 .fm {
+		font-size: 30px;
+	}
+	#top_promise .wrap .box {
+		width: 100%;
+	}
+	#top_promise .wrap .box h4 {
+		font-size: 20px;
+	}
+	#top_promise .wrap .box .serif{
+		font-size: 18px;
+	}
+	#top_promise .wrap .box .no {
+		font-size: 30px;
+	}
+	#top_reason .in h3 {
+		text-shadow: 1px 1px 0 #fff;
+		font-size: 20px;
+	}
+	#top_reason .in .waku {
+		padding: 10px;
+		border-radius: 10px;
+		font-size: 16px;
+	}
+	#top_reason .in .waku .fs {
+		font-size: 14px;
+	}
+	#top_reason .in .waku li {
+		background: url(../img/top/clover02.png) left center / 20px 20px no-repeat;
+		padding-left: 25px;
+	}
+	#top_faq h3, #top_hiroshima h3 {
+		font-size: 20px;
+		background-size: 70px auto;
+		padding-left: 80px;
+	}
+	#top_faq dl,
+	#faq dl {
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+	#top_faq dl dt,
+	#faq dl dt {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	#top_faq dl dt span,
+	#faq dl dt span {
+		font-size: 45px;
+	}
+	#top_faq dl dd,
+	#faq dl dd {
+		padding: 10px;
+	}
+	#top_support h3 {
+		font-size: 16px;
+		text-shadow: 1px 1px 0px rgb(255 255 255);
+	}
+	#top_support h3 span {
+		font-size: 20px;
+	}
+	#top_corona h3 span {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	#top_corona .wrap {
+		flex-wrap: wrap;
+	}
+	#top_corona .wrap dl {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	#top_about .bg {
+		padding: 10px;
+	}
+	#top_about h3 span {
+		width: 100%;
+	}
+	#top_about .earth {
+		position: relative;
+		top: auto;
+		right: auto;
+		border-radius: 0;
+		width: 100%;
+		height: auto;
+	}
+	#top_about .earth .maru {
+		width: 100%;
+		height: auto;
+		border-radius: 0;
+	}
+	#top_about .earth .maru img {
+		transform: rotate(-10deg);
+		position: relative;
+		top: -8px;
+		left: auto;
+		margin-right: 10px;
+	}
+	#top_about .earth .maru .txt {
+		padding-top: 0;
+		transform: rotate(0);
+	}
+	#top_about .msg {
+		font-size: 15px;
+	}
+	#top_about .wrap dl {
+		width: 100%;
+	}
+	#top_about .wrap dl dd {
+		padding: 10px;
+	}
+	#top_about ul li {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#top_about ul a {
+		width: 100%;
+	}
+	#top_hiroshima .example {
+		margin-top: 30px;
+	}
+	#top_hiroshima .wrap .img {
+		width: 100%;
+	}
+	#top_hiroshima .wrap .img dl {
+		width: 49%;
+	}
+	#top_hiroshima .example .wrap dl {
+		padding: 20px 10px 10px 10px;
+	}
+	#top_hiroshima .example .wrap dl dt {
+		border-radius: 5px;
+		width: 70px;
+		height: auto;
+		padding: 5px 0;
+	}
+	#top_hiroshima .example .wrap dl dt span {
+		display: inline-block;
+		font-size: 18px;
+		margin-left: 5px;
+	}
+	#top_koukoku dl dt {
+		font-size: 18px;
+	}
+	#top_koukoku ul li {
+		width: 100%;
+	}
+	#top_koukoku ul li a {
+		height: auto;
+		padding: 10px;
+	}
+	#top_area h3 {
+		font-size: 17px;
+		text-shadow: 1px 1px 0 rgba(255,255,255,0.2);
+	}
+	#top_area h3 .fm {
+		font-size: 23px;
+	}
+	#top_area h3 .ok {
+		margin-left: 10px;
+		font-size: 18px;;
+	}
+	#top_area .box {
+		padding: 10px;
+	}
+	#top_area .box h4 {
+		font-size: 18px;
+	}
+	#top_area .box .wrap {
+		flex-wrap: wrap;
+	}
+	#top_area .box .wrap ul {
+		width: 49%;
+	}
+	/*--------------------------------------------------
+		当社の取り組み
+	--------------------------------------------------*/
+	#service h3.smp {
+		padding: 15px 0;
+		font-size: 22px;
+	}
+	#service h3.smp b {
+		padding-left: 10px;
+		border-left-width: 6px;
+	}
+	#service h3.smp b::before {
+		left: -6px;
+		width: 6px;
+	}
+	#service p.msg {
+		font-size: 18px;
+	}
+	#service p.txt_line {
+		text-align: center;
+	}
+	#service p.txt_line b {
+		font-size: 20px;
+	}
+	#service .license .photo img {
+		width: 200px;
+	}
+	#service .license .photo p {
+		text-align: center;
+	}
+	#service .license dt {
+		padding: 5px 15px;
+		font-size: 20px;
+	}
+	#service .license dd {
+		padding: 15px;
+	}
+	#service .license .chk {
+		padding: 10px 10px 1px;
+	}
+	#service .smp {
+		padding-top: 0;
+		font-size: 85%;
+	}
+	#service .smp p.lft {
+		text-align: left;
+	}
+	#service .smp .w4 ul li {
+		width: 49%;
+	}
+	#service .smp ul li div span {
+		font-size: 85%;
+	}
+	#service .smp .w4:last-child ul li:nth-child(1),
+	#service .smp .w4:last-child ul li:nth-child(2) {
+		margin-bottom: 30px;
+	}
+	/*--------------------------------------------------
+		料金表
+	--------------------------------------------------*/
+	#price_msg .in {
+		padding: 15px;
+	}
+	#price_msg .photo {
+		display: none;
+	}
+	#price_msg .txt {
+		width: 100%;
+		padding-bottom: 0;
+	}
+	#price_msg .txt p.mp {
+		font-size: 17px;
+	}
+	#price_msg .txt p.serif {
+		margin-bottom: 20px;
+		font-size: 30px;
+		line-height: 80px;
+	}
+	#price_msg .txt p.b {
+		font-size: 100%;
+		line-height: 1.5;
+	}
+	/**/
+	#price .box h4 {
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+	#price .box h5 {
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	#price .box .tbl {
+		font-size: 90%;
+	}
+	#price .box .tbl td+td {
+		white-space: nowrap;
+	}
+	/*--------------------------------------------------
+		はじめての方へ
+	--------------------------------------------------*/
+	#beginner_msg {
+		padding-bottom: 15px;
+	}
+	#beginner_msg p {
+		font-size: 15px;
+		line-height: 1.6;
+	}
+	#beginner_msg .msg_box01 {
+		display: block;
+	}
+	#beginner_msg .msg_box01 .txt_area {
+		margin-right: 0;
+	}
+	#beginner_msg .img01 {
+		display: block;
+		width: 80%;
+		margin:20px auto;
+	}
+	#beginner_msg .msg_txt01 {
+		font-size: 14px;
+	}
+	#beginner_msg .msg_txt02 {
+		font-size: 16px;
+	}
+	#beginner_msg .msg_txt03 {
+		font-size: 18px;
+	}
+	#beginner_msg .msg_box02 {
+		background: none;
+	}
+	#beginner_msg .msg_box02 .txt_area {
+		width: auto;
+		padding: 20px;
+		float:none;
+	}
+	#beginner_msg .msg_box02 .box02_flex {
+		display: block;
+		margin-bottom: 10px;
+	}
+	#beginner_msg .msg_box02 .txt_free {
+		display: block;
+		width: 100%;
+		padding: 5px 0;
+		color: #fff;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	#beginner_msg .msg_box02 .txt_free span {
+		display: inline-block;
+		font-size: 15px;
+	}
+	#beginner_msg .msg_box02 .tel_area {
+		margin-left: 0;
+	}
+	#beginner_msg .msg_box02 .tel {
+		font-size: 28px;
+	}
+	#beginner_msg .msg_box02 .tel img {
+		width: 32px;
+		margin-right: 10px;
+		margin-top: -4px;
+	}
+	#beginner_msg .msg_txt04 {
+		font-size: 16px;
+	}
+	#beginner_msg .msg_txt05 {
+		font-size: 18px;
+		text-align: center;
+	}
+	#beginner_msg .msg_txt05 span {
+		display: block;
+		font-size: 15px;
+	}
+	/*ご相談から解決までの流れ*/
+	#beginner_flow {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+	#beginner_flow .flow_wrapper {
+		padding: 15px;
+	}
+	#beginner_flow h3.headline {
+		padding-top: 10px;
+		padding-bottom: 0;
+	}
+	#beginner_flow .flow_box01 {
+		padding-top: 5px;
+		display: block;
+	}
+	#beginner_flow .flow_box01 .txt_area {
+		margin-right: 0;
+	}
+	#beginner_flow .flow_txt01 {
+		font-size: 16px;
+	}
+	#beginner_flow .img_flow01 {
+		display: block;
+		width: 50%;
+		margin:20px auto 0;
+	}
+	
+	#beginner_flow .flow_box02 {
+		margin-bottom: 56px;
+		display: block;
+	}
+	#beginner_flow .flow_box02:before {
+		bottom: -32px;
+		transform: translateX(-50%);
+		border-width: 32px 69px 0 69px;
+		border-color: #89d4ea transparent transparent transparent;
+	}
+	#beginner_flow .flow_box02 .step {
+		width: 100%;
+		font-size: 20px;
+		padding: 5px;
+		display: block;
+		text-align: center;
+	}
+	#beginner_flow .flow_box02 .step:after {
+		display: inline;
+		margin-left: 0.5em;
+	}
+	#beginner_flow .flow_box02 .txt_area {
+		padding: 10px;
+	}
+	#beginner_flow h4.headline {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	#beginner_flow h4.headline .free {
+		font-size: 14px;
+		padding: 0 8px;
+		line-height: 20px;
+		vertical-align: 2px;
+	}
+	#beginner_flow .flow_box02 .txt_area .bold {
+		font-size: 15px;
+	}
+	#beginner_flow .flow_box02 .flow_flex {
+		display: block;
+	}
+	#beginner_flow .flow_flex .flow_txt04 {
+		display: block;
+		width: 100%;
+		padding: 5px 0;
+		font-size: 20px;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	#beginner_flow .flow_flex .flow_txt04 span {
+		display: inline-block;
+		font-size: 15px;
+	}
+	#beginner_flow .flow_flex .tel {
+		margin-right: 0;
+	}
+	#beginner_flow .flow_flex .tel01 {
+		font-size: 28px;
+	}
+	#beginner_flow .flow_flex .tel01 img {
+		width: 28px;
+	}
+	#beginner_flow .flow_txt05 {
+		font-size: 14px;
+	}
+	#beginner_flow .flow_flex .tel02 {
+		font-size: 28px;
+		margin-left: 0;
+	}
+	#beginner_flow .flow_flex .tel02 img {
+		width: 28px;
+	}
+	#beginner_flow .flow_txt06 {
+		font-size: 18px;
+	}
+	#beginner_flow .flow_txt06 span {
+		font-size: 16px;
+	}
+	/*--------------------------------------------------
+		探偵社の選び方
+	--------------------------------------------------*/
+	/*信頼できる探偵社を見分けるポイントとは！*/
+	#choose_point {
+		padding-bottom: 20px;
+	}
+	#choose_point h3.headline02 {
+		font-size: 15px;
+		line-height: 1.6;
+		padding: 8px 0;
+	}
+	#choose_point .point_box_flex {
+		padding: 15px;
+		display: block;
+	}
+	#choose_point .point_ul01 {
+		width: 100%;
+	}
+	#choose_point .point_ul01:first-of-type {
+		margin-right: 0;
+	}
+	/*探偵社の選び方*/
+	#choose_howto {
+		position: relative;
+		padding-bottom: 80px;
+	}
+	#choose_howto h4.headline {
+		font-size: 15px;
+		line-height: 2;
+		border-left: 6px solid #14aad5;
+		padding-left: 6px;
+		margin-bottom: 10px;
+	}
+	#choose_howto p span {
+		font-size: 15px;
+	}
+	#choose_howto .choose_howto_flex {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+	#choose_howto .choose_howto_flex .txt_area {
+		margin-left: 0;
+	}
+	#choose_howto .img_howto01 {
+		width: 60%;
+		display: block;
+		margin: auto;
+	}
+	/*地元の探偵社だからできる事*/
+	#choose_possible {
+		padding-top: 14px;
+		padding-bottom: 40px;
+	}
+	#choose_possible h3.headline02 {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	#choose_possible .possible_ul {
+		display: block;
+	}
+	#choose_possible .possible_ul li {
+		width: 100%;
+		padding: 20px 10px 10px;
+		margin-bottom: 20px;
+	}
+	#choose_possible .possible_ul li:last-of-type {
+		margin-bottom: 0;
+	}
+	#choose_possible .possible_ul li:before {
+		font-size: 22px;
+		top: -18px;
+	}
+	/*浮気調査の料金について*/
+	#choose_price {
+		padding-bottom: 40px;
+	}
+	#choose_price h3.headline span.fs {
+		font-size: 16px;
+	}
+	#choose_price .price_table {
+		margin-bottom: 30px;
+		font-size: 10px;
+	}
+	#choose_price .price_table td {
+		padding: 2px;
+	}
+	#choose_price .price_table .bar_gray {
+		font-size: 10px;
+		width: 46px;
+		padding-top: 5px;
+	}
+	#choose_price .price_table .bar_blue {
+		font-size: 10px;
+		width: 46px;
+		padding-top: 5px;
+	}
+	#choose_price .price_table .bar01 {
+		height: 26px;
+	}
+	#choose_price .price_table .bar02 {
+		height: 46px;
+	}
+	#choose_price .price_table .bar03 {
+		height: 82px;
+	}
+	#choose_price .price_table .bar04 {
+		height: 152px;
+	}
+	#choose_price .price_table .name_gray {
+		font-size: 10px;
+		width: 50px;
+		line-height: 1.4;
+		margin-top: 5px;
+	}
+	#choose_price .price_table .name_blue {
+		font-size: 10px;
+		width: 50px;
+		line-height: 24px;
+		padding: 2px 0;
+		margin-top: 5px;
+	}
+	#choose_price .price_table .w_190 {
+		width: 50px;
+	}
+	#choose_price .price_table .b {
+		font-size: 10px;
+	}
+	#choose_price .price_table .caution {
+		font-size: 10px;
+		margin-left: 0;
+		padding: 0 2px;
+	}
+	#choose_price h4.headline {
+		font-size: 18px;
+		line-height: 32px;
+		margin-bottom: 20px;
+	}
+	#choose_price .price_dl {
+		margin-left: 15px;
+		margin-right: 15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#choose_price .price_dl:last-of-type {
+		padding-bottom: 10px;
+	}
+	#choose_price .price_dl .circle {
+		display: block;
+		width: 32px;
+		line-height: 32px;
+		font-size: 12px;
+	}
+	#choose_price .price_dl dd {
+		font-size: 14px;
+		margin-left: 10px;
+	}
+	#choose_price .img_price01 {
+		display: none;
+	}
+	/*違法な探偵業者にご注意ください*/
+	#choose_caution {
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+	#choose_caution h3.headline02 {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	#choose_caution .caution_box {
+		padding: 15px;
+		margin-bottom: 20px;
+		display: block;
+	}
+	#choose_caution .caution_box .circle {
+		width: 80px;
+		line-height: 80px;
+		margin:0 auto 10px;
+	}
+	#choose_caution .caution_box .circle img {
+		width: 60px;
+	}
+	#choose_caution .caution_box .circle img.mt {
+		margin-top: -10px;
+	}
+	#choose_caution .caution_box .txt_area, #fickleness .fickleness_you .sec:nth-of-type(2) .txt_area {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+	#choose_caution h4.headline {
+		font-size: 17px;
+	}
+	#choose_caution .caution_txt01 {
+		font-size: 15px;
+	}
+	/*#fickleness .fickleness_you .sec .txt_area .txt b {
+		font-size: 15px;
+	}*/
+	
+	/*--------------------------------------------------
+		浮気・不倫調査
+	--------------------------------------------------*/
+	#fickleness .fickleness_about dl dt {
+		font-size: 18px;
+		padding-left: 0;
+		text-align: center;
+	}
+	#fickleness .fickleness_about dl dd {
+		padding: 10px 10px 0 10px;
+	}
+	#fickleness .fickleness_you .sec {
+		display: block;
+	}
+	#fickleness .fickleness_you .sec .txt_area {
+		width: 100%;
+		margin-left: 0;
+	}
+	#fickleness .fickleness_you .sec .img {
+		width: 100%;
+		text-align: center;
+	}
+	#fickleness .fickleness_point h3.headline {
+		text-align: center;
+	}
+	#fickleness .fickleness_point dl dt {
+		line-height: 1.6;
+		padding: 5px 5px 5px 30px;
+		position: relative;
+	}
+	#fickleness .fickleness_point dl dt span {
+		font-size: 20px;
+		position: absolute;
+		top: 1px;
+		left: 10px;
+	}
+	#fickleness .fickleness_point dl dd {
+		padding: 10px;
+	}
+	#fickleness .fickleness_point dl dd .img {
+		width: auto;
+	}
+	#fickleness .fickleness_point dl dd .img, #fickleness .fickleness_point .wrap dl dd .img {
+		position: relative;
+		top: auto;
+		right: auto;
+		bottom: auto;
+		text-align: center;
+		margin-top: 10px;
+	}
+	#fickleness .fickleness_point .wrap dl dt {
+		padding: 5px;
+	}
+	#fickleness .fickleness_point .wrap dl dd {
+		padding-right: 10px;
+	}
+	#fickleness .fickleness_point .bg_blue dl {
+		padding: 10px;
+	}
+	#fickleness .fickleness_point .bg_blue dl dt {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	#fickleness .fickleness_point .wrap dl dt {
+		font-size: 18px;
+	}
+	#fickleness .fickleness_point .wrap dl dd {
+		min-height: 0;
+	}
+	#fickleness .fickleness_point  p.link a {
+		font-size: 17px;
+	}
+	#fickleness .fickleness_check .bg {
+		padding: 30px 5px 5px;
+		border-radius: 20px 20px 0 0;
+	}
+	#fickleness .fickleness_check .bg dl {
+		padding: 10px;
+	}
+	#fickleness .fickleness_check .bg dl dt {
+		background-size: 25px auto;
+		padding-left: 35px;
+	}
+	#fickleness .fickleness_check .bg dl dt span.line {
+		font-size: 18px;
+	}
+	#fickleness .fickleness_request h3 {
+		margin-right: 0;
+	}
+	#fickleness .fickleness_request h3 span {
+		position: static;
+		font-size: 16px;
+		top: 40px;
+	}
+	#fickleness .fickleness_request .ico {
+		position: relative;
+		right: auto;
+		top: auto;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	#fickleness .fickleness_request .list .sec {
+		margin-bottom: 30px;
+	}
+	#fickleness .fickleness_request .list .sec:not(:last-of-type):before {
+		bottom: -55px;
+		margin-left: -35px;
+		border: 35px solid transparent;
+		border-top: 20px solid #fff;
+	}
+	#fickleness .fickleness_request .list .sec p.mp .no {
+		width: 25px;
+		line-height: 25px;
+		font-size: 18px;
+		margin-right: 10px;
+	}
+	#fickleness .fickleness_request .list .sec p.mp {
+		position: relative;
+		padding: 0 0 0 43px;
+	}
+	#fickleness .fickleness_request .list .sec p.mp .no {
+		position: absolute;
+		top: 1px;
+		left: 10px;
+	}
+	#fickleness .fickleness_request .list .sec dl {
+		margin-bottom: 30px;
+	}
+	#fickleness .fickleness_request .list .sec dl dt img {
+		width: 50px;
+	}
+	#fickleness .fickleness_request .list .sec dl dd {
+		margin-left: 60px;
+		padding: 10px;
+	}
+	#fickleness .fickleness_request .list .sec dl:last-of-type dd {
+		margin-right: 60px;
+	}
+	#fickleness .fickleness_request .list .sec dl dd:before {
+		left: -20px;
+		border: 10px solid transparent;
+		border-right: 15px solid #f2f2f2;
+	}
+	#fickleness .fickleness_request .list .sec dl:last-of-type dd:before {
+		left: auto;
+		right: -11px;
+		border-left: 15px solid #e7f6fb;
+	}
+	#fickleness .fickleness_request .list .sec .chk {
+		padding-left: 0;
+		padding-top: 35px;
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+	#fickleness .fickleness_request .list .sec .chk span {
+		font-size: 15px;
+		line-height: 25px;
+	}
+	/*--------------------------------------------------
+		当社の取り組み
+	--------------------------------------------------*/
+	/*--------------------------------------------------
+		お客様の声
+	--------------------------------------------------*/
+	#voice .letter .box {
+		padding: 5px;
+	}
+	#voice .letter .box > .in > .in {
+		padding: 15px;
+	}
+	#voice .letter .box dl {
+		display: block;
+	}
+	#voice .letter .box dl dt, #voice .letter .box dl dd {
+		width: 100%;
+	}
+	#voice .letter .box dl dt {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	#voice .letter .box dl dd .blue {
+		font-size: 15px;
+		line-height: 1.6;
+	}
+	/*--------------------------------------------------
+		料金表
+	--------------------------------------------------*/
+	/*--------------------------------------------------
+		事例紹介
+	--------------------------------------------------*/
+	#jirei .cmn_example .dd_tab dt {
+		width: 100%;
+	}
+	#jirei .bg_blue .wrap {
+		padding-right: 0;
+		padding-bottom: 80px;
+	}
+	#jirei .bg_blue .wrap .txt b {
+		font-size: 16px;;
+	}
+	#jirei .bg_blue .wrap .img img {
+		width: 80px;
+	}
+	/*--------------------------------------------------
+		会社概要
+	--------------------------------------------------*/
+	#company .bg .waku .rit img {
+		margin-top: 10px;
+	}
+	#company table tr th, #company table tr td {
+		display: block;
+		padding: 5px;
+	}
+	#company table tr th {
+		width: 100%;
+	}
+	#company .photo {
+		display: block;
+	}
+	#company .photo dl {
+		margin-bottom: 20px;
+	}
+	#company .photo dl dt {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	#company .history .wrap, #company .office .wrap {
+		display: block;
+	}
+	#company .history .wrap .sec, #company .office .wrap dl {
+		width: 100%;
+	}
+	#company .history .wrap .sec dl {
+		font-size: 14px;
+	}
+	#company .office .wrap dl dd {
+		padding: 10px;
+	}
+	#company .support {
+		padding: 10px 10px 0;
+	}
+	#company .support .blue {
+		font-size: 18px;
+	}
+	#company .support .txt {
+		line-height: 1.7;
+		text-align: left;
+	}
+	/*--------------------------------------------------
+		素行調査
+	--------------------------------------------------*/
+	#behavior .bg  h3 {
+		font-size: 19px;
+	}
+	#behavior .bg dl dt {
+		font-size: 18px;
+		padding-left: 0;
+		text-align: center;
+	}
+	#behavior .bg dl dd {
+		padding: 10px 10px 0 10px;
+	}
+	#behavior .behavior .wrap {
+		display: block;
+	}
+	#behavior .behavior .wrap dl {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	#behavior .behavior .wrap dl dd .mp {
+		font-size: 18px;
+		line-height: 40px;
+	}
+	#behavior .behavior .wrap dl dd .in {
+		padding: 10px
+	}
+	#behavior .end .mp {
+		font-size: 18px;
+		text-align: left;
+	}
+	#behavior .end .mp br {
+		display: none;
+	}
+	#behavior .end .txt {
+		font-size: 14px;
+	}
+	/*--------------------------------------------------
+		裁判証拠収集
+	--------------------------------------------------*/
+	#trial .bg h3 {
+		margin-bottom: 15px;
+	}
+	#trial .bg dl dd {
+		padding: 10px;
+	}
+	#trial .important .box_flex .info {
+		width: 100%;
+	}
+	#trial .example h3.smp {
+		padding: 15px 0;
+		font-size: 22px;
+	}
+	#trial .example h3.smp b {
+		padding-left: 10px;
+		border-left-width: 6px;
+	}
+	#trial .example h3.smp b::before {
+		left: -6px;
+		width: 6px;
+	}
+	#trial .example .bg02 {
+		padding: 15px 0;
+	}
+	#trial .example .box_flex dl {
+		width: 100%;
+	}
+	#trial .example .box_flex dl dd {
+		padding: 10px;
+	}
+	#trial .example .box_flex dl dd .line span {
+		font-size: 18px;
+	}
+	/*--------------------------------------------------
+		結婚・身上調査
+	--------------------------------------------------*/
+	#marriage .bg table tr th{
+		width: 100%;
+		padding: 10px;
+		display: block;
+	}
+	#marriage .bg table tr td {
+		padding: 15px;
+		display: block;
+	}
+	#trial .bg dl dd {
+		display: block;
+	}
+	#trial .bg dl dd ul li {
+		font-size: 15px;
+		margin-bottom: 0;
+	}
+	/*--------------------------------------------------
+		家出・所在調査
+	--------------------------------------------------*/
+	#whereabouts .bg h3 {
+		font-size: 20px;
+	}
+	#whereabouts .bg .txt {
+		text-align: left;
+	}
+	#whereabouts .bg .box_flex dl {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#whereabouts .bg .box_flex dl dt {
+		font-size: 16px;
+		height: 70px;
+	}
+	#whereabouts .bg .box_flex dl dd {
+		padding: 10px;
+	}
+	#whereabouts .bg .line span {
+		font-size: 18px;
+	}
+	/*--------------------------------------------------
+		嫌がらせ対策
+	--------------------------------------------------*/
+	#stalker > .bg .img img {
+		display: none;
+	}
+	#stalker .measures .chk_box dl dd {
+		display: block;
+		padding: 10px;
+	}
+	#stalker .measures .chk_box dl dd ul {
+		width: 100%;
+	}
+	#stalker .measures .chk_box dl dd ul li {
+		font-size: 16px;
+	}
+	#stalker .measures .list dl {
+		width: 100%;
+		padding: 10px 0;
+	}
+	#stalker .measures .list dl dt span {
+		font-size: 18px;
+	}
+	#stalker .bg02 .sub {
+		font-size: 16px;
+	}
+	#stalker .bg02.chk_box dl dt {
+		font-size: 16px;
+	}
+	#stalker .bg02.chk_box dl dd {
+		padding: 10px;
+		display: block;
+	}
+	#stalker .bg02.chk_box dl dd ul li {
+		font-size: 16px;
+	}
+	#stalker .bg02.chk_box dl dd ul:first-of-type {
+		margin-right: 0;
+	}
+	#stalker .example .box_flex dl {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	#stalker .example .box_flex dl dd .in {
+		padding: 10px;
+	}
+	/*--------------------------------------------------
+		盗聴器発見
+	--------------------------------------------------*/
+	#tapping .blue_waku {
+		border-width: 3px;
+		padding: 10px;
+	}
+	#tapping .blue_waku ul {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	#tapping .chk_box {
+		margin-top: 0;
+	}
+	#tapping .chk_box dl dd ul li {
+		font-size: 16px;
+	}
+	#tapping .shadow {
+		display: block;
+		padding: 15px 0 0;
+	}
+	#tapping .shadow .img {
+		text-align: center;
+	}
+	#tapping .shadow .img img {
+		width: 150px;
+	}
+	#tapping .shadow .info {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	#tapping .shadow .info .line {
+		text-align: center;
+	}
+	#tapping .type .box_flex .info {
+		width: 100%;
+	}
+	#tapping .shadow .info .line span, #tapping .example h3 span {
+		font-size: 18px;
+	}
+	#tapping .notice dt {
+		font-size: 18px;
+	}
+	#tapping .notice dd {
+		padding: 10px;
+		line-height: 30px;
+		text-align: left;
+	}
+	/*--------------------------------------------------
+		指紋・筆跡鑑定
+	--------------------------------------------------*/
+	#fingerprint .bg h3 {
+		font-size: 18px;
+	}
+	#fingerprint .bg .txt {
+		text-align: left;
+	}
+	#fingerprint .bg .txt .dsp_tbs {
+		display: none;
+	}
+	#fingerprint .chk_box dl dd {
+		display: block;
+	}
+	#fingerprint .bg dl dd ul {
+		width: 100%;
+	}
+	/*--------------------------------------------------
+		離婚の種類について
+	--------------------------------------------------*/
+	#type .box_flex dl {
+		width: 100%;
+		padding: 10px;
+	}
+	#type .bg dl {
+		margin-bottom: 25px;
+	}
+	#type .bg dl dt {
+		line-height: 1.6;
+		font-size: 18px;
+		padding: 5px 10px;
+	}
+	#type .bg dl dd, #type .bg dl:nth-of-type(even) dd {
+		padding: 10px;
+	}
+	/*--------------------------------------------------
+		内容証明について
+	--------------------------------------------------*/
+	#proof .what .wrap dl{
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	#proof .what .wrap dl dt {
+		top: -20px;
+		margin-bottom: -5px;
+	}
+	#proof .what .wrap dl dt img {
+		width: 25px;
+	}
+	#proof .what .wrap dl dd{
+		font-size: 15px;
+	}
+	#proof .notice .box {
+		padding: 10px;
+	}
+	#proof .notice .box ol li {
+		line-height: 1.7;
+		padding: 10px 5px 5px 40px;
+		font-size: 15px;
+	}
+	/*--------------------------------------------------
+		浮気調査サンプル
+	--------------------------------------------------*/
+	#sample .data {
+		padding: 10px;
+	}
+	#sample h4 {
+		margin-bottom: 10px;
+		font-size: 150%;
+	}
+	#sample dl {
+		padding: 10px 0;
+	}
+	#sample dl:last-child {
+		padding: 10px 0 0;
+		margin-bottom: 0;
+	}
+	#sample dt,
+	#sample dd,
+	#sample dd .photo {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	#sample dd .photo {
+		display: block;
+		width: 100%;
+	}
+	/*--------------------------------------------------
+		法人様向けプラン
+	--------------------------------------------------*/
+	#corporation h3.txt {
+		text-align: left;
+		margin-bottom: 15px;
+	}
+	#corporation h3.txt br {
+		display: none;
+	}
+	#corporation .box_flex > div {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#corporation .box_flex dl dd {
+		padding: 10px;
+	}
+	#corporation .special .box .info {
+		padding: 10px;
+	}
+	#corporation .special .box .info h4 {
+		line-height: 1.6;
+		font-size: 16px;
+	}
+	#corporation .special .box .info .wrap {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#corporation .special .box .info .wrap .shikaku {
+		width: 170px;
+		border-radius: 10px;
+		font-size: 23px;
+		padding: 10px 0;
+	}
+	#corporation .special .box .info .wrap .tel_area {
+		width: 100%;
+	}
+	#corporation .special .box .info .wrap .free {
+		text-align: center;
+	}
+	#corporation .special .box .info .wrap .free a {
+		font-size: 30px;
+		background-size: 45px auto;
+		padding-left: 50px;
+	}
+	#corporation .special .box .info .wrap .free {
+		padding-top: 10px;
+	}
+	#corporation .special .box .info .txt2 {
+		text-align: center;
+		font-size: 18px;
+	}
+	#corporation .special .box .info .txt2 span {
+		font-size: 16px;
+	}
+	/*--------------------------------------------------
+		sitemap
+	--------------------------------------------------*/
+	#sitemap .flex .box {
+		width: 100%;
+	}
+/*------------------------------------------------*/
+}
+
+@media only screen and (max-width: 400px){
+	.a_note {
+		font-size: 15px !important;
+	}
+}
+@media only screen and (max-width: 320px){
+	.a_note {
+		font-size: 12px !important;
+	}
+}
+
+.smt_red {
+    color: #C1272D;
+}
