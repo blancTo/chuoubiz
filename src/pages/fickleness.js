@@ -19,7 +19,7 @@ const fickleness = () => {
         <>
             
             <div id="wrap">
-            <Header h1title="浮気・不倫調査について" />
+            <Header h1title="広島の総合探偵社 中央リサーチ広島本社で浮気調査・不倫調査" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
             <Breadcrumb subtitle={pagemeta.title} />
                 <Layout>
@@ -893,13 +893,116 @@ const fickleness = () => {
         </>
     )
 }
+
+const jsonN = "総合探偵社 中央リサーチ広島本社",
+jsonT = "浮気調査・不倫調査",
+jsonS = "fickleness",
+jsonD = "広島で浮気調査を依頼する場合、探偵事務所選びは非常に重要です。この記事では、広島の探偵事務所で浮気調査を依頼する前に知っておくべきことを解説します。";
+
+const jsonLd = {
+    "@context": "http://schema.org/",
+    "@graph":[
+        {
+            "@type": "Article",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://www.chuou.biz/${jsonS}/`
+            },
+            "headline": "広島の探偵事務所で浮気調査を依頼する前に知っておくべきこと",
+            "description": `${jsonD}`,
+            "image": {
+            "@type": "ImageObject",
+            "url": "https://www.chuou.biz/img/top/title_sp.jpg",
+            "height": 568,
+            "width": 750
+            },
+            "author": {
+                "@type": "Organization",
+                "name": `${jsonN}`
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": `${jsonN}`,
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.chuou.biz/img/title.png",
+                    "width": 430,
+                    "height": 36
+                }
+            },
+            "datePublished": "2023-02-28T09:00:00+09:00",
+            "dateModified": "2023-02-28T09:00:00+09:00"  
+        },
+        {
+            "@type":"WebSite",
+            "@id":`https://www.chuou.biz/${jsonS}/#website`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonT}| 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "publisher":{
+                "@id":`https://www.chuou.biz/${jsonS}/#person`
+            }
+        },
+        {
+            "@type":"WebPage",
+            "@id":`https://www.chuou.biz/${jsonS}/#webpage`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "isPartOf":{
+                "@id":`https://www.chuou.biz/${jsonS}/#website`
+            },
+            "breadcrumb":{
+                "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`
+            },
+            "datePublished":"2023-2-22T21:00:00+09:00",
+            "dateModified":"2023-2-24T19:00:00+09:00"
+        },
+        {
+            "@type":"BreadcrumbList",
+            "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`,
+            "itemListElement":[
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/#listItem`,
+                    "position":1,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/`,
+                        "name":`${jsonN}`,
+                        "description":"当探偵社は広島に本社を構え、皆様の信頼に支えられ55年の実績を重ねてまいりました。調査・解決共経験豊富な当社にまずはお気軽にご相談ください。",
+                        "url":`https://www.chuou.biz/`
+                    },
+                    "nextItem":`https://www.chuou.biz/${jsonS}/#listItem`
+                },
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/${jsonS}/#listItem`,
+                    "position":2,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/${jsonS}/`,
+                        "name":`${jsonT}｜${jsonN}`,
+                        "description":`${jsonD}`,
+                        "url":`https://www.chuou.biz/${jsonS}/`
+                    },
+                    "previousItem":`https://www.chuou.biz/#listItem`
+                }
+            ]
+        }
+    ]
+}
+
 export const Head = () => (
     <>
         <Seo
-            title="広島で浮気・不倫調査のご依頼を悩まれている方へ"
-            description="浮気調査・不倫調査・素行調査は広島本社で55年の実績を持つ中央リサーチにお任せください。皆様に少しでも早く安心をお届けできるよう責任と誠意を持ってサポートいたします。"
-            keyword="浮気調査,不倫調査,広島,探偵,中央リサーチ"
-            />
+            title2="広島で浮気調査・不倫調査は総合探偵社中央リサーチ広島本社にお任せください"
+            description="広島で浮気調査・不倫調査をお考えなら、総合探偵社中央リサーチ広島本社にお任せください。55年の実績を誇り、信頼と実績でお客様の問題を解決します。まずは無料相談をご利用ください。"
+            keyword="広島、浮気調査、不倫調査、探偵、総合探偵社、中央リサーチ広島"
+        />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
     </>
 )
 export default fickleness
