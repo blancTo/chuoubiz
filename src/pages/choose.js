@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -15,10 +14,7 @@ const choose = () => {
     }
     return (
         <>
-            <Seo
-            title="広島で探偵業社を見分けるポイント"
-            description="広島の探偵社「中央リサーチ」より探偵社の選び方について説明しています。"
-            />
+            
             <div id="wrap">
             <Header h1title="探偵社の選び方、見分けるポイントについて" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -50,7 +46,7 @@ const choose = () => {
                         <h3 className="headline mp">探偵社の選び方</h3>
                         <p>ご依頼者様にとって調査を依頼する最も大きなポイントは料金と調査能力です。営業相談員が話しやすいだけでは本当の問題解決にはならないのです。</p>
                         <div className="choose_howto_flex">
-                            <StaticImage src="../img/choose/howto01.jpg" alt="探偵社の選び方" className="img_howto01" />
+                            <img src="../img/choose/howto01.jpg" alt="探偵社の選び方" className="img_howto01" />
                             <div className="txt_area">
                             <h4 className="headline mp">では、どのように見分ければよいのでしょうか？</h4>
                             <p>料金については必ず<span className="b">わかりやすい料金表（調査料金が概算で算定できる表）がホームページ上に公開されていること</span>が信用の目安になります。悪徳な探偵社では料金表が不明瞭であったり、電話で料金の見積もりを依頼しても「今はできません、事務所で面談してしてから見積もりします。」など料金を提示しない業者も存在します。<br />
@@ -61,21 +57,21 @@ const choose = () => {
                             </div>
                         </div>
                         <div className="choose_howto_flex">
-                            <StaticImage src="../img/choose/howto02.jpg" alt="探偵社の選び方" className="img_howto02" />
+                            <img src="../img/choose/howto02.jpg" alt="探偵社の選び方" className="img_howto02" />
                             <div className="txt_area">
                             <h4 className="headline mp">もう一つの重要な注意点は会社の信頼性です。</h4>
                             <p><span className="b">長年の継続実績のある探偵社は各種法令を厳守する事と、お客様の評価で今があります。</span>長年に渡り教育研修などを繰り返し行う事で最も大切な守秘義務や個人情報の取り扱いの管理などコンプライアンスも徹底していると思われます。また<span className="b">健全な地元の業者</span>であり、豊富な探偵経験があれば、長年の経験で培った土地勘を活かし無駄な諸経費の負担も少なく、スムーズに調査が進む可能性が高いと考えられます。</p>
                             </div>
                         </div>
                         <div className="choose_howto_flex">
-                            <StaticImage src="../img/choose/howto03.jpg" alt="探偵社の選び方" className="img_howto03" />
+                            <img src="../img/choose/howto03.jpg" alt="探偵社の選び方" className="img_howto03" />
                             <div className="txt_area">
                             <h4 className="headline mp">協会加盟は信用の目安になるの？</h4>
                             <p>一般社団法人の協会や探偵業組合などに加盟することは研修などで探偵業のコンプライアンスやガバナンスを学ぶ事においてはプラスになりますが、それだけで加盟業者が信用できる探偵社とは限りません。過去に一般社団法人～協会の加盟業者正会員や役員などが犯罪を起こした事例もあります。</p>
                             </div>
                         </div>
                         <div className="choose_howto_flex">
-                            <StaticImage src="../img/choose/howto04.jpg" alt="探偵社の選び方" className="img_howto04" />
+                            <img src="../img/choose/howto04.jpg" alt="探偵社の選び方" className="img_howto04" />
                             <div className="txt_area">
                             <h4 className="headline mp">ネットの口コミやお勧めランキングなどは信用できるの？</h4>
                             <p>現在、探偵ランキングやお勧め案内所、口コミなどのサイトで自作自演や作為的で根拠の無い誇大広告が横行しており問題視されています。その中で<span className="b">グーグルマップの口コミは審査が厳しい</span>為、比較的信用度は高いと思われますので一つの目安になります。しかし一部の探偵社で作為的な疑いがあるものも見受けられますのでご注意ください。</p>
@@ -209,14 +205,14 @@ const choose = () => {
                                 合計金額が<br className="dsp_hp" />
                                 いくらになるのか、<span className="b red">事前に必ず確認</span>しておきましょう。</dd>
                             </dl>
-                            <StaticImage src="../img/choose/price01.png" alt="ここに注意!!" className="img_price01" />
+                            <img src="../img/choose/price01.png" alt="ここに注意!!" className="img_price01" />
                         </div>
                     </div>
 
                     <div id="choose_caution" className="bg_wide">
                         <h3 className="headline02 mp">違法な探偵業者にご注意ください</h3>
                         <div className="caution_box">
-                            <span className="circle"><StaticImage src="../img/choose/caution01.png" alt="違法な探偵業者にご注意ください" className="mt" /></span>
+                            <span className="circle"><img src="../img/choose/caution01.png" alt="違法な探偵業者にご注意ください" className="mt" /></span>
                             <div className="txt_area">
                             <h4 className="headline">対象者の承諾なく人や車等にGPSを使用することは犯罪です。</h4>
                             <p className="caution_txt01">浮気調査、素行調査などの調査の為に対象者の承諾なく、探偵調査員が敷地内に忍び込み、車等に<span className="red">GPSを取り付ける業者が増えていますので注意</span>してください。</p>
@@ -225,7 +221,7 @@ const choose = () => {
                             </div>
                         </div>
                         <div className="caution_box">
-                            <span className="circle"><StaticImage src="../img/choose/caution02.png" alt="ビデオ撮影の手法" /></span>
+                            <span className="circle"><img src="../img/choose/caution02.png" alt="ビデオ撮影の手法" /></span>
                             <div className="txt_area">
                             <h4 className="headline">ビデオ撮影の手法</h4>
                             <p className="caution_txt01">浮気調査の調査方法で写真ではなく<span className="red">ビデオ撮影の手法にご注意</span>ください。<br />
@@ -235,7 +231,7 @@ const choose = () => {
                             </div>
                         </div>
                         <div className="caution_box">
-                            <span className="circle"><StaticImage src="../img/choose/caution03.png" alt="不正なルートで個人情報を入手" /></span>
+                            <span className="circle"><img src="../img/choose/caution03.png" alt="不正なルートで個人情報を入手" /></span>
                             <div className="txt_area">
                             <h4 className="headline">不正なルートで個人情報を入手</h4>
                             <p className="caution_txt01">電話番号から不正なルートで個人情報を（住所・氏名）聞き出したり、<br />
@@ -254,9 +250,10 @@ const choose = () => {
 }
 export const Head = () => (
     <>
-      <script src="/js/respond.js"></script>
-      <script src="/js/jquery.min.js"></script>
-      <script src="/js/fetch.min.js"></script>
+        <Seo
+            title="広島で探偵業社を見分けるポイント"
+            description="広島の探偵社「中央リサーチ」より探偵社の選び方について説明しています。"
+            />
     </>
 )
 export default choose

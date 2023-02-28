@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -17,11 +16,7 @@ const behavior = () => {
     }
     return (
         <>
-        <Seo
-        title="広島で素行調査は総合探偵社中央リサーチ広島本社へ"
-        keyword="素行調査,広島,探偵,中央リサーチ"
-        description="素行調査は広島本社で55年の実績を持つ中央リサーチにお任せください。皆様に少しでも早く安心をお届けできるよう責任と誠意を持ってサポートいたします。"
-        />
+        
             <div id="wrap">
             <Header h1title="素行調査について" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -43,7 +38,7 @@ const behavior = () => {
                               <li><b>債務者の現在の勤務先</b>（収入源）が知りたい。</li>
                               <li><b>実家で暮らす高齢者</b>の生活実態が気になる。</li>
                             </ul>
-                            <p className="img nm"><StaticImage src="../img/behavior/man.png" alt="" /></p>
+                            <p className="img nm"><img src="../img/behavior/man.png" alt="" /></p>
                           </dd>
                         </dl>
                       </div>
@@ -53,14 +48,14 @@ const behavior = () => {
                         <p>ご依頼内容に応じ、事案に則し最も適した２通りの調査方法で探偵業務を行います。</p>
                         <div className="wrap">
                           <dl>
-                            <dt><StaticImage src="../img/behavior/img01.jpg" alt="" /></dt>
+                            <dt><img src="../img/behavior/img01.jpg" alt="" /></dt>
                             <dd>
                               <p className="bg_blue_grad2 mp nm cen white">調査方法1</p>
                               <div className="in">探偵が尾行・張り込みを行う調査手法によって、対象者本人の素行や生活実態などを、分単位で記録し映像を取る事により事実を把握する方法</div>
                             </dd>
                           </dl>
                           <dl>
-                            <dt><StaticImage src="../img/behavior/img02.jpg" alt="" /></dt>
+                            <dt><img src="../img/behavior/img02.jpg" alt="" /></dt>
                             <dd>
                               <p className="bg_blue_grad2 mp nm cen white">調査方法2</p>
                               <div className="in">対象者に気づかれないよう経歴を基に特殊な技術で周囲に聞き込み、SNSなどからも情報を取集する等、対象者の素行の実状を調査する方法</div>
@@ -117,14 +112,14 @@ const behavior = () => {
                           <div className="bg">
                             <div className="head">
                               <p className="case serif">case01</p>
-                              <input id="marriage-check1" class="marriage-check1" type="checkbox" />
-                              <label class="marriage-label" for="marriage-check1">妻は見抜いた！消防士の夫が借金してまで貢いだ女性の影…素行調査で判明した真実<br />
+                              <input id="case-check1" className="case-check1" type="checkbox" />
+                              <label className="case-label" htmlFor="case-check1">妻は見抜いた！消防士の夫が借金してまで貢いだ女性の影…素行調査で判明した真実<br />
                               <span>探偵社には毎日多くの浮気相談が寄せられますが、奥様が旦那様の浮気に気がつくカンの鋭さには感心するものがあります。素行調査で分かった浮気発覚の事例です。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                              <div className='marriage-content'>
+                              <div className='case-content'>
 
                                 <div className="info">
                                   <div className="hito"> <span>依頼者：妻・保育士（23歳）</span> <span className="target">対象者：夫・消防士（27歳）</span> <span className="time">調査時間：●時間</span></div>
-                                  <p className="img"><StaticImage src="../img/behavior/jirei01.jpg" alt="" /></p>
+                                  <p className="img"><img src="../img/behavior/jirei01.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>
                                     <dd>結婚2年目で子供が一人いる夫婦です。夫は消防士で性格は真面目で落ち着いています。結婚後は仕事熱心で子供のお世話もしてくれ良い夫、良い父親でした。<br />
@@ -149,7 +144,7 @@ const behavior = () => {
                                   <div className="comment">
                                     <div className="requester sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">依頼者様からのコメント</p>
                                           <p className="nm">今回は本当にスピーディーな調査をして頂きありがとうございます。証拠を見たときは唖然としました。浮気は薄々感づいていましたが…。子供がまだ小さいので離婚するつもりはないです。でも、夫には反省してもらいます。安月給で切り詰めている私の気持ちも考えて‥と。</p>
@@ -158,7 +153,7 @@ const behavior = () => {
                                     </div>
                                     <div className="chu sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">中央リサーチから一言</p>
                                           <p className="nm">こちらこそ調査にご協力いただいてありがとうございました。素行調査で浮気の事実が分かりましたが、早い段階でご依頼されたので夫婦の再構築も上手くいくと信じております。</p>
@@ -178,13 +173,13 @@ const behavior = () => {
                           <div className="bg">
                             <div className="head">
                               <p className="case serif">case02</p>
-                              <input id="marriage-check2" class="marriage-check2" type="checkbox" />
-                              <label class="marriage-label" for="marriage-check2">娘の婚約者は何をジラしている？両親に挨拶して3年経っても結婚しない男の本心とは？<br />
+                              <input id="case-check2" className="case-check2" type="checkbox" />
+                              <label className="case-label" htmlFor="case-check2">娘の婚約者は何をジラしている？両親に挨拶して3年経っても結婚しない男の本心とは？<br />
                               <span>娘さんや息子さんから「結婚する」と報告を受けた親御さんは喜びでいっぱいな気持ちになりますが、「あれ？本当に大丈夫かな」と心配になるケースも少なくありません。今回は、娘の婚約者が両親にご挨拶をしてもなかなか結婚せずに3年もジラしている…というケースの素行調査をご紹介します。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                              <div className='marriage-content'>
+                              <div className='case-content'>
                                 <div className="info">
                                   <div className="hito"> <span>依頼者：娘の母親（64歳）</span> <span className="target">対象者：娘の婚約者（36歳）</span> <span className="time">調査時間：●時間</span></div>
-                                  <p className="img"><StaticImage src="../img/behavior/jirei02.jpg" alt="" /></p>
+                                  <p className="img"><img src="../img/behavior/jirei02.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>
                                     <dd>娘は都内で会社員をしている35歳です。仕事を通して知り合った婚約者（36歳）がいます。3年前に二人は結婚報告をするために、広島の実家までご挨拶に来てくれました。<br />
@@ -208,7 +203,7 @@ const behavior = () => {
                                   <div className="comment">
                                     <div className="requester sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">依頼者様からのコメント</p>
                                           <p className="nm">迅速で素晴らしい情報ありがとうございます。 二人がまだ交際していると知り、ホッとしました。婚約者が両親の介護をしているとは知りませんでした。<br />
@@ -218,7 +213,7 @@ const behavior = () => {
                                     </div>
                                     <div className="chu sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">中央リサーチから一言</p>
                                           <p className="nm">こちらこそ迅速なご対応ありがとうございます。娘さんと婚約者はとても仲睦まじく、素行に問題点はありませんでした。 またご心配なことがありましたらお気軽にご相談下さい。</p>
@@ -237,14 +232,14 @@ const behavior = () => {
                           <div className="bg">
                             <div className="head">
                               <p className="case serif">case03</p>
-                              <input id="marriage-check3" class="marriage-check3" type="checkbox" />
-                              <label class="marriage-label" for="marriage-check3">子供の教育費に貯めた100万円が消えた！妻がハマって浪費したものとは…？<br />
+                              <input id="case-check3" className="case-check3" type="checkbox" />
+                              <label className="case-label" htmlFor="case-check3">子供の教育費に貯めた100万円が消えた！妻がハマって浪費したものとは…？<br />
                               <span>人間はハマってしまうと金銭感覚がなくなり、あるだけのお金をどんどん使ってしまい、気がついた時には借金地獄に陥るケースもあるので注意が必要です。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                              <div className='marriage-content'>
+                              <div className='case-content'>
 
                                 <div className="info">
                                   <div className="hito"> <span>依頼者：夫・会社員（41歳）</span> <span className="target">対象者：妻・パート従業員（37歳）</span> <span className="time">調査時間：●時間</span></div>
-                                  <p className="img"><StaticImage src="../img/behavior/jirei03.jpg" alt="" /></p>
+                                  <p className="img"><img src="../img/behavior/jirei03.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>
                                     <dd>妻が定期預金を勝手に使って困っています。子供が高校まで通うための塾代、学費などを定期預金で貯めていますが、ある日いきなり100万円がなくなったのです。<br />
@@ -266,7 +261,7 @@ const behavior = () => {
                                   <div className="comment">
                                     <div className="requester sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">依頼者様からのコメント</p>
                                           <p className="nm">報告書をみて拍子抜けしました。妻は毎日スマホ片手に真剣な顔をしているので、何かと思っていましたが、電話占いに課金をしていたなんて…。<br />
@@ -276,7 +271,7 @@ const behavior = () => {
                                     </div>
                                     <div className="chu sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">中央リサーチから一言</p>
                                           <p className="nm">パートナーがお金を何に使っているか、分からず困っているご相談は多いです。今回のように心当たりのある方は、一度ご相談いただければと思います。</p>
@@ -297,13 +292,13 @@ const behavior = () => {
         </>
     )
 }
-
 export const Head = () => (
-    <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
-    </>
+  <>
+      <Seo
+        title="広島で素行調査は総合探偵社中央リサーチ広島本社へ"
+        keyword="素行調査,広島,探偵,中央リサーチ"
+        description="素行調査は広島本社で55年の実績を持つ中央リサーチにお任せください。皆様に少しでも早く安心をお届けできるよう責任と誠意を持ってサポートいたします。"
+        />
+  </>
 )
-
 export default behavior

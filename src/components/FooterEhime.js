@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
 
 const FooterEhime = () => {
   return (
@@ -9,9 +8,9 @@ const FooterEhime = () => {
             {/* タブレット・スマホ時ページ下部に表示される内容 */}
             <div id="footer_btn">
                 <ul>
-                <li className="mail"><Link to="/ehime/contact/"><StaticImage src="../img/btn_mail.png" alt="メールで相談" /></Link></li>
-                <li className="line"><Link to="https://line.me/R/ti/p/65gpK3qcDs" rel="nofollow noopener noreferrer" target="_blank"><StaticImage src="../img/btn_line.png" alt="LINEで相談" /></Link></li>
-                <li className="tel"><Link to="tel:0120-30-6630"><StaticImage src="../img/btn_tel.png" alt="" /></Link></li>
+                    <li className="mail"><Link to="/ehime/contact/"><img src="../../img/btn_mail.png" alt="メールで相談" /></Link></li>
+                    <li className="line"><a href="https://line.me/R/ti/p/65gpK3qcDs" aria-label="ラインで相談" rel="nofollow noopener noreferrer" target="_blank"><img src="../../img/btn_line.png" alt="LINEで相談" /></a></li>
+                    <li className="tel"><a href="tel:0120-30-6630" aria-label="電話で相談"><img src="../../img/btn_tel.png" alt="電話で相談" /></a></li>
                 </ul>
             </div>
             {/* ここまで */}
@@ -23,8 +22,8 @@ const FooterEhime = () => {
                     <div className="wrap">
                         <div className="shikaku">無料<br className="dsp_hpt" /><span>相談窓口</span></div>
                         <div className="tel_area">
-                        <p className="free sans"><Link to="tel:0120-30-6630">0120-30-6630</Link></p>
-                        <p className="free2"><span className="txt mp">女性相談員ご希望の方はこちら</span><Link to="tel:0120-20-3399">0120-20-3399</Link></p>
+                        <p className="free sans"><a href="tel:0120-30-6630">0120-30-6630</a></p>
+                        <p className="free2"><span className="txt mp">女性相談員ご希望の方はこちら</span><a href="tel:0120-20-3399">0120-20-3399</a></p>
                         </div>
                     </div>
                     <p className="mp txt2">年中無休！ 24時間受付！<span><br className="dsp_smt" />携帯電話でもOK!</span></p>

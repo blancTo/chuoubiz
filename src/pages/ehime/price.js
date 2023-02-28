@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
-
 import Seo from '../../components/SEO'
 import Layout from '../../components/Layout'
 import SubpageTitle from '../../components/SubpageTitle'
@@ -17,11 +15,7 @@ const price = () => {
     }
     return (
         <>
-        <Seo
-            title2="探偵事務所調査料金表｜総合探偵社中央リサーチ愛媛"
-            description="当探偵社ではお客様を不安にさせる様なあいまいな料金表示や請求方法は一切行いません。"
-            keyword="探偵,愛媛,料金表,中央リサーチ愛媛"
-            />
+        
             <div id="wrap">
                 <HeaderEhime h1title="調査料金について" pagetitle="松山市民病院前にある探偵事務所" />
                 <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -37,7 +31,7 @@ const price = () => {
                             <p className="serif">健全・適正・正確</p>
                             <p className="b nm">詳細な料金は、<br className="dsp_tbs" />お見積りいたしますので<br className="dsp_smt" />お気軽にご連絡ください！</p>
                         </div>
-                        <p className="photo"><StaticImage src="../../img/ehime/price/img.png" alt="" /></p>
+                        <p className="photo"><img src="../../img/ehime/price/img.png" alt="" /></p>
                         </div>
                     </div>
                     <h3 className="headline mp">料金表</h3>
@@ -167,7 +161,7 @@ const price = () => {
                         <dl className="head">
                         <dt className="mp w2"><span className="in"><span className="txt">追加料金不要で任せて安心<br /><span className="smt_fs">（深夜料金一切不要で安心）</span><br /><span className="fs dsp_hpt">※お支払いはクレジットも利用可能</span></span></span></dt>
                         <dd>
-                            <p className="icon"><StaticImage src="../../img/top/pay00.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay01.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay02.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay03.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay04.png" loading="lazy" alt="" /></p>
+                            <p className="icon"><img src="../../img/top/pay00.png" loading="lazy" alt="" /><img src="../../img/top/pay01.png" loading="lazy" alt="" /><img src="../../img/top/pay02.png" loading="lazy" alt="" /><img src="../../img/top/pay03.png" loading="lazy" alt="" /><img src="../../img/top/pay04.png" loading="lazy" alt="" /></p>
                             <p className="dsp_smt fs"><span className="fs">※お支払いはクレジットも利用可能</span></p>
                         </dd>
                         </dl>
@@ -274,10 +268,10 @@ const price = () => {
                             <dd>経費の名目で後から<span className="b red">高額請求</span>する探偵事務所もあります。<br />
                             調査料金・基本料金が安いように見えても、報告が完了するまでの<br className="dsp_tbs" />合計金額が<br className="dsp_hp" />いくらになるのか、<span className="b red">事前に必ず確認</span>しておきましょう。</dd>
                         </dl>
-                        <StaticImage src="../../img/choose/price01.png" alt="ここに注意!!" className="img_price01" />
+                        <img src="../../img/choose/price01.png" alt="ここに注意!!" className="img_price01" />
                         </div>
                     </div>
-                    {/* #EndLibraryItem */}{/*p class="link mp"><a href="jirei.html">事例ページはこちら</a></p*/}
+                    
                     </div>
 
                 </Layout>
@@ -286,5 +280,13 @@ const price = () => {
         </>
     )
 }
-
+export const Head = () => (
+    <>
+        <Seo
+            title2="探偵事務所調査料金表｜総合探偵社中央リサーチ愛媛"
+            description="当探偵社ではお客様を不安にさせる様なあいまいな料金表示や請求方法は一切行いません。"
+            keyword="探偵,愛媛,料金表,中央リサーチ愛媛"
+            />
+    </>
+  )
 export default price

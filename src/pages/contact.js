@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -15,10 +14,7 @@ const contact = () => {
     }
     return (
         <>
-        <Seo
-        title="ご相談、お問い合わせはこちら"
-        description="広島の探偵社「中央リサーチ」ではどのようなお問い合わせにも対応致します。お気軽にご連絡ください。"
-        />
+        
             <div id="wrap">
             <Header h1title="ご相談、お問い合わせについて" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -27,16 +23,16 @@ const contact = () => {
                     <div id={pagemeta.slug} className="main pb">
                         <div id="contact_line" className="cf pb">
                             <h3 className="headline">LINEでのお問い合わせ</h3>
-                            <p><StaticImage src="../img/contact/line_logo.png" alt="" /></p>
+                            <p><img src="../img/contact/line_logo.png" alt="" /></p>
                             <p className="b fm">LINEからお問い合わせできます！</p>
                             <div className="dsp_hp">
-                                <p className="img_rit"><StaticImage src="../img/contact/qr.gif" alt="" /></p>
-                                <p>QRコードから<Link to="https://line.me/R/ti/p/65gpK3qcDs" target="_blank" rel="nofollow noopener noreferrer">「友だち登録」</Link>すると、LINEでお問い合わせができます。<br />
+                                <p className="img_rit"><img src="../img/contact/qr.gif" alt="" /></p>
+                                <p>QRコードから<a href="https://line.me/R/ti/p/65gpK3qcDs" target="_blank" rel="nofollow noopener noreferrer">「友だち登録」</a>すると、LINEでお問い合わせができます。<br />
                                     LINEアプリの【友だち追加】で右のQRコードを読み取って、トークからお問い合わせください。</p>
                             </div>
                             <div className="dsp_tbs">
-                                <p>下記<Link to="https://line.me/R/ti/p/65gpK3qcDs" target="_blank" rel="nofollow noopener noreferrer">「友だち登録」</Link>をタップすると、LINEでお問い合わせができます。</p>
-                                <p className="cen nm"><Link to="https://line.me/R/ti/p/%40zmg2410c" target="_blank" rel="nofollow noopener noreferrer"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" width={232} height={72} alt="友だち追加" /></Link></p>
+                                <p>下記<a href="https://line.me/R/ti/p/65gpK3qcDs" target="_blank" rel="nofollow noopener noreferrer">「友だち登録」</a>をタップすると、LINEでお問い合わせができます。</p>
+                                <p className="cen nm"><a href="https://line.me/R/ti/p/%40zmg2410c" target="_blank" rel="nofollow noopener noreferrer"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" width={232} height={72} alt="友だち追加" /></a></p>
                             </div>
                         </div>
                         <div id="contact_tel" className="pb">
@@ -49,9 +45,9 @@ const contact = () => {
                                 <dl className="box02_flex">
                                     <dt><span className="txt_free mp">無料<span>相談窓口</span></span></dt>
                                     <dd className="tel_area">
-                                    <Link to="tel:0120-30-6630" className="tel tel_m sans"><StaticImage src="../img/free.png" alt="フリーダイヤル" />0120-30-6630</Link>
+                                    <a href="tel:0120-30-6630" className="tel tel_m sans"><img src="../img/free.png" alt="フリーダイヤル" />0120-30-6630</a>
                                     <p className="msg_txt04">女性相談員ご希望の方はこちら</p>
-                                    <Link to="tel:0120-20-3399" className="tel sans"><StaticImage src="../img/free.png" alt="フリーダイヤル" />0120-20-3399</Link>
+                                    <a href="tel:0120-20-3399" className="tel sans"><img src="../img/free.png" alt="フリーダイヤル" />0120-20-3399</a>
                                     </dd>
                                 </dl>
                                 <p className="msg_txt05">年中無休！ 24時間受付！<span>携帯電話でもOK!</span></p>
@@ -148,10 +144,83 @@ const contact = () => {
     )
 }
 
+const jsonN = "広島探偵 中央リサーチ",
+jsonT = "ご相談、お問い合わせはこちら",
+jsonS = "contact",
+jsonD = "広島の探偵社「中央リサーチ」ではどのようなお問い合わせにも対応致します。お気軽にご連絡ください。";
+
+const jsonLd = {
+    "@context": "http://schema.org/",
+    "@graph":[
+        {
+            "@type":"WebSite",
+            "@id":`https://www.chuou.biz/${jsonS}/#website`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonT}| 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "publisher":{
+                "@id":`https://www.chuou.biz/${jsonS}/#person`
+            }
+        },
+        {
+            "@type":"WebPage",
+            "@id":`https://www.chuou.biz/${jsonS}/#webpage`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "isPartOf":{
+                "@id":`https://www.chuou.biz/${jsonS}/#website`
+            },
+            "breadcrumb":{
+                "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`
+            },
+            "datePublished":"2023-2-22T21:00:00+09:00",
+            "dateModified":"2023-2-24T19:00:00+09:00"
+        },
+        {
+            "@type":"BreadcrumbList",
+            "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`,
+            "itemListElement":[
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/#listItem`,
+                    "position":1,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/`,
+                        "name":`${jsonN}`,
+                        "description":"当探偵社は広島に本社を構え、皆様の信頼に支えられ55年の実績を重ねてまいりました。調査・解決共経験豊富な当社にまずはお気軽にご相談ください。",
+                        "url":`https://www.chuou.biz/`
+                    },
+                    "nextItem":`https://www.chuou.biz/${jsonS}/#listItem`
+                },
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/${jsonS}/#listItem`,
+                    "position":2,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/${jsonS}/`,
+                        "name":`${jsonT}｜${jsonN}`,
+                        "description":`${jsonD}`,
+                        "url":`https://www.chuou.biz/${jsonS}/`
+                    },
+                    "previousItem":`https://www.chuou.biz/#listItem`
+                }
+            ]
+        }
+    ]
+}
+
 export const Head = () => (
     <>
-        
+        <Seo
+        title="ご相談、お問い合わせはこちら"
+        description="広島の探偵社「中央リサーチ」ではどのようなお問い合わせにも対応致します。お気軽にご連絡ください。"
+        />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
     </>
 )
-
 export default contact

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+
 import Seo from '../../components/SEO'
 import HeaderOkayama from '../../components/HeaderOkayama'
 import FooterOkayama from '../../components/FooterOkayama'
@@ -8,11 +8,7 @@ import FooterOkayama from '../../components/FooterOkayama'
 const index = () => {
   return (
     <>
-      <Seo
-        title2="岡山で浮気調査なら55年の実績と信頼｜岡山の探偵社、中央リサーチ岡山"
-        description="中央リサーチ岡山は｢浮気調査が最も得意｣な探偵社であり、裁判証拠収集ならお任せください!!ご相談は無料です。岡山県公安委員会探偵業届出済で、浮気調査は信頼と実績ある当社にご相談ください！プロの探偵が全力でお悩みを解決いたします！高い追跡技術を持つ中央リサーチ岡山が浮気・不倫の現場を突き止めます。"
-        keyword="探偵,岡山,興信所,浮気調査,中央リサーチ岡山"
-        />
+      
         <div id="wrap">
             <HeaderOkayama h1title="岡山で浮気調査なら55年の実績と信頼｜岡山の探偵社、中央リサーチ岡山" pagetitle="岡山駅より徒歩5分の探偵事務所" />
   
@@ -23,8 +19,8 @@ const index = () => {
   </div>
   <section id="container" className="cf">
     <div id="page_title">
-      <div className="dsp_hpt"><StaticImage src="../../img/top/title.png" alt="総合探偵社中央リサーチ" /></div>
-      <div className="dsp_smt"><StaticImage src="../../img/top/title_sp.jpg" alt="総合探偵社中央リサーチ" /></div>
+      <div className="dsp_hpt"><img src="../../img/top/title.png" alt="総合探偵社中央リサーチ" /></div>
+      <div className="dsp_smt"><img src="../../img/top/title_sp.jpg" alt="総合探偵社中央リサーチ" /></div>
     </div>
     <div id="img_bottom_msg">
       <p className="nm cen thin">※弊社では探偵経験10年以上のスタッフが卓越した調査力で、<br className="dsp_tbs" />ご安心、ご納得できるサービスを提供します。</p>
@@ -49,7 +45,7 @@ const index = () => {
               <Link to="https://www.google.co.jp/search?tbm=lcl&ei=XWsGX-yqB4_W0gSAhYHwBA&q=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&oq=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&gs_l=psy-ab.3...155248.157868.0.158152.0.0.0.0.0.0.0.0..0.0....0...1c.1j4.64.psy-ab..0.0.0....0.8ef4ngT_iJU#rlfi=hd:;si:14351266089033009334;mv:[[34.40155767731903,132.4662481279093],[34.40119772268097,132.46581187209068]]" rel="nofollow" target="_blank">
                 Googleクチコミ実績
               </Link>
-              <StaticImage src="../../img/top/hoshi4.5.png" alt="" />
+              <img src="../../img/top/hoshi4.5.png" alt="" />
               </span>
             </div>
           </div>
@@ -63,53 +59,49 @@ const index = () => {
                   <Link to="https://www.google.co.jp/search?tbm=lcl&ei=XWsGX-yqB4_W0gSAhYHwBA&q=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&oq=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&gs_l=psy-ab.3...155248.157868.0.158152.0.0.0.0.0.0.0.0..0.0....0...1c.1j4.64.psy-ab..0.0.0....0.8ef4ngT_iJU#rlfi=hd:;si:14351266089033009334;mv:[[34.40155767731903,132.4662481279093],[34.40119772268097,132.46581187209068]]" rel="nofollow" target="_blank">
                     Googleクチコミ実績
                   </Link>
-                  <StaticImage src="../../img/top/hoshi4.5.png" alt="" />
+                  <img src="../../img/top/hoshi4.5.png" alt="" />
                 </span>
               </div>
               <p className="comment"><Link to="#top_profile">弁護士事務所から推奨されている探偵社です！ »</Link></p>
             </div>
           </div>
         </div>
-        {/*dl class="mp">
-					<dt>解決の第一歩はまず<br class="dsp_smt">相談してみることから始まります</dt>
-					<dd>ご相談やお見積もりなど、お客様に合った調査方法を提案し、無駄のない調査プランにて対応いたしております。<br>
-						弊社の探偵調査員は卓越した調査能力を持っており、お客様が納得できる調査結果をお届けします。</dd>
-				</dl*/}
+        
       </div>
     </div>
     <div id="about"><div id="okayama_about" className="bg_wide main pt pb">
         <h3 className="ttl"><span>調査項目</span></h3>
         <div className="box_flex">
           <dl id="uwaki">
-            <dt><StaticImage src="../../img/okayama/about/img01.jpg" alt="" /><b className="mp">浮気・不倫調査</b></dt>
+            <dt><img src="../../img/okayama/about/img01.jpg" alt="" /><b className="mp">浮気・不倫調査</b></dt>
             <dd>対象者の行動を気づかれないように尾行・張り込みを行い、分単位の記録と動かぬ証拠を取る調査です。</dd>
           </dl>
           <dl id="saiban">
-            <dt><StaticImage src="../../img/okayama/about/img02.jpg" alt="" /><b className="mp">裁判証拠収集</b></dt>
+            <dt><img src="../../img/okayama/about/img02.jpg" alt="" /><b className="mp">裁判証拠収集</b></dt>
             <dd>真実を立証できるように裁判になる可能性のある事案の事実確認調査や動かぬ証拠収集を行います。</dd>
           </dl>
           <dl id="konzen">
-            <dt><StaticImage src="../../img/okayama/about/img03.jpg" alt="" /><b className="mp">婚前・身上調査</b></dt>
+            <dt><img src="../../img/okayama/about/img03.jpg" alt="" /><b className="mp">婚前・身上調査</b></dt>
             <dd>将来結婚する可能性のある人物や、そのご家族についての職業や人物性、風評など大きな懸念材料があるか調査します。</dd>
           </dl>
           <dl id="sokou">
-            <dt><StaticImage src="../../img/okayama/about/img04.jpg" alt="" /><b className="mp">素行調査</b></dt>
+            <dt><img src="../../img/okayama/about/img04.jpg" alt="" /><b className="mp">素行調査</b></dt>
             <dd>ご家族の見守り、お子様の一人暮らしの生活実態や、不信感のある従業員の素行面を確認する調査です。</dd>
           </dl>
           <dl id="iede">
-            <dt><StaticImage src="../../img/okayama/about/img05.jpg" alt="" /><b className="mp">家出・所在調査</b></dt>
+            <dt><img src="../../img/okayama/about/img05.jpg" alt="" /><b className="mp">家出・所在調査</b></dt>
             <dd>家出人の捜索や、同窓会、恩師、恩人など、大切なご家族やお世話になった方などの所在調査を行います。</dd>
           </dl>
           <dl id="iyagarase">
-            <dt><StaticImage src="../../img/okayama/about/img06.jpg" alt="" /><b className="mp">嫌がらせ対策</b></dt>
+            <dt><img src="../../img/okayama/about/img06.jpg" alt="" /><b className="mp">嫌がらせ対策</b></dt>
             <dd>SNSや近隣に誹謗・中傷する行為など不信感や不安感を抱かす嫌がらせ行為の事実確認の調査を行います。</dd>
           </dl>
           <dl id="tousatsuki">
-            <dt><StaticImage src="../../img/okayama/about/img07.jpg" alt="" /><b className="mp">盗撮器発見</b></dt>
+            <dt><img src="../../img/okayama/about/img07.jpg" alt="" /><b className="mp">盗撮器発見</b></dt>
             <dd>盗聴器は意外と身近に潜んでいます。不審な事や情報が知らぬ間に漏れていると思われた時は早期にご相談ください。</dd>
           </dl>
           <dl id="simon">
-            <dt><StaticImage src="../../img/okayama/about/img08.jpg" alt="" /><b className="mp">指紋・声紋・筆跡鑑定</b></dt>
+            <dt><img src="../../img/okayama/about/img08.jpg" alt="" /><b className="mp">指紋・声紋・筆跡鑑定</b></dt>
             <dd>不審者の出入りによる盗難や紛失。遺言状や契約書、誹謗・中傷の手紙など指紋検出、筆跡鑑定で事実確認いたします。</dd>
           </dl>
         </div>
@@ -119,42 +111,42 @@ const index = () => {
         <h3 className="serif">当探偵社が選ばれる理由</h3>
         <div className="box_flex">
           <dl>
-            <dt><b className="mp">1</b><StaticImage src="../../img/okayama/img_reason01.jpg" width={450} height={300} alt="" /></dt>
+            <dt><b className="mp">1</b><img src="../../img/okayama/img_reason01.jpg" width={450} height={300} alt="" /></dt>
             <dd>
               <p className="ttl mp">知識と経験、<br />良識のある相談員が応対</p>
               <p>当探偵社の相談員は、女性相談員（教員免許資格者）を中心に経験豊富なスタッフが、お客様のお悩みに心から寄り添い対応いたします。</p>
             </dd>
           </dl>
           <dl>
-            <dt><b className="mp">2</b><StaticImage src="../../img/okayama/img_reason02.jpg" width={450} height={300} alt="" /></dt>
+            <dt><b className="mp">2</b><img src="../../img/okayama/img_reason02.jpg" width={450} height={300} alt="" /></dt>
             <dd>
               <p className="ttl mp">業界最安値の<br />料金プラン</p>
               <p>調査料金のお見積もりはお電話でも、解りやすくご説明いたします。また、お客様の事案にあった無駄のないプランを細かく説明いたします。弊社は後から追加料金を請求する事は一切ございません。</p>
             </dd>
           </dl>
           <dl>
-            <dt><b className="mp">3</b><StaticImage src="../../img/okayama/img_reason03.jpg" width={450} height={300} alt="" /></dt>
+            <dt><b className="mp">3</b><img src="../../img/okayama/img_reason03.jpg" width={450} height={300} alt="" /></dt>
             <dd>
               <p className="ttl mp">全国約300名の<br />弁護士との連携</p>
               <p>当社の探偵調査員は、弁護士事務所からも推奨される調査能力のエビデンスがあります。また、常に難しい調査でも解決できるよう研究を重ね力量を向上しています。</p>
             </dd>
           </dl>
           <dl>
-            <dt><b className="mp">4</b><StaticImage src="../../img/okayama/img_reason04.jpg" width={450} height={300} alt="" /></dt>
+            <dt><b className="mp">4</b><img src="../../img/okayama/img_reason04.jpg" width={450} height={300} alt="" /></dt>
             <dd>
               <p className="ttl mp">中四国最大級の<br />探偵事務所</p>
               <p>地元の経験豊富な探偵調査員が膨大な情報や土地勘で、迅速な調査対応が可能です。早期に問題解決につなげるため探偵調査員は各地で24時間稼働しています。</p>
             </dd>
           </dl>
           <dl>
-            <dt><b className="mp">5</b><StaticImage src="../../img/okayama/img_reason05.jpg" width={450} height={300} alt="" /></dt>
+            <dt><b className="mp">5</b><img src="../../img/okayama/img_reason05.jpg" width={450} height={300} alt="" /></dt>
             <dd>
               <p className="ttl mp">当探偵社は特殊な事案でも<br />幅広く対応</p>
               <p>浮気調査はもちろんのこと、その他、婚前調査・いじめ調査・見守り素行調査・家出人調査・指紋鑑定など幅広く調査を行う技術がありますので特殊な事案も安心してご相談ください。</p>
             </dd>
           </dl>
           <dl>
-            <dt><b className="mp">6</b><StaticImage src="../../img/okayama/img_reason06.jpg" width={450} height={300} alt="" /></dt>
+            <dt><b className="mp">6</b><img src="../../img/okayama/img_reason06.jpg" width={450} height={300} alt="" /></dt>
             <dd>
               <p className="ttl mp">裁判になっても<br />有利に進める報告書</p>
               <p>高い撮影技術で証拠能力の高い報告書を提出いたしておりますので、万が一の際もご安心ください。また、お客様が笑顔を取り戻すことのできるようアフターケアも万全です。</p>
@@ -163,54 +155,7 @@ const index = () => {
         </div>
       </div></div>
     <div className="main">
-      {/*div id="okayama_promise" class="bg_wide">
-				<h3 class="mp">お客様との６つの約束</h3>
-				<div class="box_flex bg_wide">
-					<dl>
-						<dt><StaticImage src="../../img/okayama/img_promise01.jpg" alt=""><b class="mp">秘密厳守</b></dt>
-						<dd>ご安心下さい。調査の秘密が第三者に漏洩することはございません。更に報告書を提出後、調査で知りえた個人情報は責任を持ってシュレッダーにて破棄いたします。</dd>
-					</dl>
-					<dl>
-						<dt><StaticImage src="../../img/okayama/img_promise02.jpg" alt=""><b class="mp">即日調査可能</b></dt>
-						<dd>迅速な対応で怪しい日を逃すことなく調査を行います。<br>
-							ベテラン探偵調査員が24時間年中無休で対応いたします。</dd>
-					</dl>
-					<dl>
-						<dt><StaticImage src="../../img/okayama/img_promise03.jpg" alt=""><b class="mp">確かな調査力</b></dt>
-						<dd>業界トップクラスの調査力を誇る探偵社です。<br>
-							弁護士事務所や警察OBとの連携により、高い調査能力でご安心をお届けいたします。</dd>
-					</dl>
-					<dl>
-						<dt><StaticImage src="../../img/okayama/img_promise04.jpg" alt=""><b class="mp">格安価格</b></dt>
-						<dd>弊社では口コミでの紹介事案が数多くあり大幅に広告宣伝費を削減しています。<br>
-							無駄を削減する事で予算をお客様の料金に充当する格安料金を実現しています。</dd>
-					</dl>
-					<dl>
-						<dt><StaticImage src="../../img/okayama/img_promise05.jpg" alt=""><b class="mp">まごころ調査</b></dt>
-						<dd>結果が出るまで親身になって調査いたします。他社にご依頼されても結果が出なかった方、当社は必ずお力になる事をお約束いたします。</dd>
-					</dl>
-					<dl>
-						<dt><StaticImage src="../../img/okayama/img_promise06.jpg" alt=""><b class="mp">アフターケア</b></dt>
-						<dd>調査の進行状況報告から調査結果に基づく今後の対策など責任を持って対応いたします。必要に応じ有能な弁護士をご紹介いたします。</dd>
-					</dl>
-				</div>
-			</div*/}
-      {/*div id="okayama_6reason" class="bg_wide pt">
-				<h3 class="mp"><b>中央リサーチ岡山が<br class="dsp_smt">選ばれる理由</b></h3>
-				<ol>
-					<li>弊社相談員は、お客様のお話にしっかりと耳を傾け、問題解決に向けてお客様と共に考え、<b class="red">個々のケースに相応しいアドバイス</b>をいたしております。</li>
-					<li>調査料金等のお見積もりは必ず事前にご提示し、お客様に納得いただけるようきちんとご説明しております。後から勝手に追加料金を請求することはありません。</li>
-					<li>弊社調査員は、豊富な経験と高度な技術力を活かし、目的達成へ向けて全力を尽くします。<b class="red">無責任、不適切な調査はいたしません。</b></li>
-					<li>調査方法・日程等については、お客様と打ち合わせの上で決定し、<b class="red">進行状況は必要に応じて随時ご報告</b>しております。お客様の承諾なく、勝手な延長・打ち切りを行うことはありません。</li>
-					<li>調査報告書は、<b class="red">詳細かつ証拠能力の高いものを作成</b>しております。弊社の報告書は大変多くのお客様にご満足いただけております。</li>
-					<li>調査終了後も、お客様の抱える問題の解決へ向け、<b class="red">アフターケアも対応</b>させていただいております。どうぞ安心してご相談下さい。</li>
-				</ol>
-				<div class="txt">
-					<p>中央リサーチ岡山では明朗会計をモットーとしており、システムなども最初にお客様に解りやすく納得のいくまで説明いたします。</p>
-					<p>最先端の調査技術で、あなたに合った調査方法と無駄のない調査料金で必ず問題解決いたします。</p>
-				</div>
-				<div class="photo"><StaticImage src="../../img/okayama/img_reason02.png" width="352" height="360" alt=""></div>
-			</div*/}
+      
       <div id="yamaguchi_button">
         <p className="link mp pt pb"><Link to="/okayama/voice/">お客様の声はこちら</Link></p>
       </div>
@@ -218,10 +163,14 @@ const index = () => {
         <h3 className="mp">浮気調査安心プラン</h3>
         <div className="box">
           <dl className="head">
-            <dt className="mp"><span className="in">必要なところにピンポイント調査</span></dt>
-            <dd>
+              <dt className="mp">
+              <div className="top_point_title">
+                  必要なところにピンポイント調査
+              </div>
+              </dt>
+              <dd>
               <p className="nm">お客様に合った無駄のないプランを提案し、動かぬ証拠を取ります。</p>
-            </dd>
+              </dd>
           </dl>
           <div className="wrap">
             <dl className="plan w2">
@@ -258,28 +207,27 @@ const index = () => {
               </dd>
             </dl>
           </div>
-          {/*					
-					<div class="pad">
-						<p class="cen_pc red">
-							※浮気調査でGPS使用を促す業者にご注意ください！<br class="dsp_tbs">違法な証拠取得は証拠として認められない可能性があります。</p>
-						<p class="cen"><Link to="https://www.keishicho.metro.tokyo.lg.jp/about_mpd/keiyaku_horei_kohyo/horei_jorei/stalker.html" target="_blank">ストーカー規制法について<br class="dsp_smt">（警視庁）&raquo;</Link></p>
-					</div>
-*/}
+          
         </div>
         <div className="box price_box">
           <dl className="head">
-            <dt className="mp w2"><span className="in"><span className="txt">追加料金不要で任せて安心<br /><span className="smt_fs">（深夜料金一切不要で安心）</span><br /><span className="fs dsp_hpt">※お支払いはクレジットも利用可能</span></span></span></dt>
+            <dt className="mp w2">
+            <div className="top_price_title">
+                <span className="smt_red">追加料金不要</span>で任せて安心<br />
+                <span className="smt_fs">（深夜料金一切不要で安心）</span><br />
+                <span className="credit">※お支払いはクレジットも利用可能</span>
+            </div>
+            </dt>
             <dd>
-              <p className="icon"><StaticImage src="../../img/top/pay00.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay01.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay02.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay03.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay04.png" loading="lazy" alt="" /></p>
-              <p className="dsp_smt fs"><span className="fs">※お支払いはクレジットも利用可能</span></p>
-              <p className="link mp"><Link to="/okayama/price/">料金の詳細はこちら</Link></p>
+            <p className="icon"><img src="../img/top/pay00.png" width={49} height={37} loading="lazy" alt="" /><img src="../img/top/pay01.png" width={50} height={35} loading="lazy" alt="" /><img src="../img/top/pay02.png" width={85} height={26} loading="lazy" alt="" /><img src="../img/top/pay03.png" width={59} height={35} loading="lazy" alt="" /><img src="../img/top/pay04.png" width={124} height={32} loading="lazy" alt="" /></p>
+            <p className="dsp_smt fs"><span className="fs">※お支払いはクレジットも利用可能</span></p>
+            <p className="link mp"><Link to="/price/">料金の詳細はこちら</Link></p>
             </dd>
           </dl>
         </div>
       </div>
       <div id="okayama_point" className="bg_wide pt">
-        {/*h3>毎日気になって夜も眠れない日々、<br class="dsp_hpt">このままでは、ご自分が健康を害してしまいます。<br>
-						問題解決に向けて今･･･一歩前進する勇気を持ってください！</h3*/}
+        
         <div className="in">
           <p className="cen_pc nm"><b className="fm">証拠は問題解決への第一歩です。</b><br />
             相手と話し合いを行うための材料として、また浮気相手に内容証明を送る場合にも、<br />
@@ -295,19 +243,19 @@ const index = () => {
             <dl className="w2">
               <dt>遠くから確実に証拠を押さえます。</dt>
               <dd>
-                <p className="arrow"><StaticImage src="../../img/top/sample01.jpg" loading="lazy" alt="" /></p>
-                <p><StaticImage src="../../img/top/sample02.jpg" alt="" /></p>
+                <p className="arrow"><img src="../../img/top/sample01.jpg" loading="lazy" alt="" /></p>
+                <p><img src="../../img/top/sample02.jpg" alt="" /></p>
               </dd>
             </dl>
             <dl className="w2">
               <dt>決定的な証拠も確実に撮影</dt>
               <dd>
-                <p className="arrow"><StaticImage src="../../img/top/sample03.jpg" loading="lazy" alt="" /><span>2019/6/25/19:09</span></p>
-                <p><StaticImage src="../../img/top/sample04.jpg" alt="" /><span>2019/6/25/21:11</span></p>
+                <p className="arrow"><img src="../../img/top/sample03.jpg" loading="lazy" alt="" /><span>2019/6/25/19:09</span></p>
+                <p><img src="../../img/top/sample04.jpg" alt="" /><span>2019/6/25/21:11</span></p>
               </dd>
             </dl>
           </div>
-          <p className="cen"><StaticImage src="../../img/okayama/sample08.png" alt="" className /></p>
+          <p className="cen"><img src="../../img/okayama/sample08.png" alt="" className /></p>
           <p className="link mp"><Link to="/okayama/sample/">調査報告書サンプルはコチラ</Link></p>
         </div>
       </div>
@@ -315,57 +263,27 @@ const index = () => {
         <h3 className="mp bg_wide"><span>弁護士事務所からの推奨コメント</span></h3>
         <div className="bg bg_wide pb">
           <dl>
-            <dt><StaticImage src="../../img/okayama/profile_name01.png" alt="" /></dt>
-            <dd><StaticImage src="../../img/okayama/profile_txt01.png" alt="" className="dsp_hpt" /><StaticImage src="../../img/okayama/profile_txt01_sp.png" alt="" className="dsp_smt" /></dd>
+            <dt><img src="../../img/okayama/profile_name01.png" alt="" /></dt>
+            <dd><img src="../../img/okayama/profile_txt01.png" alt="" className="dsp_hpt" /><img src="../../img/okayama/profile_txt01_sp.png" alt="" className="dsp_smt" /></dd>
           </dl>
           <dl>
-            <dt><StaticImage src="../../img/okayama/profile_name02.png" alt="" /></dt>
-            <dd><StaticImage src="../../img/okayama/profile_txt02.png" alt="" className="dsp_hpt" /><StaticImage src="../../img/okayama/profile_txt02_sp.png" alt="" className="dsp_smt" /></dd>
+            <dt><img src="../../img/okayama/profile_name02.png" alt="" /></dt>
+            <dd><img src="../../img/okayama/profile_txt02.png" alt="" className="dsp_hpt" /><img src="../../img/okayama/profile_txt02_sp.png" alt="" className="dsp_smt" /></dd>
           </dl>
           <dl>
-            <dt><StaticImage src="../../img/okayama/profile_name03.png" alt="" /></dt>
-            <dd><StaticImage src="../../img/okayama/profile_txt03.png" alt="" className="dsp_hpt" /><StaticImage src="../../img/okayama/profile_txt03_sp.png" alt="" className="dsp_smt" /></dd>
+            <dt><img src="../../img/okayama/profile_name03.png" alt="" /></dt>
+            <dd><img src="../../img/okayama/profile_txt03.png" alt="" className="dsp_hpt" /><img src="../../img/okayama/profile_txt03_sp.png" alt="" className="dsp_smt" /></dd>
           </dl>
           <dl>
             <dt>
-              <StaticImage src="../../img/okayama/profile_name04.png" alt="" />
-              <span className="label very"><Link to="https://rikon.vbest.jp/" target="_blank" rel="nofollow"><StaticImage src="../../img/top/bery_best_btn.png" alt="ベリーベスト法律事務所" loading="lazy" /></Link></span>
+              <img src="../../img/okayama/profile_name04.png" alt="" />
+              <span className="label very"><Link to="https://rikon.vbest.jp/" target="_blank" rel="nofollow"><img src="../../img/top/bery_best_btn.png" alt="ベリーベスト法律事務所" loading="lazy" /></Link></span>
             </dt>
-            <dd><StaticImage src="../../img/okayama/profile_txt04.png" alt="" className="dsp_hpt" /><StaticImage src="../../img/okayama/profile_txt04_sp.png" alt="" className="dsp_smt" /></dd>
+            <dd><img src="../../img/okayama/profile_txt04.png" alt="" className="dsp_hpt" /><img src="../../img/okayama/profile_txt04_sp.png" alt="" className="dsp_smt" /></dd>
           </dl>
         </div>
       </div>
-      {/*div id="okayama_txt" class="bg_wide pt pb mp">
-				<p class="cen_pc nm">お客様の気持ちに寄り添い、一日でも早く本来の笑顔を取り戻していただくことが、<br class="dsp_hp">私たち総合探偵社中央リサーチ岡山スタッフ一同の願いです。</p>
-			</div*/}
-      {/*div id="okayama_reason" class="bg_wide pt">
-				<h3 class="mp"><b>中央リサーチ岡山が選ばれる理由</b></h3>
-				<p>数ある探偵社・興信所の中から、中央リサーチ岡山は多くのお客様にお選びいただき、ご満足いただいております。</p>
-				<div class="box">
-					弊社相談員は、お客様のお話にしっかりと耳を傾け、問題解決に向けてお客様と共に考え、<span class="red">個々のケースに相応しいアドバイス</span>をいたしております。
-				</div>
-				<div class="box">
-					調査料金等のお見積もりは必ず事前にご提示し、お客様に納得いただけるようきちんとご説明しております。後から勝手に追加料金を請求することはありません。
-				</div>
-				<div class="box">
-					弊社調査員は、豊富な経験と高度な技術力を活かし、目的達成へ向けて全力を尽くします。<span class="red">無責任、不適切な調査はいたしません。</span>
-				</div>
-				<div class="box">
-					調査方法・日程等については、お客様と打ち合わせの上で決定し、<span class="red">進行状況は必要に応じて随時ご報告</span>しております。お客様の承諾なく、勝手な延長・打ち切りを行うことはありません。
-				</div>
-				<div class="box">
-					調査報告書は、<span class="red">詳細かつ証拠能力の高いものを作成</span>しております。弊社の報告書は大変多くのお客様にご満足いただけております。
-				</div>
-				<div class="box">
-					調査終了後も、お客様の抱える問題の解決へ向け、<span class="red">アフターケアも対応</span>させていただいております。どうぞ安心してご相談下さい。
-				</div>
-			</div*/}
-      {/*div class="check">
-				<ul>
-					<li>中央リサーチ岡山では<span class="red">明朗会計</span>をモットーとしており、システムなども最初にお客様に解りやすく納得のいくまで説明いたします。</li>
-					<li>最先端の調査技術で、あなたに合った調査方法と<span class="red">無駄のない調査料金で必ず問題解決</span>いたします。</li>
-				</ul>
-			</div*/}
+      
       <div id="top_faq" className="pt pb">
         <h3 className="mp">よくある質問</h3>
         <div className="list">
@@ -406,21 +324,21 @@ const index = () => {
           <dl>
             <dt>アルコール消毒液の設置</dt>
             <dd>
-              <p className="ico nm"><StaticImage src="../../img/top/corona01.png" loading="lazy" alt="アルコール消毒液の設置" /></p>
+              <p className="ico nm"><img src="../../img/top/corona01.png" loading="lazy" alt="アルコール消毒液の設置" /></p>
               <p className="txt thin nm">入口に消毒液を設置しておりますので手指の除菌にご協力お願いします。</p>
             </dd>
           </dl>
           <dl>
             <dt>スタッフのマスク着用</dt>
             <dd>
-              <p className="ico nm"><StaticImage src="../../img/top/corona02.png" loading="lazy" alt="スタッフのマスク着用" /></p>
+              <p className="ico nm"><img src="../../img/top/corona02.png" loading="lazy" alt="スタッフのマスク着用" /></p>
               <p className="txt thin nm">全スタッフのマスクの着用を徹底しております。</p>
             </dd>
           </dl>
           <dl>
             <dt>スタッフの検温の確認</dt>
             <dd>
-              <p className="ico nm"><StaticImage src="../../img/top/corona03.png" loading="lazy" alt="スタッフの検温の確認" /></p>
+              <p className="ico nm"><img src="../../img/top/corona03.png" loading="lazy" alt="スタッフの検温の確認" /></p>
               <p className="txt thin nm">毎日出勤時に全スタッフの検温を実施して発熱の確認をしています。</p>
             </dd>
           </dl>
@@ -428,7 +346,7 @@ const index = () => {
       </div>
       <div id="top_about" className="bg_wide pt pb">
         <div className="bg">
-          <h3 className="cen"><span><StaticImage src="../../img/top/txt.png" alt="総合探偵社 中央リサーチ" /></span></h3>
+          <h3 className="cen"><span><img src="../../img/top/txt.png" alt="総合探偵社 中央リサーチ" /></span></h3>
           <p className="earth"><span className="maru"><img src="../../img/top/earth.png" alt="" /><span className="txt">全国対応<br />海外もOK!</span></span></p>
           <p className="mp cen msg">つらい思いをされている方が<br className="dsp_tbs" />一日も早く笑顔を取り戻す為に・・・。<br />
             弊社スタッフは一丸となり<br className="dsp_smt" />「人助け」の思いで、<br className="dsp_tbs" />日夜探偵業務に取り組んでおります。</p>
@@ -485,35 +403,28 @@ const index = () => {
         <h3 className="mp">岡山相談室案内</h3>
         <div className="wrap">
           <div className="img">
-            <p><StaticImage src="../../img/okayama/img_yamaguchi.jpg" alt="" /><br />
+            <p><img src="../../img/okayama/img_yamaguchi.jpg" alt="" /><br />
               プライバシーを守る相談室</p>
           </div>
-          <p className="map"><Link to="https://goo.gl/maps/Eyr7fYEAtyhkFcBN7" rel="nofollow" target="_blank"><StaticImage src="../../img/okayama/map.png" loading="lazy" alt="" /></Link></p>
+          <p className="map"><Link to="https://goo.gl/maps/Eyr7fYEAtyhkFcBN7" rel="nofollow" target="_blank"><img src="../../img/okayama/map.png" loading="lazy" alt="" /></Link></p>
         </div>
-        {/*div class="photo">
-					<h3 class="mp">当社の看板</h3>
-					<ul class="box_flex">
-						<li><StaticImage src="../../img/okayama/img_signboard01.jpg" alt=""></li>
-						<li><StaticImage src="../../img/okayama/img_signboard02.jpg" alt=""></li>
-						<li><StaticImage src="../../img/okayama/img_signboard03.jpg" alt=""></li>
-					</ul>
-				</div*/}
+        
       </div>
       <div id="top_koukoku" className="pt pb">
         <div className="box_flex mb">
           <div className="line">
             <div className="in">
-              <p><StaticImage src="../../img/okayama/logo_line.png" alt="" /></p>
+              <p><img src="../../img/okayama/logo_line.png" alt="" /></p>
               <p className="b">LINEからお問い合わせ<br className="dsp_smt" />できます！</p>
               <p>QRコードから<Link to="https://line.me/R/ti/p/65gpK3qcDs" target="_blank">「友だち登録」</Link>すると、LINEでお問い合わせができます。</p>
             </div>
-            <p className="qr"><StaticImage src="../../img/okayama/qr_line.png" alt="" /></p>
+            <p className="qr"><img src="../../img/okayama/qr_line.png" alt="" /></p>
           </div>
           <dl className="card">
             <dt>お支払いはクレジットでもご利用できます</dt>
             <dd>
-              <p><StaticImage src="../../img/okayama/img_card01.png" alt="" /></p>
-              <p><StaticImage src="../../img/okayama/img_card02.png" alt="" /></p>
+              <p><img src="../../img/okayama/img_card01.png" alt="" /></p>
+              <p><img src="../../img/okayama/img_card02.png" alt="" /></p>
             </dd>
           </dl>
         </div>
@@ -524,10 +435,10 @@ const index = () => {
           </dl>
         </div>
         <ul>
-          <li><Link to="http://www.ncia-research.or.jp/" rel="nofollow" target="_blank"><StaticImage src="../../img/okayama/bana01.png" alt="全国調査業協同組合" /></Link></li>
-          <li><Link to="https://www.pref.okayama.jp/site/kenkei/" rel="nofollow" target="_blank"><StaticImage src="../../img/okayama/okayama_p.png" alt="岡山県警察" /></Link></li>
-          <li><Link to="http://www.rikonnsoudan.jp/" rel="nofollow" target="_blank"><StaticImage src="../../img/okayama/bana03.png" alt="ベリーベスト法律事務所" /></Link></li>
-          <li><Link to="https://best-legal.jp/want-to-claim-affair-alimony-3366" rel="nofollow" target="_blank"><StaticImage src="../../img/okayama/bana04.png" alt="不倫・浮気の慰謝料請求ならベリーベスト法律事務所" /></Link></li>
+          <li><Link to="http://www.ncia-research.or.jp/" rel="nofollow" target="_blank"><img src="../../img/okayama/bana01.png" alt="全国調査業協同組合" /></Link></li>
+          <li><Link to="https://www.pref.okayama.jp/site/kenkei/" rel="nofollow" target="_blank"><img src="../../img/okayama/okayama_p.png" alt="岡山県警察" /></Link></li>
+          <li><Link to="http://www.rikonnsoudan.jp/" rel="nofollow" target="_blank"><img src="../../img/okayama/bana03.png" alt="ベリーベスト法律事務所" /></Link></li>
+          <li><Link to="https://best-legal.jp/want-to-claim-affair-alimony-3366" rel="nofollow" target="_blank"><img src="../../img/okayama/bana04.png" alt="不倫・浮気の慰謝料請求ならベリーベスト法律事務所" /></Link></li>
         </ul>
       </div>
       <div id="top_area" className="bg_wide pt pb">
@@ -580,5 +491,13 @@ const index = () => {
     </>
   )
 }
-
+export const Head = () => (
+  <>
+      <Seo
+        title2="岡山で浮気調査なら55年の実績と信頼｜岡山の探偵社、中央リサーチ岡山"
+        description="中央リサーチ岡山は｢浮気調査が最も得意｣な探偵社であり、裁判証拠収集ならお任せください!!ご相談は無料です。岡山県公安委員会探偵業届出済で、浮気調査は信頼と実績ある当社にご相談ください！プロの探偵が全力でお悩みを解決いたします！高い追跡技術を持つ中央リサーチ岡山が浮気・不倫の現場を突き止めます。"
+        keyword="探偵,岡山,興信所,浮気調査,中央リサーチ岡山"
+        />
+  </>
+)
 export default index

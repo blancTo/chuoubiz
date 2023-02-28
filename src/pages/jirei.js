@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -11,15 +11,11 @@ import Footer from '../components/Footer'
 const jirei = () => {
     const pagemeta = {
         title:`事例紹介`,
-        slug:`jirei`
+        slug:jsonS
     }
     return (
         <>
-        <Seo
-        title="当探偵社へのご相談事例"
-        keyword="事例紹介,広島,探偵,中央リサーチ"
-        description="広島の探偵社「中央リサーチ」、事例紹介についての説明ページです。"
-        />
+        
             <div id="wrap">
             <Header h1title="調査事例について" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -32,8 +28,8 @@ const jirei = () => {
 
                             <div className="cmn_example">
                                 
-                                <input id="jirei-check1" class="jirei-check1" type="checkbox" />                                
-                                <label class="jirei-label" for="jirei-check1">
+                                <input id="jirei-check1" className="jirei-check1" type="checkbox" />                                
+                                <label className="jirei-label" htmlFor="jirei-check1">
                                     <div className='jirei-icon'>事例<span>1</span></div>
                                     夫の携帯を見たら浮気相手と思われる女性とのメールを見ました｡<br />話し合う為にも動かぬ証拠と浮気相手がどんな人物か知りたい。
                                 </label>
@@ -67,8 +63,8 @@ const jirei = () => {
 
                             <div className="cmn_example">
                                 
-                                <input id="jirei-check2" class="jirei-check2" type="checkbox" />                                
-                                <label class="jirei-label" for="jirei-check2">
+                                <input id="jirei-check2" className="jirei-check2" type="checkbox" />                                
+                                <label className="jirei-label" htmlFor="jirei-check2">
                                     <div className='jirei-icon'>事例<span>2</span></div>
                                     営業社員の業績が上がらないことで、悩んでいました。このままでは会社が倒産してしまうという不安がよぎり、思い切って相談してみました。
                                 </label>
@@ -104,8 +100,8 @@ const jirei = () => {
 
                             <div className="cmn_example">
                                 
-                                <input id="jirei-check3" class="jirei-check3" type="checkbox" />                                
-                                <label class="jirei-label" for="jirei-check3">
+                                <input id="jirei-check3" className="jirei-check3" type="checkbox" />                                
+                                <label className="jirei-label" htmlFor="jirei-check3">
                                     <div className='jirei-icon'>事例<span>3</span></div>
                                     夫が急に離婚しようと言い出し、その原因はと問いただすと、こちらばかり責められます。もしかして愛人がいるのでは？
                                 </label>
@@ -142,8 +138,8 @@ const jirei = () => {
 
                             <div className="cmn_example">
                                 
-                                <input id="jirei-check4" class="jirei-check4" type="checkbox" />                                
-                                <label class="jirei-label" for="jirei-check4">
+                                <input id="jirei-check4" className="jirei-check4" type="checkbox" />                                
+                                <label className="jirei-label" htmlFor="jirei-check4">
                                     <div className='jirei-icon'>事例<span>4</span></div>
                                     娘が家出をしてしまい、眠れない日々を過ごしています。<br />今、何処で何をしているのか、気になります。
                                 </label>
@@ -183,8 +179,8 @@ const jirei = () => {
                             
                             <div className="cmn_example">
                                 
-                                <input id="jirei-check5" class="jirei-check5" type="checkbox" />                                
-                                <label class="jirei-label" for="jirei-check5">
+                                <input id="jirei-check5" className="jirei-check5" type="checkbox" />                                
+                                <label className="jirei-label" htmlFor="jirei-check5">
                                     <div className='jirei-icon'>事例<span>5</span></div>
                                     「いま付き合っている相手と別れた方がよいのか？」と悩んでいます。<br />自分の気持ちに、ふん切りを付けるためにも事実関係を確認したいのです。
                                 </label>
@@ -223,8 +219,8 @@ const jirei = () => {
 
                             <div className="cmn_example">
                                 
-                                <input id="jirei-check6" class="jirei-check6" type="checkbox" />                                
-                                <label class="jirei-label" for="jirei-check6">
+                                <input id="jirei-check6" className="jirei-check6" type="checkbox" />                                
+                                <label className="jirei-label" htmlFor="jirei-check6">
                                     <div className='jirei-icon'>事例<span>6</span></div>
                                     離婚した元妻とは、定期的に連絡はとって子供の近況報告は受けています。<br />しかし、それが本当なのか？「虐待はないのか？」「いじめられていないか？」「元気そうに学校に行っているか？」気になります。
                                 </label>
@@ -270,7 +266,7 @@ const jirei = () => {
                             <p className="cen_pc txt nm"><b className="blue">中央リサーチに調査をご依頼いただいたお客様からの感想の一部をご紹介致します。</b><br />
                                 当社にご依頼いただいたお客様の問題解決の力になれたことを誇りに思い、<br />
                                 今後ともお客様からの喜びの声をいただけるよう頑張ってまいりたいと思います。</p>
-                            <p className="img nm"><StaticImage src="../img/jirei/woman.png" alt="" /></p>
+                            <p className="img nm"><img src="../img/jirei/woman.png" alt="" /></p>
                             </div>
                             <div className="bg_dia">
                             <dl className="plan">
@@ -346,12 +342,84 @@ const jirei = () => {
     )
 }
 
+const jsonN = "広島探偵 中央リサーチ",
+jsonT = "当探偵社へのご相談事例",
+jsonS = "jirei",
+jsonD = "広島の探偵社「中央リサーチ」、事例紹介についての説明ページです。";
+
+const jsonLd = {
+    "@context": "http://schema.org/",
+    "@graph":[
+        {
+            "@type":"WebSite",
+            "@id":`https://www.chuou.biz/${jsonS}/#website`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonT}| 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "publisher":{
+                "@id":`https://www.chuou.biz/${jsonS}/#person`
+            }
+        },
+        {
+            "@type":"WebPage",
+            "@id":`https://www.chuou.biz/${jsonS}/#webpage`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "isPartOf":{
+                "@id":`https://www.chuou.biz/${jsonS}/#website`
+            },
+            "breadcrumb":{
+                "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`
+            },
+            "datePublished":"2023-2-22T21:00:00+09:00",
+            "dateModified":"2023-2-24T19:00:00+09:00"
+        },
+        {
+            "@type":"BreadcrumbList",
+            "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`,
+            "itemListElement":[
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/#listItem`,
+                    "position":1,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/`,
+                        "name":`${jsonN}`,
+                        "description":"当探偵社は広島に本社を構え、皆様の信頼に支えられ55年の実績を重ねてまいりました。調査・解決共経験豊富な当社にまずはお気軽にご相談ください。",
+                        "url":`https://www.chuou.biz/`
+                    },
+                    "nextItem":`https://www.chuou.biz/${jsonS}/#listItem`
+                },
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/${jsonS}/#listItem`,
+                    "position":2,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/${jsonS}/`,
+                        "name":`${jsonT}｜${jsonN}`,
+                        "description":`${jsonD}`,
+                        "url":`https://www.chuou.biz/${jsonS}/`
+                    },
+                    "previousItem":`https://www.chuou.biz/#listItem`
+                }
+            ]
+        }
+    ]
+}
+
 export const Head = () => (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
+        <Seo
+        title="当探偵社へのご相談事例"
+        keyword="事例紹介,広島,探偵,中央リサーチ"
+        description="広島の探偵社「中央リサーチ」、事例紹介についての説明ページです。"
+        />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
     </>
 )
-
 export default jirei

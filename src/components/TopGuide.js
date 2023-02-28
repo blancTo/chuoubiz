@@ -1,6 +1,8 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
 import { Link } from 'gatsby'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons"
 
 const TopGuide = () => {
   return (
@@ -8,34 +10,41 @@ const TopGuide = () => {
         <div id="top_hiroshima">
             <h3 className="mp">広島相談室案内</h3>
             <div className="wrap">
-            <p className="map"><Link to="https://goo.gl/maps/sexpTLmVC3urDhUC9" rel="nofollow noopener noreferrer" target="_blank"><StaticImage src="../img/top/map.jpg" width={528} height={275} alt="" /></Link></p>
+            <div className="map">
+                <a href="https://goo.gl/maps/sexpTLmVC3urDhUC9" aria-label="グーグルマップで見る" rel="nofollow noopener noreferrer" target="_blank">
+                    <img src="../img/top/map.jpg" width={528} height={275} loading="lazy" alt="" />
+                </a>
+            </div>
             <div className="img">
                 <dl>
-                <dt><StaticImage src="../img/top/map_l.jpg" width={248} height={248} alt="" /></dt>
+                <dt><img src="../img/top/map_l.jpg" width={248} height={248} alt="" loading="lazy" /></dt>
                 <dd>当社の青い看板が目印</dd>
                 </dl>
                 <dl>
-                <dt><StaticImage src="../img/top/map_r.jpg" width={248} height={248} alt="" /></dt>
+                <dt><img src="../img/top/map_r.jpg" width={248} height={248} alt="" loading="lazy" /></dt>
                 <dd>プライバシーを守る安心できる相談室</dd>
                 </dl>
             </div>
             </div>
-            <p id="click_map" className="link mp full"><Link to="/javascript:void(0)" disabled="disabled" tabIndex={-1}><span>相談室への経路はこちらから</span></Link></p>
-            <div className="contents">
-            <ul>
-                <li><Link to="/img/top/map01.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map01s.jpg" width={245} height={184} loading="lazy" alt="" /></Link><br />①広島駅南口へ向かいます。</li>
-                <li><Link to="/img/top/map02.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map02s.jpg" width={245} height={184} loading="lazy" alt="" /></Link><br />②南口階段を降ります。</li>
-                <li><Link to="/img/top/map03.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map03s.jpg" width={245} height={184} loading="lazy" alt="" /></Link><br />③右折します。</li>
-                <li><Link to="/img/top/map05.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map05s.jpg" width={245} height={184} loading="lazy" alt="" /></Link><br />④市内を走る広島電鉄のバス乗り場へ向かいます。</li>
-                <li><Link to="/img/top/map06.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map06s.jpg" width={245} height={184} loading="lazy" alt="" /></Link><br />⑤バス乗り場（8番乗り場）へ向かいます。</li>
-                <li><Link to="/img/top/map07.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map07s.jpg" width={245} height={184} loading="lazy" alt="" /></Link><br />⑥広島交通 合同庁舎、広島バスセンター、基町経由　高陽・深川方面行きのバスに乗車して下さい。</li>
-                <li><Link to="/img/top/map08.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map08s.jpg" width={245} height={184} loading="lazy" alt="" /></Link><br />⑦「女学院前」で降車し、右手の「広島幟町中特ビル内郵便局」の方向へ進みます。</li>
-                <li><Link to="/img/top/map09.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map09s.jpg" width={245} height={184} loading="lazy" alt="" /></Link><br />⑧「女学院前」交差点まで来ましたら、右に曲がり北進します。</li>
-                <li><Link to="/img/top/map10.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map10s.jpg" width={245} height={184} loading="lazy" alt="" /></Link><br />⑨「広島県立美術館」前をさらに北進します。</li>
-                <li><Link to="/img/top/map11.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map11s.jpg" width={245} height={184} loading="lazy" alt="" /></Link><br />⑩「広島県立美術館」を150m程進むと、中央リサーチの入っている「今田ビル」がございます。</li>
-                <li><Link to="/img/top/map12.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map12s.jpg" width={245} height={184} loading="lazy" alt="" /></Link><br />⑪ビルの2階へお上がりください。</li>
-            </ul>
+
+            <div className="top_guide_box">
+                <input id="guide-check1" className="guide-check1" type="checkbox" />
+                <label className="guide-label" htmlFor="guide-check1">相談室への経路はこちらから<FontAwesomeIcon icon={faAngleDown} /></label>
+                <ul className="guide-content">                    
+                    <li><a href="/img/top/map01.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map01s.jpg" width={245} height={184} loading="lazy" alt="相談室への経路1" /></a><br />①広島駅南口へ向かいます。</li>
+                    <li><a href="/img/top/map02.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map02s.jpg" width={245} height={184} loading="lazy" alt="相談室への経路2" /></a><br />②南口階段を降ります。</li>
+                    <li><a href="/img/top/map03.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map03s.jpg" width={245} height={184} loading="lazy" alt="相談室への経路3" /></a><br />③右折します。</li>
+                    <li><a href="/img/top/map05.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map05s.jpg" width={245} height={184} loading="lazy" alt="相談室への経路4" /></a><br />④市内を走る広島電鉄のバス乗り場へ向かいます。</li>
+                    <li><a href="/img/top/map06.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map06s.jpg" width={245} height={184} loading="lazy" alt="相談室への経路5" /></a><br />⑤バス乗り場（8番乗り場）へ向かいます。</li>
+                    <li><a href="/img/top/map07.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map07s.jpg" width={245} height={184} loading="lazy" alt="相談室への経路6" /></a><br />⑥広島交通 合同庁舎、広島バスセンター、基町経由　高陽・深川方面行きのバスに乗車して下さい。</li>
+                    <li><a href="/img/top/map08.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map08s.jpg" width={245} height={184} loading="lazy" alt="相談室への経路7" /></a><br />⑦「女学院前」で降車し、右手の「広島幟町中特ビル内郵便局」の方向へ進みます。</li>
+                    <li><a href="/img/top/map09.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map09s.jpg" width={245} height={184} loading="lazy" alt="相談室への経路8" /></a><br />⑧「女学院前」交差点まで来ましたら、右に曲がり北進します。</li>
+                    <li><a href="/img/top/map10.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map10s.jpg" width={245} height={184} loading="lazy" alt="相談室への経路9" /></a><br />⑨「広島県立美術館」前をさらに北進します。</li>
+                    <li><a href="/img/top/map11.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map11s.jpg" width={245} height={184} loading="lazy" alt="相談室への経路10" /></a><br />⑩「広島県立美術館」を150m程進むと、中央リサーチの入っている「今田ビル」がございます。</li>
+                    <li><a href="/img/top/map12.jpg" target="_blank" rel="noopener noreferrer"><img src="../img/top/map12s.jpg" width={245} height={184} loading="lazy" alt="相談室への経路11" /></a><br />⑪ビルの2階へお上がりください。</li>
+                </ul>
             </div>
+
             <div className="example">
             <h3 className="mp">弊社へのご相談事例</h3>
             <div className="wrap">

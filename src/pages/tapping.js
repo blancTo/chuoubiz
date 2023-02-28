@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -15,10 +15,7 @@ const tapping = () => {
     }
     return (
         <>
-        <Seo
-        title2="広島で盗聴、盗撮で心配の方はまずは調査して発見します"
-        description="広島の探偵社「中央リサーチ」、盗聴器、盗撮器発見についての説明ページです。"
-        keyword="盗聴器,盗撮器,発見,広島,探偵,中央リサーチ" />
+        
             <div id="wrap">
             <Header h1title="盗聴器、盗撮器の発見について" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -38,13 +35,13 @@ const tapping = () => {
                             一般的に盗聴器には<b className="fm">アナログ式の電波を出す盗聴器</b>と<b className="fm">デジタル式の電波を出す盗聴器、電波を出さない盗聴器</b>があります。<br />
                             その３種類の盗聴器を発見する為には電磁波測定器や周波数カウンター、目視等で盗聴に使用される周波数帯の探査やアッテネーター<br className="dsp_hp" />で場所の絞り込みなどを行う必要があります。<br />
                             不安・不信を感じた時は盗聴探査の技術のある探偵にお任せください。</p>
-                          <p className="img"><StaticImage src="../img/tapping/man.png" alt="" /></p>
+                          <p className="img"><img src="../img/tapping/man.png" alt="" /></p>
                         </div>
                         <div className="blue_waku">
                           <ul className="box_flex">
-                            <li><StaticImage src="../img/tapping/img01.jpg" alt="" /></li>
-                            <li><StaticImage src="../img/tapping/img02.jpg" alt="" /></li>
-                            <li><StaticImage src="../img/tapping/img03.jpg" alt="" /></li>
+                            <li><img src="../img/tapping/img01.jpg" alt="" /></li>
+                            <li><img src="../img/tapping/img02.jpg" alt="" /></li>
+                            <li><img src="../img/tapping/img03.jpg" alt="" /></li>
                           </ul>
                         </div>
                       </div>
@@ -71,7 +68,7 @@ const tapping = () => {
                         </dl>
                       </div>
                       <div className="shadow">
-                        <p className="img nm"><StaticImage src="../img/tapping/img01.png" alt="" /></p>
+                        <p className="img nm"><img src="../img/tapping/img01.png" alt="" /></p>
                         <div className="info">
                           <p className="line mp"><span>特殊無線技士</span></p>
                           <p className="fm">当社の探偵調査員は<b className="red">無線従事者免許（特殊無線技士）</b>を<br className="dsp_hp" />取得した、経験豊富なスタッフが在籍しております。</p>
@@ -86,7 +83,7 @@ const tapping = () => {
                               見た目では全く普通のヒューズボックスであって外見からはNTTなどと書いている部品であるため、見分けがつきにくいのが現状です。（発見には電波及び電磁波測定器が必要です）<br />
                               昔テレビドラマでも放映された、受話器が上がり会話が始まれば電波が発信され自動で録音開始する盗聴器の自動録音タイプはよく使われています。</p>
                           </div>
-                          <p className="img"><StaticImage src="../img/tapping/img04.jpg" alt="" /></p>
+                          <p className="img"><img src="../img/tapping/img04.jpg" alt="" /></p>
                         </div>
                         <div className="sec">
                           <h3 className="line mp">部屋・社内・車内を盗聴・盗撮される場合</h3>
@@ -101,12 +98,12 @@ const tapping = () => {
                       <div className="example blue_waku">
                         <h3 className="cen mp"><span>盗聴・盗撮器の一例</span></h3>
                         <ul className="box_flex">
-                          <li><StaticImage src="../img/tapping/img05.jpg" alt="" /></li>
-                          <li><StaticImage src="../img/tapping/img06.jpg" alt="" /></li>
-                          <li><StaticImage src="../img/tapping/img07.jpg" alt="" /></li>
-                          <li><StaticImage src="../img/tapping/img08.jpg" alt="" /></li>
-                          <li><StaticImage src="../img/tapping/img09.jpg" alt="" /></li>
-                          <li><StaticImage src="../img/tapping/img10.jpg" alt="" /></li>
+                          <li><img src="../img/tapping/img05.jpg" alt="" /></li>
+                          <li><img src="../img/tapping/img06.jpg" alt="" /></li>
+                          <li><img src="../img/tapping/img07.jpg" alt="" /></li>
+                          <li><img src="../img/tapping/img08.jpg" alt="" /></li>
+                          <li><img src="../img/tapping/img09.jpg" alt="" /></li>
+                          <li><img src="../img/tapping/img10.jpg" alt="" /></li>
                         </ul>
                       </div>
                       <dl className="notice">
@@ -123,13 +120,12 @@ const tapping = () => {
         </>
     )
 }
-
 export const Head = () => (
-    <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
-    </>
+  <>
+      <Seo
+        title2="広島で盗聴、盗撮で心配の方はまずは調査して発見します"
+        description="広島の探偵社「中央リサーチ」、盗聴器、盗撮器発見についての説明ページです。"
+        keyword="盗聴器,盗撮器,発見,広島,探偵,中央リサーチ" />
+  </>
 )
-
 export default tapping

@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
 import Seo from '../../components/SEO'
 import HeaderOkayama from '../../components/HeaderOkayama'
 import FooterOkayama from '../../components/FooterOkayama'
@@ -15,11 +14,7 @@ const price = () => {
     }
     return (
         <>
-        <Seo
-            title2="探偵事務所調査料金表｜総合探偵社中央リサーチ岡山"
-            description="当探偵社ではお客様を不安にさせる様なあいまいな料金表示や請求方法は一切行いません。"
-            keyword="探偵,岡山,料金表,中央リサーチ岡山"
-            />
+        
             <div id="wrap">
                 <HeaderOkayama h1title="調査料金について" pagetitle="岡山駅より徒歩5分の探偵事務所" />
                 <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -33,7 +28,7 @@ const price = () => {
                             <p className="serif">健全・適正・正確</p>
                             <p className="b nm">詳細な料金は、<br className="dsp_tbs" />お見積りいたしますので<br className="dsp_smt" />お気軽にご連絡ください！</p>
                         </div>
-                        <p className="photo"><StaticImage src="../../img/price/img.png" alt="" /></p>
+                        <p className="photo"><img src="../../img/price/img.png" alt="" /></p>
                         </div>
                     </div>
                     <h3 className="headline mp">料金表</h3>
@@ -157,17 +152,17 @@ const price = () => {
                             <p className="attention nm">※成功報酬プラン（内容に応じ別途お見積りいたしますので、ご相談ください。）</p>
                         </div>
                         </div>
-                    </div>{/* #BeginLibraryItem "/Library/card_price.lbi" */}
+                    </div>
                     <div id="creditcard" className="box price_box">
                         <dl className="head">
                         <dt className="mp w2"><span className="in"><span className="txt">追加料金不要で任せて安心<br /><span className="smt_fs">（深夜料金一切不要で安心）</span><br /><span className="fs dsp_hpt">※お支払いはクレジットも利用可能</span></span></span></dt>
                         <dd>
-                            <p className="icon"><StaticImage src="../../img/top/pay00.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay01.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay02.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay03.png" loading="lazy" alt="" /><StaticImage src="../../img/top/pay04.png" loading="lazy" alt="" /></p>
+                            <p className="icon"><img src="../../img/top/pay00.png" loading="lazy" alt="" /><img src="../../img/top/pay01.png" loading="lazy" alt="" /><img src="../../img/top/pay02.png" loading="lazy" alt="" /><img src="../../img/top/pay03.png" loading="lazy" alt="" /><img src="../../img/top/pay04.png" loading="lazy" alt="" /></p>
                             <p className="dsp_smt fs"><span className="fs">※お支払いはクレジットも利用可能</span></p>
                         </dd>
                         </dl>
                     </div>
-                    {/* #EndLibraryItem */}{/* #BeginLibraryItem "/Library/choose_price.lbi" */}
+                    
                     <div id="choose_price" className="bg_wide">
                         <h3 className="headline mp">浮気調査の料金について<br className="dsp_smt" /><span className="fs">（5日間、実働20時間）</span></h3>
                         <p>同程度の内容でも調査料金が何故これほど違うのでしょう？</p>
@@ -269,10 +264,10 @@ const price = () => {
                             <dd>経費の名目で後から<span className="b red">高額請求</span>する探偵事務所もあります。<br />
                             調査料金・基本料金が安いように見えても、報告が完了するまでの<br className="dsp_tbs" />合計金額が<br className="dsp_hp" />いくらになるのか、<span className="b red">事前に必ず確認</span>しておきましょう。</dd>
                         </dl>
-                        <StaticImage src="../../img/choose/price01.png" alt="ここに注意!!" className="img_price01" />
+                        <img src="../../img/choose/price01.png" alt="ここに注意!!" className="img_price01" />
                         </div>
                     </div>
-                    {/* #EndLibraryItem */}{/*p class="link mp"><a href="jirei.html">事例ページはこちら</a></p*/}
+                    
                     </div>
 
                 </Layout>
@@ -281,5 +276,13 @@ const price = () => {
         </>
     )
 }
-
+export const Head = () => (
+    <>
+        <Seo
+            title2="探偵事務所調査料金表｜総合探偵社中央リサーチ岡山"
+            description="当探偵社ではお客様を不安にさせる様なあいまいな料金表示や請求方法は一切行いません。"
+            keyword="探偵,岡山,料金表,中央リサーチ岡山"
+            />
+    </>
+  )
 export default price

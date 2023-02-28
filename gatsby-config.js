@@ -18,10 +18,13 @@ module.exports = {
     siteUrl: "https://www.chuou.biz/",
   },
   plugins: [
-    `gatsby-plugin-image`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
+    
+    {
+      resolve: `gatsby-plugin-lodash`,
+      options: {
+        disabledFeatures: [`shorthands`, `cloning`],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,9 +37,39 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          quality: 75, //デフォルトは50
+          quality: 50, //デフォルトは50
         },
       },
     },
+
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://www.chuou.biz/`,
+        sitemap: `https://www.chuou.biz/sitemap-0.xml`,
+        policy: [{ userAgent: `*`, allow: `/` }],
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.chuou.biz/`,
+      },
+    },
+
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-KPV22J2",
+        includeInDevelopment: false,
+      },
+    },
+
+    `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
+    
   ],
 }

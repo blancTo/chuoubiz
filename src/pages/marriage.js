@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -17,11 +16,7 @@ const marriage = () => {
     }
     return (
         <>
-        <Seo
-        title="広島で結婚相手の身上調査なら"
-        keyword="結婚・身上調査,広島,探偵,中央リサーチ"
-        description="結婚・身上調査について説明した広島の探偵社「中央リサーチ」のページです。"
-        />
+        
             <div id="wrap">
             <Header h1title="結婚調査、身上調査について" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -34,12 +29,12 @@ const marriage = () => {
                             <h3 className="mp blue2">結婚する可能性のある2人のために・・・<br className="dsp_hpt" />幸せはお互いの家族の事を知ることから</h3>
                             <p>一生に関わるご縁談に際し<b className="red fm">新しく親戚関係になる事は慎重に判断せざるを得ません。</b><br />
                                 失敗しないため、騙されない為、そして建設的に考えるからこそ事実を確認し納得してから前に進む事が当然の考えです。</p>
-                            <p className="img nm dsp_smt"><StaticImage src="../img/marriage/img01.jpg" alt="" /></p><br className="dsp_smt" />
+                            <p className="img nm dsp_smt"><img src="../img/marriage/img01.jpg" alt="" /></p><br className="dsp_smt" />
                             <p className="line mp"><span>結婚・身上調査の必要性</span></p>
                             <p className="txt">これから結婚される2人が、<b className="fm red">本当の幸せな結婚生活を送るために確かな「安心」を得るための大切な調査です。</b></p>
                             <p>例えば・・・反社会勢力や特殊な宗教団体との関係や家族の人物性、金銭トラブル、経歴詐称、健康面、資産状況、特殊な思想など、交際中は分からなかいことや聞きづらいことについて結婚前に調査をすることで、<b className="fm">「結婚をする時の客観的な後押し」</b>にもなり、<b className="fm">「結婚後に後悔することを事前に防ぐ」</b>ことができます。</p>
                             </div>
-                            <p className="img nm dsp_hpt"><StaticImage src="../img/marriage/img01.jpg" alt="" /></p>
+                            <p className="img nm dsp_hpt"><img src="../img/marriage/img01.jpg" alt="" /></p>
                         </div>
                         <div className="bg bg_wide pt pb">
                             <div className="sec">
@@ -93,7 +88,7 @@ const marriage = () => {
                         <div className="reason pt">
                             <div className="img_headline_area">
                             <div className="sec">
-                                <p className="img"><StaticImage src="../img/marriage/img02.jpg" alt="" /></p>
+                                <p className="img"><img src="../img/marriage/img02.jpg" alt="" /></p>
                                 <div className="info">
                                 <h3 className="headline">離婚理由の調査</h3>
                                 <p>結婚する際、交際相手に婚姻歴があることは少なくありません。そういった状況下にある方は、同じ失敗の繰り返しになるリスクを避けるためにも結婚に向けての心構え、あるいは結論づけが必要になってくると考えます。</p>
@@ -112,13 +107,13 @@ const marriage = () => {
                             <div className="bg">
                                 <div className="head">
                                     <p className="case serif">case01</p>
-                                    <input id="marriage-check1" class="marriage-check1" type="checkbox" />
-                                    <label class="marriage-label" for="marriage-check1">近所の子供に注意した後に嫌がらせが加速！電磁波被害調査でわかった事実<br />
+                                    <input id="case-check1" className="case-check1" type="checkbox" />
+                                    <label className="case-label" htmlFor="case-check1">近所の子供に注意した後に嫌がらせが加速！電磁波被害調査でわかった事実<br />
                                     <span>最近、身体のあちこちがしびれるように痛くなったり、頭痛が止まらないとお悩みの方は電磁波の被害を受けている可能性があります。早速、最新の事例をご紹介しましょう。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                                    <div className='marriage-content'>
+                                    <div className='case-content'>
                                         <div className="info">
-                                            <div className="hito"> <span>依頼者：事務職、会社員（37歳）</span> <span className="target">対象者：美容外科医の婚約者（46歳）</span> {/*span class="time">調査時間：●時間</span*/}</div>
-                                            <p className="img"><StaticImage src="../img/marriage/jirei01.jpg" alt="" /></p>
+                                            <div className="hito"> <span>依頼者：事務職、会社員（37歳）</span> <span className="target">対象者：美容外科医の婚約者（46歳）</span> {/*span className="time">調査時間：●時間</span*/}</div>
+                                            <p className="img"><img src="../img/marriage/jirei01.jpg" alt="" /></p>
                                             <dl className="content">
                                                 <dt>依頼内容</dt>
                                                 <dd>私は医師と弁護士だけが登録しているサイト主催のお見合いパーティーに参加しました。男性は高収入なので、女性の登録条件も厳しいですが、何とか通過することができました。<br />
@@ -140,7 +135,7 @@ const marriage = () => {
                                             <div className="comment">
                                                 <div className="requester sec">
                                                 <dl>
-                                                    <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                     <p className="b">依頼者様からのコメント</p>
                                                     <p className="nm">報告を頂いたときは、ショックで倒れそうになりました。こんな嘘で固めたような男を信じて婚約したと信じた自分が情けないです。両親に紹介する前に真実が分かって良かったです。<br />
@@ -150,7 +145,7 @@ const marriage = () => {
                                                 </div>
                                                 <div className="chu sec">
                                                 <dl>
-                                                    <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                     <p className="b">中央リサーチから一言</p>
                                                     <p className="nm">最近は、嘘のプロフィールで女性を騙す婚活の手口が増えています。悪質さはケースバイケースですが、結婚調査をしておいて損はありません。一度、中央リサーチまでご相談ください。</p>
@@ -170,13 +165,13 @@ const marriage = () => {
                             <div className="bg">
                                 <div className="head">
                                     <p className="case serif">case02</p>
-                                    <input id="marriage-check2" class="marriage-check2" type="checkbox" />
-                                    <label class="marriage-label" for="marriage-check2">娘の婚約者はバツイチ子持ちを隠している？結婚調査で分かった驚きの調査結果<br />
+                                    <input id="case-check2" className="case-check2" type="checkbox" />
+                                    <label className="case-label" htmlFor="case-check2">娘の婚約者はバツイチ子持ちを隠している？結婚調査で分かった驚きの調査結果<br />
                                     <span>お子様が結婚報告をされた時は、本来喜ぶべきお祝いとなりますが、ご両親は「何かがおかしい…」と直感で気がつくことがあります。結婚調査で分かった驚きの事例とは？</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                                    <div className='marriage-content'>
+                                    <div className='case-content'>
                                         <div className="info">
-                                            <div className="hito"> <span>依頼者：大学4年生の娘さんのご両親（47歳、51歳）</span> <span className="target">対象者：娘さんの婚約者（42歳）</span>{/*span class="time">調査時間：●時間</span*/}</div>
-                                            <p className="img"><StaticImage src="../img/marriage/jirei02.jpg" alt="" /></p>
+                                            <div className="hito"> <span>依頼者：大学4年生の娘さんのご両親（47歳、51歳）</span> <span className="target">対象者：娘さんの婚約者（42歳）</span>{/*span className="time">調査時間：●時間</span*/}</div>
+                                            <p className="img"><img src="../img/marriage/jirei02.jpg" alt="" /></p>
                                             <dl className="content">
                                                 <dt>依頼内容</dt>
                                                 <dd>娘は都内の私立大学に通う21歳です。塾で講師のアルバイトをしており、この度そこで知り合った塾長という４２歳の男性と婚約をしました。<br />
@@ -198,7 +193,7 @@ const marriage = () => {
                                             <div className="comment">
                                                 <div className="requester sec">
                                                 <dl>
-                                                    <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                     <p className="b">依頼者様からのコメント</p>
                                                     <p className="nm">今回は調査報告書に丁寧にまとめていただいてありがとうございます。娘の婚約者はバツイチで小学生のお子様が2人もいるとは…驚きで言葉が出ません。<br />
@@ -208,7 +203,7 @@ const marriage = () => {
                                                 </div>
                                                 <div className="chu sec">
                                                 <dl>
-                                                    <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                     <p className="b">中央リサーチから一言</p>
                                                     <p className="nm">お二人の愛は確かであるかもしれませんが、離婚歴やお子様と同居していることを婚約者に隠しているのは信頼度に欠けます。また何かお困りのことがございましたら、ご連絡ください。</p>
@@ -227,14 +222,14 @@ const marriage = () => {
                             <div className="bg">
                                 <div className="head">
                                 <p className="case serif">case03</p>
-                                <input id="marriage-check3" class="marriage-check3" type="checkbox" />
-                                    <label class="marriage-label" for="marriage-check3">息子の婚約者の家族が知りたいです…結婚調査で分かった複雑な家庭環境<br />
+                                <input id="case-check3" className="case-check3" type="checkbox" />
+                                    <label className="case-label" htmlFor="case-check3">息子の婚約者の家族が知りたいです…結婚調査で分かった複雑な家庭環境<br />
                                     <span>息子さんが婚約者を実家に連れてきてくれた時に、婚約者がなにか隠している…と直感するのは決して珍しいケースではありません。結婚調査で分かった複雑な家庭環境とは？</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                                    <div className='marriage-content'>
+                                    <div className='case-content'>
 
                                         <div className="info">
-                                            <div className="hito"> <span>依頼者：息子の母親（54歳）</span> <span className="target">対象者：息子の婚約者（25歳）</span> {/*span class="time">調査時間：●時間</span*/}</div>
-                                            <p className="img"><StaticImage src="../img/marriage/jirei03.jpg" alt="" /></p>
+                                            <div className="hito"> <span>依頼者：息子の母親（54歳）</span> <span className="target">対象者：息子の婚約者（25歳）</span> {/*span className="time">調査時間：●時間</span*/}</div>
+                                            <p className="img"><img src="../img/marriage/jirei03.jpg" alt="" /></p>
                                             <dl className="content">
                                                 <dt>依頼内容</dt>
                                                 <dd>息子は広島県内で自動車整備士をしています。実家暮らしで地味な生活をしていると思っていましたが、結婚を前提にお付き合いしている女性がいるとのことで、先日家に連れてきてくれました。<br />
@@ -256,7 +251,7 @@ const marriage = () => {
                                             <div className="comment">
                                                 <div className="requester sec">
                                                 <dl>
-                                                    <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                     <p className="b">依頼者様からのコメント</p>
                                                     <p className="nm">今回は息子の婚約者の家族関係を徹底的に調べていただいてありがとうございました。感無量です。複雑な家庭環境には驚きましたが、素晴らしい女性であると再確認できました。<br />
@@ -266,7 +261,7 @@ const marriage = () => {
                                                 </div>
                                                 <div className="chu sec">
                                                 <dl>
-                                                    <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                     <p className="b">中央リサーチから一言</p>
                                                     <p className="nm">息子さんがご結婚される前に、結婚調査でお相手の気になる点を明らかにして、安心してご結婚を祝福されることができて良かったです。お幸せを祈っております。</p>
@@ -291,13 +286,13 @@ const marriage = () => {
         </>
     )
 }
-
 export const Head = () => (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
+        <Seo
+        title="広島で結婚相手の身上調査なら"
+        keyword="結婚・身上調査,広島,探偵,中央リサーチ"
+        description="結婚・身上調査について説明した広島の探偵社「中央リサーチ」のページです。"
+        />
     </>
 )
-
 export default marriage

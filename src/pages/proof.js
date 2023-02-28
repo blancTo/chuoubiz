@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -15,11 +14,7 @@ const proof = () => {
     }
     return (
         <>
-        <Seo
-        title="内容証明と慰謝料請求について"
-        keyword="内容証明,浮気調査,広島,探偵,中央リサーチ"
-        description="内容証明は浮気・不倫相手に対し、慰謝料請求を行う際によく用いられます。浮気調査・離婚に関する内容証明について広島の探偵社「中央リサーチ」が説明させていただきます。"
-        />
+        
             <div id="wrap">
             <Header h1title="内容証明は浮気の慰謝料請求の方法です。" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -35,11 +30,11 @@ const proof = () => {
                                 浮気による<b className="fm blue2">精神的苦痛、あるいは肉体的苦痛に対する賠償</b>です。</p>
                                 <p className="nm">民法では<b className="fm">「夫婦の一方の配偶者と肉体関係を持った第三者は、故意又は過失がある限り、右配偶者を誘惑するなどして肉体関係を持つに至らせたかどうか、両名の関係が自然の愛情によって生じたかどうかにかかわらず、他方の配偶者の夫又は妻としての権利を侵害し、その行為は違法性を帯び、右他方の配偶者の被った精神上の苦痛を慰謝すべき義務があるというべきである。」</b>とあります。</p>
                             </div>
-                            <p className="img nm"><StaticImage src="../img/proof/img01.jpg" alt="" /></p>
+                            <p className="img nm"><img src="../img/proof/img01.jpg" alt="" /></p>
                             </div>
                         </div>
                         <div className="proof_wrap">
-                            <p className="img"><StaticImage src="../img/proof/img02.jpg" alt="" /></p>
+                            <p className="img"><img src="../img/proof/img02.jpg" alt="" /></p>
                             <div>
                             <div className="box">
                                 <h3 className="line mp">内容証明とは</h3>
@@ -70,15 +65,15 @@ const proof = () => {
                             <h3 className="cen mp">内容証明に何を明記すればよいか？</h3>
                             <div className="wrap">
                             <dl>
-                                <dt><StaticImage src="../img/chk02.png" alt="" /></dt>
+                                <dt><img src="../img/chk02.png" alt="" /></dt>
                                 <dd className="blue2 mp">夫との間に不貞行為が<br className="dsp_hp" />あったという<br className="dsp_smt" />事実の内容</dd>
                             </dl>
                             <dl>
-                                <dt><StaticImage src="../img/chk02.png" alt="" /></dt>
+                                <dt><img src="../img/chk02.png" alt="" /></dt>
                                 <dd className="blue2 mp">夫との交際を<br className="dsp_hp" />辞めることを求める内容</dd>
                             </dl>
                             <dl>
-                                <dt><StaticImage src="../img/chk02.png" alt="" /></dt>
+                                <dt><img src="../img/chk02.png" alt="" /></dt>
                                 <dd className="blue2 mp">慰謝料を請求する旨の内容<br className="dsp_hp" /><br className="dsp_smt" />（要求する慰謝料金額を明記）</dd>
                             </dl>
                             </div>
@@ -102,13 +97,13 @@ const proof = () => {
         </>
     )
 }
-
 export const Head = () => (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
+        <Seo
+        title="内容証明と慰謝料請求について"
+        keyword="内容証明,浮気調査,広島,探偵,中央リサーチ"
+        description="内容証明は浮気・不倫相手に対し、慰謝料請求を行う際によく用いられます。浮気調査・離婚に関する内容証明について広島の探偵社「中央リサーチ」が説明させていただきます。"
+        />
     </>
 )
-
 export default proof

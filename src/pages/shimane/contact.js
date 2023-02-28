@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
-
 import Seo from '../../components/SEO'
 import Layout from '../../components/Layout'
 import SubpageTitle from '../../components/SubpageTitle'
@@ -16,11 +14,7 @@ const contact = () => {
     }
     return (
         <>
-            <Seo
-            title2="ご相談、お問合せはこちら｜総合探偵社中央リサーチ島根"
-            description="島根の探偵社「中央リサーチ島根」ではどのようなお問合せにも対応致します。お気軽にご連絡ください。"
-            keyword="探偵,島根,問合せ,中央リサーチ島根"
-            />
+            
             <div id="wrap">
                 <HeaderShimane h1title="ご相談、お問い合わせについて" pagetitle="JR松江駅前にある探偵事務所" />
                 <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -30,10 +24,10 @@ const contact = () => {
                     
                         <div id="contact_line" className="cf pb">
                             <h3 className="headline">LINEでのお問い合わせ</h3>
-                            <p><StaticImage src="../../img/shimane/contact/line_logo.png" width={151} height={41} alt="" /></p>
+                            <p><img src="../../img/shimane/contact/line_logo.png" width={151} height={41} alt="" /></p>
                             <p className="b fm">LINEからお問い合わせできます！</p>
                             <div className="dsp_hp">
-                            <p className="img_rit"><StaticImage src="../../img/shimane/contact/qr.gif" width={170} height={170} alt="" /></p>
+                            <p className="img_rit"><img src="../../img/shimane/contact/qr.gif" width={170} height={170} alt="" /></p>
                             <p>QRコードから<a href="https://line.me/R/ti/p/65gpK3qcDs" rel="nofollow noopener noreferrer" target="_blank">「友だち登録」</a>すると、LINEでお問い合わせができます。<br />
                                 LINEアプリの【友だち追加】で右のQRコードを読み取って、トークからお問い合わせください。</p>
                             </div>
@@ -52,9 +46,9 @@ const contact = () => {
                                 <dl className="box02_flex">
                                     <dt><span className="txt_free mp">無料<span>相談窓口</span></span></dt>
                                     <dd className="tel_area">
-                                    <a href="tel:0120-30-6630" className="tel tel_m sans"><StaticImage src="../../img/shimane/free.png" alt="フリーダイヤル" />0120-30-6630</a>
+                                    <a href="tel:0120-30-6630" className="tel tel_m sans"><img src="../../img/shimane/free.png" alt="フリーダイヤル" />0120-30-6630</a>
                                     <p className="msg_txt04">女性相談員ご希望の方はこちら</p>
-                                    <a href="tel:0120-20-3399" className="tel sans"><StaticImage src="../../img/shimane/free.png" alt="フリーダイヤル" />0120-20-3399</a>
+                                    <a href="tel:0120-20-3399" className="tel sans"><img src="../../img/shimane/free.png" alt="フリーダイヤル" />0120-20-3399</a>
                                     </dd>
                                 </dl>
                                 <p className="msg_txt05">年中無休！ 24時間受付！<span>携帯電話でもOK!</span></p>
@@ -155,5 +149,13 @@ const contact = () => {
         </>
     )
 }
-
+export const Head = () => (
+    <>
+        <Seo
+            title2="ご相談、お問合せはこちら｜総合探偵社中央リサーチ島根"
+            description="島根の探偵社「中央リサーチ島根」ではどのようなお問合せにも対応致します。お気軽にご連絡ください。"
+            keyword="探偵,島根,問合せ,中央リサーチ島根"
+            />
+    </>
+  )
 export default contact

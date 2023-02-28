@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -17,10 +17,7 @@ const stalker = ({data}) => {
     }
     return (
         <>
-        <Seo
-        title="広島で嫌がらせやストーカー行為のトラブル対策はお任せ下さい"
-        description="広島の探偵社「中央リサーチ」、嫌がらせ、ストーカー対策についての説明ページです。"
-        keyword="嫌がらせ,ストーカー対策,広島,探偵,中央リサーチ" />
+        
             <div id="wrap">
             <Header h1title="嫌がらせの対策について" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -35,7 +32,7 @@ const stalker = ({data}) => {
                         <h3 className="mp blue2">安心・安全な生活を取り戻す為に・・・<br />迷惑行為によるトラブルを解消！</h3>
                         <p className="nm">あなたに精神的苦痛を与えるような迷惑行為、<b className="fm">嫌がらせの証拠をとります。</b><br />
                           <b className="fm red">また迷惑行為を行う人物を特定し、<br className="dsp_tbs" />警察や弁護士に動いてもらえる為の証拠を集めます。</b></p>
-                        <p className="img nm"><StaticImage src="../img/stalker/woman.png" alt="" /></p>
+                        <p className="img nm"><img src="../img/stalker/woman.png" alt="" /></p>
                       </div>
                       <div className="pt pb measures">
                         <div className="sec">
@@ -59,7 +56,7 @@ const stalker = ({data}) => {
                             </dl>
                           </div>
                           <div className="content box_flex">
-                            <p className="img"><StaticImage src="../img/stalker/img01.jpg" alt="" /></p>
+                            <p className="img"><img src="../img/stalker/img01.jpg" alt="" /></p>
                             <div className="info">
                               <p>嫌がらせや迷惑行為は年々増加傾向にあります。特にネット（SNS）による誹謗中傷が目立ちます。また数々の近隣トラブルなどの迷惑行為や嫌がらせを受けたとの、ご相談も多数いただいております。</p>
                               <p>当社では、その要因となる人間関係や交際のもつれによる様々な問題、<b className="fm blue2">近隣トラブル、モラハラ、パワハラ、セクハラ、いじめ、DV等</b>について、一連の流れを把握し迷惑行為の事実確認及び証拠収集を行い、速やかな問題解決を図ります。</p>
@@ -116,9 +113,9 @@ const stalker = ({data}) => {
                             </dl>
                           </div>
                           <div className="content box_flex pc_rev">
-                            <p className="img"><StaticImage src="../img/stalker/img02.jpg" alt="" /></p>
+                            <p className="img"><img src="../img/stalker/img02.jpg" alt="" /></p>
                             <div className="info">
-                              <p>平成12年に、ストーカー行為から被害者を守るため<Link to="https://www.keishicho.metro.tokyo.lg.jp/kurashi/higai/dv/kiseho.html" target="_blank">「ストーカー規制法」</Link>が制定されています。しかし、いくら警察に相談しても<b className="red fm">ストーカー行為を受けている明確な証拠がない</b>と、なかなか警察は動いてくれないのが実態です。</p>
+                              <p>平成12年に、ストーカー行為から被害者を守るため<a href="https://www.keishicho.metro.tokyo.lg.jp/kurashi/higai/dv/kiseho.html" target="_blank" rel="noopener noreferrer">「ストーカー規制法」</a>が制定されています。しかし、いくら警察に相談しても<b className="red fm">ストーカー行為を受けている明確な証拠がない</b>と、なかなか警察は動いてくれないのが実態です。</p>
                               <p>ストーカー犯罪は年々増加しており、警察の細かい対応が追いついていない事も事実で、過去の事案では警察に3回も相談したが<b className="fm">「事件性がない」</b>と動いてもらえず、結果的には殺人事件へと発展し、相談者は守ってもらうどころか無念の死を遂げてしまったというケースなど、心の痛むような事案が後を絶ちません。</p>
                               <p>ストーカー行為を行う人物の多くは、<b className="fm">被害者の元恋人・夫（妻）・知人の場合がほとんど</b>です。<br />
                                 被害者に対して持つ歪んだ愛情表現によって、身の危険を感じる恐怖や精神的な苦痛を与えられます。</p>
@@ -158,7 +155,7 @@ const stalker = ({data}) => {
                             <p>例えば、お子様が友だちとどういうやり取りをしているのか、学校から帰るまでどこに行って何をしているのか・・など、法律的に有効な証拠を集めることが可能です。<br />
                               また<b className="fm">調査は、気づかれずに進めて行ける技術を持ったプロの探偵が調査にあたります。</b></p>
                           </div>
-                          <p className="img"><StaticImage src="../img/stalker/img03.jpg" alt="" /></p>
+                          <p className="img"><img src="../img/stalker/img03.jpg" alt="" /></p>
                         </div>
                       </div>
                       <div className="pt example">
@@ -167,7 +164,7 @@ const stalker = ({data}) => {
                           <p>子供のいじめの種類はさまざまで、どういったいじめが行われているかによって調査方法も異なります。具体的にどうやって調査するのでしょうか？一部の調査事例をご案内いたします。</p>
                           <div className="box_flex">
                             <dl>
-                              <dt><StaticImage src="../img/stalker/jirei01.jpg" alt="" /></dt>
+                              <dt><img src="../img/stalker/jirei01.jpg" alt="" /></dt>
                               <dd>
                                 <p className="bg_blue_grad2 mp cen">誹謗中傷手紙を受け取る事例</p>
                                 <div className="in">
@@ -176,7 +173,7 @@ const stalker = ({data}) => {
                               </dd>
                             </dl>
                             <dl>
-                              <dt><StaticImage src="../img/stalker/jirei02.jpg" alt="" /></dt>
+                              <dt><img src="../img/stalker/jirei02.jpg" alt="" /></dt>
                               <dd>
                                 <p className="bg_blue_grad2 mp cen">聞き取り調査での証拠集め事例</p>
                                 <div className="in">
@@ -185,7 +182,7 @@ const stalker = ({data}) => {
                               </dd>
                             </dl>
                             <dl>
-                              <dt><StaticImage src="../img/stalker/jirei03.jpg" alt="" /></dt>
+                              <dt><img src="../img/stalker/jirei03.jpg" alt="" /></dt>
                               <dd>
                                 <p className="bg_blue_grad2 mp cen">子供の素行調査を行う事例</p>
                                 <div className="in">
@@ -195,7 +192,7 @@ const stalker = ({data}) => {
                               </dd>
                             </dl>
                             <dl>
-                              <dt><StaticImage src="../img/stalker/jirei04.jpg" alt="" /></dt>
+                              <dt><img src="../img/stalker/jirei04.jpg" alt="" /></dt>
                               <dd>
                                 <p className="bg_blue_grad2 mp cen">ネットでの調査の事例</p>
                                 <div className="in">
@@ -215,7 +212,7 @@ const stalker = ({data}) => {
                               <p>学校内のいじめの証拠を集めるには探偵が学校の敷地に入ることができないため、お子様自身が証拠をとる事が重要です。<br />
                                 いじめられているお子様自身に承諾してもらった上で、相手とのやり取りをボイスレコダーやスマホなどを使って、そのいじめの現場の状況証拠を集める事が理想です。</p>
                             </div>
-                            <p className="img"><StaticImage src="../img/stalker/img04.jpg" alt="" /></p>
+                            <p className="img"><img src="../img/stalker/img04.jpg" alt="" /></p>
                           </div>
                           <div className="sec">
                             <div className="info">
@@ -226,7 +223,7 @@ const stalker = ({data}) => {
                                 何とか自身でいじめの証拠を集めたいと思っても、素人の方が信頼性の高いいじめの証拠を集める事は、簡単ではありません。</p>
                               <p>手遅れになる前に<b className="fm red">調査のプロである私たちにお任せください。卓越した技術でいじめの事実確認を行い、証拠を集めます。</b></p>
                             </div>
-                            <p className="img nm"><StaticImage src="../img/stalker/woman02.png" alt="" /></p>
+                            <p className="img nm"><img src="../img/stalker/woman02.png" alt="" /></p>
                           </div>
                         </div>
                       </div>
@@ -238,14 +235,14 @@ const stalker = ({data}) => {
                             <div className="head">
                               <p className="case serif">case01</p>
 
-                              <input id="stalker-check1" class="stalker-check1" type="checkbox" />
-                              <label class="stalker-label" for="stalker-check1">近所の子供に注意した後に嫌がらせが加速！電磁波被害調査でわかった事実<br />
+                              <input id="case-check1" className="case-check1" type="checkbox" />
+                              <label className="case-label" htmlFor="case-check1">近所の子供に注意した後に嫌がらせが加速！電磁波被害調査でわかった事実<br />
                               <span>最近、身体のあちこちがしびれるように痛くなったり、頭痛が止まらないとお悩みの方は電磁波の被害を受けている可能性があります。早速、最新の事例をご紹介しましょう。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                              <div className='stalker-content'>
+                              <div className='case-content'>
 
                                 <div className="info">
-                                  <div className="hito"> <span>依頼者：主婦（52歳）</span> {/*span class="target">対象者：●●</span> <span class="time">調査時間：●時間</span*/}</div>
-                                  <p className="img"><StaticImage src="../img/stalker/chousajirei01.jpg" alt="" /></p>
+                                  <div className="hito"> <span>依頼者：主婦（52歳）</span></div>
+                                  <p className="img"><img src="../img/stalker/chousajirei01.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>
                                     <dd>数ヶ月前に反対側に住むご家族の息子さんとその友人たち（高校生）が夜遅くまでバイクで騒音を立てて走り回ったり、夜中に大声で叫ぶので、そこの奥様に行動を注意しました。<br />
@@ -268,7 +265,7 @@ const stalker = ({data}) => {
                                   <div className="comment">
                                     <div className="requester sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">依頼者様からのコメント</p>
                                           <p className="nm">今回は丁寧で明確な電磁波被害調査をして頂き、本当にありがとうございます。嫌がらせが健康被害に繋がって、悩み続けていたのでとても助かりました。<br />
@@ -278,7 +275,7 @@ const stalker = ({data}) => {
                                     </div>
                                     <div className="chu sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">中央リサーチから一言</p>
                                           <p className="nm">最近は、電磁波被害のご相談が増えています。すべての電磁波が有害ではなく、ご自身での判断は難しいところがあります。<br />
@@ -299,14 +296,14 @@ const stalker = ({data}) => {
                           <div className="bg">
                             <div className="head">
                               <p className="case serif">case02</p>
-                              <input id="stalker-check2" class="stalker-check2" type="checkbox" />
-                              <label class="stalker-label" for="stalker-check2">小学生の娘が嫌がらせといじめの被害に遭い不登校に…探偵の調査でわかったこと<br />
+                              <input id="case-check2" className="case-check2" type="checkbox" />
+                              <label className="case-label" htmlFor="case-check2">小学生の娘が嫌がらせといじめの被害に遭い不登校に…探偵の調査でわかったこと<br />
                               <span>学校でのいじめ問題はいつの時代も起こり、悲しいことに解決策は見つかっていません。探偵社にもいじめ被害による嫌がらせのお悩み相談が多数寄せられています。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                              <div className='stalker-content'>
+                              <div className='case-content'>
 
                                 <div className="info">
-                                  <div className="hito"> <span>依頼者：小学5年生女子の親御様（40代）</span> {/*span class="target">対象者：●●</span> <span class="time">調査時間：●時間</span*/}</div>
-                                  <p className="img"><StaticImage src="../img/stalker/chousajirei02.jpg" alt="" /></p>
+                                  <div className="hito"> <span>依頼者：小学5年生女子の親御様（40代）</span></div>
+                                  <p className="img"><img src="../img/stalker/chousajirei02.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>
                                     <dd>小学5年生の娘が学校の男子と女子のいじめグループからモノを投げつけられたり、荷物を盗まれたりして、泣きながら帰ってくることが多くなりました。<br />
@@ -328,7 +325,7 @@ const stalker = ({data}) => {
                                   <div className="comment">
                                     <div className="requester sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">依頼者様からのコメント</p>
                                           <p className="nm">今回は娘のいじめ、嫌がらせの証拠獲得に懸命に調査していただいて、本当にありがとうございます。娘も段々と闘う姿勢になり、泣くことがなくなりました。<br />
@@ -338,7 +335,7 @@ const stalker = ({data}) => {
                                     </div>
                                     <div className="chu sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">中央リサーチから一言</p>
                                           <p className="nm">学校でのいじめ、嫌がらせの被害は誰にも言えずに自殺に発展する可能性もゼロではありません。そのような最悪な事態を避けるためにも、探偵社の早急な調査で解決されることをおすすめします。</p>
@@ -359,14 +356,14 @@ const stalker = ({data}) => {
                             <div className="head">
                               <p className="case serif">case03</p>
                               
-                              <input id="stalker-check3" class="stalker-check3" type="checkbox" />
-                              <label class="stalker-label" for="stalker-check3">彼女の元カレから強烈な嫌がらせを受けて参った！探偵調査で分かった結果とは？<br />
+                              <input id="case-check3" className="case-check3" type="checkbox" />
+                              <label className="case-label" htmlFor="case-check3">彼女の元カレから強烈な嫌がらせを受けて参った！探偵調査で分かった結果とは？<br />
                               <span>嫌がらせをする対象は、元交際相手というパターンが多いですが、嫌がらせの矛先が新しい交際相手に向かうこともあります。今回はそのような嫌がらせ調査の事例をご紹介します。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                              <div className='stalker-content'>
+                              <div className='case-content'>
 
                                 <div className="info">
-                                  <div className="hito"> <span>依頼者：会社員、男性（34歳）</span> {/*span class="target">対象者：●●</span> <span class="time">調査時間：●時間</span*/}</div>
-                                  <p className="img"><StaticImage src="../img/stalker/chousajirei03.jpg" alt="" /></p>
+                                  <div className="hito"> <span>依頼者：会社員、男性（34歳）</span></div>
+                                  <p className="img"><img src="../img/stalker/chousajirei03.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>
                                     <dd>現在、会社員の私は数ヶ月前から知人の紹介で知り合った29歳の女性と交際することになりました。彼女とは性格が合い、結婚も視野に入れて交際しています。<br />
@@ -387,7 +384,7 @@ const stalker = ({data}) => {
                                   <div className="comment">
                                     <div className="requester sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">依頼者様からのコメント</p>
                                           <p className="nm">今回は嫌がらせの調査をしていただいてありがとうございました。男性の行動が異常でしたので恐怖を感じる日々でしたが、あれから警察に相談し警告していただいて、被害が止まりました。<br />
@@ -397,7 +394,7 @@ const stalker = ({data}) => {
                                     </div>
                                     <div className="chu sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">中央リサーチから一言</p>
                                           <p className="nm">元彼が嫉妬や新しい彼氏に恨みが募って、嫌がらせやストーカー行為に発展するケースは珍しくありません。警察に警告されるとピタリと止まる可能性が高いです。<br />
@@ -422,13 +419,12 @@ const stalker = ({data}) => {
         </>
     )
 }
-
 export const Head = () => (
-    <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
-    </>
+  <>
+     <Seo
+        title="広島で嫌がらせやストーカー行為のトラブル対策はお任せ下さい"
+        description="広島の探偵社「中央リサーチ」、嫌がらせ、ストーカー対策についての説明ページです。"
+        keyword="嫌がらせ,ストーカー対策,広島,探偵,中央リサーチ" /> 
+  </>
 )
-
 export default stalker

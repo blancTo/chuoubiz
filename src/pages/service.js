@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -11,14 +10,11 @@ import Footer from '../components/Footer'
 const service = () => {
     const pagemeta = {
         title:`当社の取り組み`,
-        slug:`service`
+        slug:jsonS
     }
     return (
         <>
-        <Seo
-        title="広島の探偵事務所中央リサーチの調査能力、取り組みについて"
-        description="当探偵社は広島に本社を構え、皆様の信頼に支えられ55年の実績を重ねてまいりました。調査・解決共経験豊富な当社にまずはお気軽にご相談ください。"
-        />
+        
             <div id="wrap">
             <Header h1title="調査能力や取り組みについて" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -37,7 +33,7 @@ const service = () => {
                                 弊社では、年に数回、探偵業の<b className="blue2 fm">教育研修会の受講や探偵調査実施訓練等</b>を行い、<b className="fm">探偵調査員の質的向上に取り組んでいます。</b></p>
                             </div>
                             <div className="photo">
-                            <p><StaticImage src="../img/service/img01.png" alt="" /></p>
+                            <p><img src="../img/service/img01.png" alt="" /></p>
                             </div>
                         </div>
                         <br />
@@ -49,7 +45,7 @@ const service = () => {
                             <p>地上からの探偵調査員による調査と共に、ドローンを使用し上空から撮影する事（証拠の確立性）を目的とする、未来に向けての調査の研究をしております。</p>
                             </div>
                             <div className="photo">
-                            <p><StaticImage src="../img/service/img02.png" alt="" /></p>
+                            <p><img src="../img/service/img02.png" alt="" /></p>
                             </div>
                         </div>
                         <br />
@@ -60,7 +56,7 @@ const service = () => {
                             <p><b>弊社の探偵犬も認知症の症状により、ご家族の元に帰る事ができなくなった方の捜索やストーカー目的で自宅付近に現れる不審人物の状況確認等に力を発揮しています。探偵犬の育成、導入により調査開始からいち早く発見、確認、命の保守を目指して日々、探偵調査員が訓練、育成を行っています。</b></p>
                             </div>
                             <div className="photo">
-                            <p><StaticImage src="../img/service/img03.png" alt="" /></p>
+                            <p><img src="../img/service/img03.png" alt="" /></p>
                             </div>
                         </div>
                         <div className="mb">
@@ -73,7 +69,7 @@ const service = () => {
                         <h3 className="headline mp">相談部の取り組み</h3>
                         <div className="box_flex license">
                             <div className="photo">
-                            <p><StaticImage src="../img/service/img_license01.jpg" alt="" /></p>
+                            <p><img src="../img/service/img_license01.jpg" alt="" /></p>
                             </div>
                             <div className="txt">
                             <p className="txt_line mp"><b>指導相談員資格認定</b></p>
@@ -98,13 +94,13 @@ const service = () => {
                                 <b className="fm red">問題解決に向けて、スタッフ一同全力でサポートいたします。</b></p>
                             </div>
                             <div className="photo">
-                            <p><StaticImage src="../img/service/img04.jpg" alt="" /></p>
+                            <p><img src="../img/service/img04.jpg" alt="" /></p>
                             </div>
                         </div>
                         <h3 className="headline mp">調査部の取り組み</h3>
                         <div className="box_flex license">
                             <div className="photo">
-                            <p><StaticImage src="../img/service/img_license02.jpg" alt="" /></p>
+                            <p><img src="../img/service/img_license02.jpg" alt="" /></p>
                             </div>
                             <div className="txt">
                             <p className="txt_line mp"><b>１級調査士資格認定</b></p>
@@ -127,7 +123,7 @@ const service = () => {
                                 弊社の探偵調査員の写真やビデオの知識や画質などの撮影レベルは、プロのカメラマンよりも優れていると思っています。特に尾行しながらの暗所撮影には弊社独自の特殊な撮影テクニックがあります。</p>
                             </div>
                             <div className="photo">
-                            <p><StaticImage src="../img/service/img05.png" alt="" /></p>
+                            <p><img src="../img/service/img05.png" alt="" /></p>
                             </div>
                         </div>
                         <div className="mb">
@@ -142,33 +138,33 @@ const service = () => {
                         <div className="smp pb box_flex">
                             <div className="w2">
                             <ul className="arow">
-                                <li><div><StaticImage src="../img/service/img_smp01.jpg" alt="" /></div></li>
-                                <li><div><StaticImage src="../img/service/img_smp02.jpg" alt="" /></div></li>
+                                <li><div><img src="../img/service/img_smp01.jpg" alt="" /></div></li>
+                                <li><div><img src="../img/service/img_smp02.jpg" alt="" /></div></li>
                             </ul>
                             <p>ズームで、ここまで撮ることが出来ます</p>
                             </div>
                             <div className="w2">
                             <ul>
-                                <li><div><StaticImage src="../img/service/img_smp03.jpg" alt="" /><span>2022.2.22 9:12</span></div></li>
-                                <li><div><StaticImage src="../img/service/img_smp04.jpg" alt="" /><span>2022.2.22 9:43</span></div></li>
+                                <li><div><img src="../img/service/img_smp03.jpg" alt="" /><span>2022.2.22 9:12</span></div></li>
+                                <li><div><img src="../img/service/img_smp04.jpg" alt="" /><span>2022.2.22 9:43</span></div></li>
                             </ul>
                             <p>証拠となるホテルの出入りや、<br className="dsp_tbs" />自宅の出入りを確実に撮影</p>
                             </div>
                             <div className="w4">
                             <ul>
-                                <li><div><StaticImage src="../img/service/img_smp05.jpg" alt="" /><span>ふつうのカメラ</span></div></li>
-                                <li><div><StaticImage src="../img/service/img_smp06.jpg" alt="" /><span>高感度カメラ</span></div></li>
-                                <li><div><StaticImage src="../img/service/img_smp07.jpg" alt="" /><span>超高感度カメラ</span></div></li>
-                                <li><div><StaticImage src="../img/service/img_smp08.jpg" alt="" /><span>赤外線カメラ</span></div></li>
+                                <li><div><img src="../img/service/img_smp05.jpg" alt="" /><span>ふつうのカメラ</span></div></li>
+                                <li><div><img src="../img/service/img_smp06.jpg" alt="" /><span>高感度カメラ</span></div></li>
+                                <li><div><img src="../img/service/img_smp07.jpg" alt="" /><span>超高感度カメラ</span></div></li>
+                                <li><div><img src="../img/service/img_smp08.jpg" alt="" /><span>赤外線カメラ</span></div></li>
                             </ul>
                             <p className="lft">フラッシュOFFで夜間でも超高感度カメラや赤外線カメラでしっかり証拠を撮影します</p>
                             </div>
                             <div className="w4">
                             <ul>
-                                <li><div><StaticImage src="../img/service/img_smp09.jpg" alt="" /><span>2022.2.22 13:22</span></div>二人でデート中の写真</li>
-                                <li><div><StaticImage src="../img/service/img_smp10.jpg" alt="" /><span>2022.2.22 13:38</span></div>車両に乗車中の写真</li>
-                                <li><div><StaticImage src="../img/service/img_smp11.jpg" alt="" /><span>2022.2.22 13:45</span></div>車内にて会話を<br className="dsp_tbs" />楽しんでいる写真</li>
-                                <li><div><StaticImage src="../img/service/img_smp12.jpg" alt="" /><span>2022.2.22 14:32</span></div>場所が特定できる<br className="dsp_tbs" />標識入りの写真</li>
+                                <li><div><img src="../img/service/img_smp09.jpg" alt="" /><span>2022.2.22 13:22</span></div>二人でデート中の写真</li>
+                                <li><div><img src="../img/service/img_smp10.jpg" alt="" /><span>2022.2.22 13:38</span></div>車両に乗車中の写真</li>
+                                <li><div><img src="../img/service/img_smp11.jpg" alt="" /><span>2022.2.22 13:45</span></div>車内にて会話を<br className="dsp_tbs" />楽しんでいる写真</li>
+                                <li><div><img src="../img/service/img_smp12.jpg" alt="" /><span>2022.2.22 14:32</span></div>場所が特定できる<br className="dsp_tbs" />標識入りの写真</li>
                             </ul>
                             </div>
                         </div>
@@ -182,12 +178,83 @@ const service = () => {
     )
 }
 
+const jsonN = "広島探偵 中央リサーチ",
+jsonT = "広島の探偵事務所中央リサーチの調査能力、取り組みについて",
+jsonS = "service",
+jsonD = "当探偵社は広島に本社を構え、皆様の信頼に支えられ55年の実績を重ねてまいりました。調査・解決共経験豊富な当社にまずはお気軽にご相談ください。";
+
+const jsonLd = {
+    "@context": "http://schema.org/",
+    "@graph":[
+        {
+            "@type":"WebSite",
+            "@id":`https://www.chuou.biz/${jsonS}/#website`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonT}| 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "publisher":{
+                "@id":`https://www.chuou.biz/${jsonS}/#person`
+            }
+        },
+        {
+            "@type":"WebPage",
+            "@id":`https://www.chuou.biz/${jsonS}/#webpage`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "isPartOf":{
+                "@id":`https://www.chuou.biz/${jsonS}/#website`
+            },
+            "breadcrumb":{
+                "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`
+            },
+            "datePublished":"2023-2-22T21:00:00+09:00",
+            "dateModified":"2023-2-24T19:00:00+09:00"
+        },
+        {
+            "@type":"BreadcrumbList",
+            "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`,
+            "itemListElement":[
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/#listItem`,
+                    "position":1,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/`,
+                        "name":`${jsonN}`,
+                        "description":"当探偵社は広島に本社を構え、皆様の信頼に支えられ55年の実績を重ねてまいりました。調査・解決共経験豊富な当社にまずはお気軽にご相談ください。",
+                        "url":`https://www.chuou.biz/`
+                    },
+                    "nextItem":`https://www.chuou.biz/${jsonS}/#listItem`
+                },
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/${jsonS}/#listItem`,
+                    "position":2,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/${jsonS}/`,
+                        "name":`${jsonT}`,
+                        "description":`${jsonD}${jsonT}`,
+                        "url":`https://www.chuou.biz/${jsonS}/`
+                    },
+                    "previousItem":`https://www.chuou.biz/#listItem`
+                }
+            ]
+        }
+    ]
+}
+
 export const Head = () => (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
+        <Seo
+        title="広島の探偵事務所中央リサーチの調査能力、取り組みについて"
+        description="当探偵社は広島に本社を構え、皆様の信頼に支えられ55年の実績を重ねてまいりました。調査・解決共経験豊富な当社にまずはお気軽にご相談ください。"
+        />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
     </>
 )
-
 export default service

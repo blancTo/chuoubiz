@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -15,11 +15,7 @@ const price = () => {
     }
     return (
         <>
-        <Seo
-        title="探偵事務所調査料金表"
-        keyword="探偵,広島,料金表,中央リサーチ"
-        description="当探偵社ではお客様を不安にさせる様なあいまいな料金表示や請求方法は一切行いません。"
-        />
+        
             <div id="wrap">
             <Header h1title="調査料金について" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -33,7 +29,7 @@ const price = () => {
                                 <p className="serif">健全・適正・正確</p>
                                 <p className="b nm">詳細な料金は、<br className="dsp_tbs" />お見積りいたしますので<br className="dsp_smt" />お気軽にご連絡ください！</p>
                             </div>
-                            <p className="photo"><StaticImage src="../img/price/img.png" alt="" /></p>
+                            <p className="photo"><img src="../img/price/img.png" alt="" /></p>
                         </div>
                     </div>
                     <h3 className="headline mp">料金表</h3>
@@ -167,7 +163,7 @@ const price = () => {
                         <dl className="head">
                         <dt className="mp w2"><span className="in"><span className="txt">追加料金不要で任せて安心<br /><span className="smt_fs">（深夜料金一切不要で安心）</span><br /><span className="fs dsp_hpt">※お支払いはクレジットも利用可能</span></span></span></dt>
                         <dd>
-                            <p className="icon"><StaticImage src="../img/top/pay00.png" loading="lazy" alt="" /><StaticImage src="../img/top/pay01.png" loading="lazy" alt="" /><StaticImage src="../img/top/pay02.png" loading="lazy" alt="" /><StaticImage src="../img/top/pay03.png" loading="lazy" alt="" /><StaticImage src="../img/top/pay04.png" loading="lazy" alt="" /></p>
+                            <p className="icon"><img src="../img/top/pay00.png" loading="lazy" alt="" /><img src="../img/top/pay01.png" loading="lazy" alt="" /><img src="../img/top/pay02.png" loading="lazy" alt="" /><img src="../img/top/pay03.png" loading="lazy" alt="" /><img src="../img/top/pay04.png" loading="lazy" alt="" /></p>
                             <p className="dsp_smt fs"><span className="fs">※お支払いはクレジットも利用可能</span></p>
                         </dd>
                         </dl>
@@ -274,7 +270,7 @@ const price = () => {
                             <dd>経費の名目で後から<span className="b red">高額請求</span>する探偵事務所もあります。<br />
                             調査料金・基本料金が安いように見えても、報告が完了するまでの<br className="dsp_tbs" />合計金額が<br className="dsp_hp" />いくらになるのか、<span className="b red">事前に必ず確認</span>しておきましょう。</dd>
                         </dl>
-                        <StaticImage src="../img/choose/price01.png" alt="ここに注意!!" className="img_price01" />
+                        <img src="../img/choose/price01.png" alt="ここに注意!!" className="img_price01" />
                         </div>
                     </div>
                     {/* #EndLibraryItem */}
@@ -288,12 +284,84 @@ const price = () => {
     )
 }
 
+const jsonN = "広島探偵 中央リサーチ",
+jsonT = "探偵事務所調査料金表",
+jsonS = "price",
+jsonD = "当探偵社ではお客様を不安にさせる様なあいまいな料金表示や請求方法は一切行いません。";
+
+const jsonLd = {
+    "@context": "http://schema.org/",
+    "@graph":[
+        {
+            "@type":"WebSite",
+            "@id":`https://www.chuou.biz/${jsonS}/#website`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonT}| 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "publisher":{
+                "@id":`https://www.chuou.biz/${jsonS}/#person`
+            }
+        },
+        {
+            "@type":"WebPage",
+            "@id":`https://www.chuou.biz/${jsonS}/#webpage`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "isPartOf":{
+                "@id":`https://www.chuou.biz/${jsonS}/#website`
+            },
+            "breadcrumb":{
+                "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`
+            },
+            "datePublished":"2023-2-22T21:00:00+09:00",
+            "dateModified":"2023-2-24T19:00:00+09:00"
+        },
+        {
+            "@type":"BreadcrumbList",
+            "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`,
+            "itemListElement":[
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/#listItem`,
+                    "position":1,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/`,
+                        "name":`${jsonN}`,
+                        "description":"当探偵社は広島に本社を構え、皆様の信頼に支えられ55年の実績を重ねてまいりました。調査・解決共経験豊富な当社にまずはお気軽にご相談ください。",
+                        "url":`https://www.chuou.biz/`
+                    },
+                    "nextItem":`https://www.chuou.biz/${jsonS}/#listItem`
+                },
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/${jsonS}/#listItem`,
+                    "position":2,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/${jsonS}/`,
+                        "name":`${jsonT}`,
+                        "description":`${jsonD}${jsonT}`,
+                        "url":`https://www.chuou.biz/${jsonS}/`
+                    },
+                    "previousItem":`https://www.chuou.biz/#listItem`
+                }
+            ]
+        }
+    ]
+}
+
 export const Head = () => (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
+        <Seo
+        title="探偵事務所調査料金表"
+        keyword="探偵,広島,料金表,中央リサーチ"
+        description="当探偵社ではお客様を不安にさせる様なあいまいな料金表示や請求方法は一切行いません。"
+        />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
     </>
 )
-
 export default price

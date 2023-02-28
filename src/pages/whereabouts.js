@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -17,11 +16,7 @@ const whereabouts = () => {
     }
     return (
         <>
-        <Seo
-        title2="行方不明の人探し、家出人調査なら"
-        description="広島の探偵社「中央リサーチ」、家出・所在調査、所在調査について説明しています。"
-        keyword="家出・所在調査,所在調査,広島,探偵,中央リサーチ"
-        />
+        
             <div id="wrap">
             <Header h1title="家出人調査・所在調査について" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -38,11 +33,11 @@ const whereabouts = () => {
                         <div className="box_flex graf">
                           <dl>
                             <dt className="bg_blue_grad2 b cen">SNSの普及により少年少女の家出が急増</dt>
-                            <dd><StaticImage src="../img/whereabouts/img01.jpg" alt="" /></dd>
+                            <dd><img src="../img/whereabouts/img01.jpg" alt="" /></dd>
                           </dl>
                           <dl>
                             <dt className="bg_blue_grad2 b cen">家出するとSNSの出会い系に走る<br />少年・少女が急増している</dt>
-                            <dd><StaticImage src="../img/whereabouts/img02.jpg" alt="" /></dd>
+                            <dd><img src="../img/whereabouts/img02.jpg" alt="" /></dd>
                           </dl>
                         </div>
 
@@ -54,7 +49,7 @@ const whereabouts = () => {
                             <p className="nm">発見後は、<b className="fm">その要因を解消しない限り家出は繰り返されます。</b><br />
                               きちんと事実に基づく話し合いをし、本当の問題を解決して行きましょう。</p>
                           </div>
-                          <p className="img nm"><StaticImage src="../img/whereabouts/img03.jpg" alt="" /></p>
+                          <p className="img nm"><img src="../img/whereabouts/img03.jpg" alt="" /></p>
                         </div>
 
                       </div>
@@ -70,7 +65,7 @@ const whereabouts = () => {
                               <h3 className="line mp">家出した家族の行方が知りたい</h3>
                               <p>少女や少年の家出の要因は様々ですが、家庭でのストレスや学校でのいじめなどが原因で家出に至ることが多いようです。家出するとSNSの出会い系サイトなどで、見知らぬ人の家を泊まり歩くなどの可能性もありますので、時間が経つほど大変危険です。<b className="fm">また薬を飲まされたり、何らかの犯罪に巻き込まれたり、本人の意思ではどうにもできないような危険もありますので早期の発見は欠かせません。</b></p>
                             </div>
-                            <p className="img"><StaticImage src="../img/whereabouts/img04_01.jpg" alt="" /></p>
+                            <p className="img"><img src="../img/whereabouts/img04_01.jpg" alt="" /></p>
                           </div>
 
                           <div className="box_flex box_r">
@@ -78,7 +73,7 @@ const whereabouts = () => {
                               <h3 className="line mp">家族の安否を確認したい</h3>
                               <p><b className="fm">同居家族が突然の音信不通に。一人暮らしの家族が音信不通。また、多重債務</b>を抱えて消息を断ってしまった家族の行方や生活実態などを調査いたします。</p>
                             </div>
-                            <p className="img"><StaticImage src="../img/whereabouts/img04_02.jpg" alt="" /></p>
+                            <p className="img"><img src="../img/whereabouts/img04_02.jpg" alt="" /></p>
                           </div>
 
                           <div className="box_flex">
@@ -87,7 +82,7 @@ const whereabouts = () => {
                               <p><b className="fm">認知症などが原因で自宅に帰りたくても帰れなくなった方の捜索</b>をいたします。<br />
                                 幼いころに行った場所や山、川、海に行き事故にあう可能性もあります。また財布を奪われるなど、何らかの事件に巻き込まれている可能性もありますので早期にご相談ください。</p>
                             </div>
-                            <p className="img"><StaticImage src="../img/whereabouts/img04_03.jpg" alt="" /></p>
+                            <p className="img"><img src="../img/whereabouts/img04_03.jpg" alt="" /></p>
                           </div>
 
                         </div>
@@ -102,7 +97,7 @@ const whereabouts = () => {
                               <h3 className="line mp">お金を貸したが、返済されず行方がわからなくなった</h3>
                               <p>知人やSNSで知り合った人物などに出資させられたり、高額なお金を貸したものの、その後、一切連絡が取れなくなり困っている方が増えています。まずは対象者の所在を突き止めることが大事です。その後は弁護士にご相談ください。</p>
                             </div>
-                            <p className="img"><StaticImage src="../img/whereabouts/img05_01.jpg" alt="" /></p>
+                            <p className="img"><img src="../img/whereabouts/img05_01.jpg" alt="" /></p>
                           </div>
 
                           <div className="box_flex">
@@ -110,7 +105,7 @@ const whereabouts = () => {
                               <h3 className="line mp">恩師やお世話になった方の消息が知りたい</h3>
                               <p><b className="fm">お世話になってお礼を言えなかった恩人や、懐かしい思い出の恩師の消息</b>についてもお調べいたします。数年ぶりの感動的な再会のお手伝いをいたします。</p>
                             </div>
-                            <p className="img"><StaticImage src="../img/whereabouts/img05_02.jpg" alt="" /></p>
+                            <p className="img"><img src="../img/whereabouts/img05_02.jpg" alt="" /></p>
                           </div>
 
                           <div className="box_flex box_r">
@@ -119,7 +114,7 @@ const whereabouts = () => {
                               <p>急な引っ越しで連絡が取れなくなってしまった。あるいは連絡先を無くして連絡先がわからなくなった懐かしい同級生、旧友の消息について所在調査いたします。<br />
                                 こちらの調査は、<b className="fm">同窓会や仲間内での久しぶりの会合等にもご活用いただけます。</b>懐かしい旧友との再会のお手伝いをいたします。</p>
                             </div>
-                            <p className="img"><StaticImage src="../img/whereabouts/img05_03.jpg" alt="" /></p>
+                            <p className="img"><img src="../img/whereabouts/img05_03.jpg" alt="" /></p>
                           </div>
 
                         </div>
@@ -129,15 +124,15 @@ const whereabouts = () => {
                             <div className="info">
                               <h3 className="headline">ペット調査について</h3>
                               <p>目撃者の聞き込み・ポスター・ペット特有の獣道・足跡の確認・飼い主の呼ぶ声の録音・えさの仕掛けと水のある場所の捜索等、<b className="blue2 fm">行動範囲の狭いペット（猫）から行動範囲の広いペット（犬）まで迅速に対応いたします。</b><b className="fm red">プロの発見率90パーセントです。</b></p>
-                              <p className="img dsp_tbs"><StaticImage src="../img/whereabouts/img06.jpg" alt="" /></p>
+                              <p className="img dsp_tbs"><img src="../img/whereabouts/img06.jpg" alt="" /></p>
                               <h3 className="line mp">迷子になったペットを探し出したい</h3>
-                              <p className="img_rit dsp_hp"><StaticImage src="../img/whereabouts/img06_02.jpg" alt="" /></p>
+                              <p className="img_rit dsp_hp"><img src="../img/whereabouts/img06_02.jpg" alt="" /></p>
                               <p>ペットは大切な家族の一員です。１日でも早くご家族のもとに帰る事が望ましいです。<br />
                                 ペットは自宅に帰りたくても帰れない状況になっている場合もありますので早期にご相談ください。<br />
                                 ペット調査では、<b className="blue2 fm">周辺へのビラ貼りや聞き込み。また、動物が行く可能性の高い場所の捜索</b>を行い、迷子になってしまった愛犬(猫)その他のペットを早急に探し出します。</p>
                             </div>
-                            <p className="img dsp_hp"><StaticImage src="../img/whereabouts/img06.jpg" alt="" /></p>
-                            <p className="img dsp_tbs"><StaticImage src="../img/whereabouts/img06_02_l.jpg" alt="" /></p>
+                            <p className="img dsp_hp"><img src="../img/whereabouts/img06.jpg" alt="" /></p>
+                            <p className="img dsp_tbs"><img src="../img/whereabouts/img06_02_l.jpg" alt="" /></p>
                           </div>
                         </div>
 
@@ -151,14 +146,14 @@ const whereabouts = () => {
                           <div className="bg">
                             <div className="head">
                               <p className="case serif">case01</p>
-                              <input id="iede-check1" class="iede-check1" type="checkbox" />
-                              <label class="iede-label" for="iede-check1">夫婦喧嘩の後に夫が家を出て5日間帰宅せず…調査を依頼して居場所を確認したいです<br />
+                              <input id="case-check1" className="case-check1" type="checkbox" />
+                              <label className="case-label" htmlFor="case-check1">夫婦喧嘩の後に夫が家を出て5日間帰宅せず…調査を依頼して居場所を確認したいです<br />
                               <span>夫婦の間でもこれだけは言ってはいけないというボーダーラインがあります。それを超えてしまうと‥。家出調査の事例をご紹介します。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                              <div className='iede-content'>
+                              <div className='case-content'>
 
                                 <div className="info">
-                                  <div className="hito"> <span>依頼者：妻（41歳）</span> <span className="target">対象者：会社員、夫（49歳）</span> {/*span class="time">調査時間：●時間</span*/}</div>
-                                  <p className="img"><StaticImage src="../img/whereabouts/jirei01.jpg" alt="" /></p>
+                                  <div className="hito"> <span>依頼者：妻（41歳）</span> <span className="target">対象者：会社員、夫（49歳）</span> {/*span className="time">調査時間：●時間</span*/}</div>
+                                  <p className="img"><img src="../img/whereabouts/jirei01.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>
                                     <dd>コロナ禍になり、夫は時短勤務の在宅ワークとなり、給与が半分に減ってしまいました。その日、夫は朝起きてすぐSNSを見て大笑いしており、あまりの危機感のなさに、思わず私は冷たく当たってしまいました。<br />
@@ -179,7 +174,7 @@ const whereabouts = () => {
                                   <div className="comment">
                                     <div className="requester sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">依頼者様からのコメント</p>
                                           <p className="nm">今回は迅速な家出調査をしていただいて心から感謝いたしております。本当にありがとうございます。夫に万が一の事があったら、すべて自分の責任だと思いました。夫婦喧嘩は何を言ってもいいものではなく、人を侮辱する発言は深く傷つける結果になることを学びました。<br />夫に謝ったら少しずつ笑顔を取り戻してくれて本当に良かったです。今回は本当にお世話になりました。</p>
@@ -188,7 +183,7 @@ const whereabouts = () => {
                                     </div>
                                     <div className="chu sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">中央リサーチから一言</p>
                                           <p className="nm">奥様は食事が喉を通らないほどストレスがピークに達していました。ご主人様の出勤している事実が分かった後は、もう居場所は時間の問題でした。無事にご帰宅されて良かったです。</p>
@@ -209,13 +204,13 @@ const whereabouts = () => {
                           <div className="bg">
                             <div className="head">
                               <p className="case serif">case02</p>
-                              <input id="iede-check2" class="iede-check2" type="checkbox" />
-                              <label class="iede-label" for="iede-check2">妻が怪しいサークルに誘われて急に家出…LINEだけは繋がりますが居場所が分かりません<br />
+                              <input id="case-check2" className="case-check2" type="checkbox" />
+                              <label className="case-label" htmlFor="case-check2">妻が怪しいサークルに誘われて急に家出…LINEだけは繋がりますが居場所が分かりません<br />
                               <span>家出する理由は人それぞれですが、他人からの勧誘などで、急に姿を消してしまうケースがあります。事件に繋がる前に早急な対応が求められます。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                              <div className='iede-content'>
+                              <div className='case-content'>
                                 <div className="info">
-                                  <div className="hito"> <span>依頼者：会社員、夫（56歳）</span> <span className="target">対象者：専業主婦、妻（54歳）</span> {/*span class="time">調査時間：●時間</span*/}</div>
-                                  <p className="img"><StaticImage src="../img/whereabouts/jirei02.jpg" alt="" /></p>
+                                  <div className="hito"> <span>依頼者：会社員、夫（56歳）</span> <span className="target">対象者：専業主婦、妻（54歳）</span> {/*span className="time">調査時間：●時間</span*/}</div>
+                                  <p className="img"><img src="../img/whereabouts/jirei02.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>
                                     <dd>妻は地元のヨガサークルに入っています。同年代の主婦が多く、おしゃべりしながら体を動かすとストレス発散になるようです。<br />
@@ -236,7 +231,7 @@ const whereabouts = () => {
                                   <div className="comment">
                                     <div className="requester sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">依頼者様からのコメント</p>
                                           <p className="nm">無事に妻が帰ってきました！本当にホッとして全身が脱力状態です。宗教の洗脳にあわず本当に良かった。迅速な対応に感謝しています。感謝してもしきれません。</p>
@@ -245,7 +240,7 @@ const whereabouts = () => {
                                     </div>
                                     <div className="chu sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">中央リサーチから一言</p>
                                           <p className="nm">今回はカウンセリングからご主人さまの深刻なご様子を見て、早く奥様を発見しなければ、と使命に燃えました。奥様もご無事とのことで一件落着ですね。本当に良かったです。</p>
@@ -266,14 +261,14 @@ const whereabouts = () => {
                           <div className="bg">
                             <div className="head">
                               <p className="case serif">case03</p>
-                              <input id="iede-check3" class="iede-check3" type="checkbox" />
-                              <label class="iede-label" for="iede-check3">引きこもりフリーター息子が突然の失踪…家出調査で居場所を知りたいです<br />
+                              <input id="case-check3" className="case-check3" type="checkbox" />
+                              <label className="case-label" htmlFor="case-check3">引きこもりフリーター息子が突然の失踪…家出調査で居場所を知りたいです<br />
                               <span>いつも自宅にいるフリーターの息子さんが突然いなくなり、家に帰ってこない日が続いています。息子さんが宿泊していた場所と家出の理由とは？</span> <FontAwesomeIcon icon={faAngleDown} /></label>
-                              <div className='iede-content'>
+                              <div className='case-content'>
 
                                 <div className="info">
-                                  <div className="hito"> <span>依頼者：息子さんの母親（67歳）</span> <span className="target">対象者：引きこもり43歳の息子さん</span> {/*span class="time">調査時間：●時間</span*/}</div>
-                                  <p className="img"><StaticImage src="../img/whereabouts/jirei03.jpg" alt="" /></p>
+                                  <div className="hito"> <span>依頼者：息子さんの母親（67歳）</span> <span className="target">対象者：引きこもり43歳の息子さん</span> {/*span className="time">調査時間：●時間</span*/}</div>
+                                  <p className="img"><img src="../img/whereabouts/jirei03.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>
                                     <dd>息子は週2回コンビニで深夜のアルバイトをしているフリーターの43歳です。いわゆるオタクで彼女はいません。結婚も諦めていると思います。そんな息子がある日突然、リュックに荷物をまとめて家を出ていきました。そのうち戻るだろうと思いながら、1週間経ちました。<br />
@@ -293,7 +288,7 @@ const whereabouts = () => {
                                   <div className="comment">
                                     <div className="requester sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">依頼者様からのコメント</p>
                                           <p className="nm">今回はカウンセリング時から丁寧なご対応ありがとうございます。無事に息子が帰ってきました。オンラインゲームを通じて彼女ができて、彼女に自宅の様子を見られるのが恥ずかしいと思い、マンガ喫茶のパソコンを使っていたと説明されました。<br />
@@ -303,7 +298,7 @@ const whereabouts = () => {
                                     </div>
                                     <div className="chu sec">
                                       <dl>
-                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                         <dd>
                                           <p className="b">中央リサーチから一言</p>
                                           <p className="nm">息子さんがマンガ喫茶から無事に帰宅されたとのことで、調査員もほっといたしました。家出の理由が微笑ましたかったです。お力になれて幸いです。</p>
@@ -328,13 +323,13 @@ const whereabouts = () => {
         </>
     )
 }
-
 export const Head = () => (
-    <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
-    </>
+  <>
+      <Seo
+        title2="行方不明の人探し、家出人調査なら"
+        description="広島の探偵社「中央リサーチ」、家出・所在調査、所在調査について説明しています。"
+        keyword="家出・所在調査,所在調査,広島,探偵,中央リサーチ"
+        />
+  </>
 )
-
 export default whereabouts

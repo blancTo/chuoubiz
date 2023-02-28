@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+a:link, a:visited {
+    color: #005E9C;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline;}
+
+#blog_list dl {
+	background: #fff;
+	clear: both;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+#blog_list dl dt {
+	float: left;
+	width: 100px;
+}
+#blog_list dl dd {
+	margin-left: 100px;
+}
+
+@media only screen and (max-width: 640px) {
+    #blog_list dl dt {
+        float: none;
+    }
+    #blog_list dl dd  {
+        margin-left: 0;
+    }
+}

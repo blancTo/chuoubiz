@@ -1,27 +1,15 @@
 @charset "utf-8";
-/*==================================================
-  基本スタイル
-==================================================*/
 
-* {
-	margin: 0;
-	padding: 0;
-}
+* {	margin: 0; padding: 0; }
 body {
 	background: #FFF;
 	color: #333;
 	font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 90%;
 	text-align: center;
-	-webkit-text-size-adjust: none;
 }
-p {
-	text-align: justify;
-	text-justify: inter-ideograph;
-}
-p.nm {
-	margin-bottom: 0px !important;
-}
+p {	text-align: justify; }
+p.nm { margin-bottom: 0px !important; }
 h1, h2, h3, h4 {
 	font-size: 100%;
 }
@@ -44,67 +32,46 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-/*--------------------------------------------------
-  リンク
---------------------------------------------------*/
+/*リンク*/
 a { text-decoration: none; }
 a img { border: none; }
 @media print, screen and (min-width:769px){
 	a:active, a:hover {
-		filter:alpha(opacity=60);
-		-moz-opacity: 0.6;
 		opacity: 0.6;
 	}
 }
-/*--------------------------------------------------
-  セレクション
---------------------------------------------------*/
+/*セレクション*/
 ::selection {
 	background: rgba(20, 170, 213, 0.5);
 }
-::-moz-selection {
-	background: rgba(20, 170, 213, 0.5);
-}
-/*--------------------------------------------------
-  フォントサイズ
---------------------------------------------------*/
-.b  { font-weight: bold; }		/* 太字 */
-.fs { font-size: 85%; }				/* 小さい文字 */
-.fm { font-size: 110%; }			/* 大きい文字 */
-/*--------------------------------------------------
-  配置
---------------------------------------------------*/
-.cen { text-align: center; }	/* 中央寄せ */
-.lft { text-align: left; }		/* 左寄せ */
-.rit { text-align: right; }		/* 右寄せ */
+/*フォントサイズ*/
+.b  { font-weight: bold; }
+.fs { font-size: 85%; }
+.fm { font-size: 110%; }
+/*配置*/
+.cen { text-align: center; }
+.lft { text-align: left; }
+.rit { text-align: right; }
 
-.vtop { vertical-align: top; }		/* 上詰め */
-.vbtm { vertical-align: bottom; }	/* 下詰め */
+.vtop { vertical-align: top; }
+.vbtm { vertical-align: bottom; }
 
 .ind { text-indent: -0.5em; }
-/*--------------------------------------------------
-  画像配置（文字を回り込ます）
---------------------------------------------------*/
+/*画像配置（文字を回り込ます）*/
 .img_lft { float: left; margin-right: 20px; }
 .img_rit { float: right; margin-left: 20px; }
-/*--------------------------------------------------
-  IME（フォームコントロール用）
---------------------------------------------------*/
+/*IME（フォームコントロール用）*/
 /* 半角 */
 .disabled {
-	ime-mode: disabled;
 	border: 1px solid #A5ACB2;
 	padding: 2px;
 }
 /* 全角(切替可) */
 .active {
-	ime-mode: active;
 	border: 1px solid #A5ACB2;
 	padding: 2px;
 }
-/*--------------------------------------------------
-  その他
---------------------------------------------------*/
+/*その他*/
 /* フロート解除 */
 .cb { clear: both; }
 /* クリアフィックス */

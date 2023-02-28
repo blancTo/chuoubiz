@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -17,11 +16,7 @@ const voice = () => {
     }
     return (
         <>
-            <Seo
-            title={pagemeta.title}
-            description="広島の探偵社「中央リサーチ」、お客様の声についてのページです。"
-            keyword="お客様の声,広島,探偵,中央リサーチ"
-            />
+            
             <div id="wrap">
                 <Header h1title="お客様の声" />
                 <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -39,9 +34,9 @@ const voice = () => {
                                     
                                     <div className="head">
                                         <p className="case serif">浮気調査</p>
-                                        <input id="acd-check1" class="acd-check1" type="checkbox" />
-                                        <label class="acd-label" for="acd-check1">泣き続けた心が晴れて、家族の絆が強まりました <FontAwesomeIcon icon={faAngleDown} /></label>
-                                        <div className='acd-content'>
+                                        <input id="case-check1" className="case-check1" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check1">泣き続けた心が晴れて、家族の絆が強まりました <FontAwesomeIcon icon={faAngleDown} /></label>
+                                        <div className='case-content'>
                                             <div className="info">
                                                 <div className="hito">
                                                 <span>ご依頼者様：S様主婦・30代</span>
@@ -67,7 +62,7 @@ const voice = () => {
                                                 <div className="comment">
                                                     <div className="chu sec">
                                                         <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                             <p className="b">中央リサーチから一言</p>
                                                             <p className="nm">今回はご利用ありがとうございました。ご家庭に平穏が戻られたと聞き、スタッフ一同喜びの気持ちでいっぱいです。どうぞ、いつまでもお幸せに。</p>
@@ -89,9 +84,9 @@ const voice = () => {
                                     
                                     <div className="head">
                                         <p className="case serif">浮気調査</p>
-                                        <input id="acd-check2" class="acd-check2" type="checkbox" />
-                                        <label class="acd-label" for="acd-check2">確固たる証拠が浮気夫に教訓を与えました。浮気調査後に強くなった家庭の絆 <FontAwesomeIcon icon={faAngleDown} /></label>
-                                        <div className='acd-content'>
+                                        <input id="case-check2" className="case-check2" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check2">確固たる証拠が浮気夫に教訓を与えました。浮気調査後に強くなった家庭の絆 <FontAwesomeIcon icon={faAngleDown} /></label>
+                                        <div className='case-content'>
                                             <div className="info">
                                                 <div className="hito">
                                                 <span>ご依頼者様：K様 主婦・会社員、40代</span>
@@ -117,7 +112,7 @@ const voice = () => {
                                                 <div className="comment">
                                                     <div className="chu sec">
                                                         <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                             <p className="b">中央リサーチから一言</p>
                                                             <p className="nm">今回はご利用ありがとうございました。事前に色々と情報提供していただき、早く問題解決に繋がり、スタッフ一同、安心しております。また、お気軽に近況をご報告ください。</p>
@@ -139,9 +134,9 @@ const voice = () => {
                                     
                                     <div className="head">
                                         <p className="case serif">浮気調査</p>
-                                        <input id="acd-check3" class="acd-check3" type="checkbox" />
-                                        <label class="acd-label" for="acd-check3">浮気調査が自分の未来を守ってくれた！離婚調停が無事に終わって一安心です <FontAwesomeIcon icon={faAngleDown} /></label>
-                                        <div className='acd-content'>
+                                        <input id="case-check3" className="case-check3" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check3">浮気調査が自分の未来を守ってくれた！離婚調停が無事に終わって一安心です <FontAwesomeIcon icon={faAngleDown} /></label>
+                                        <div className='case-content'>
 
                                         <div className="info">
                                             <div className="hito">
@@ -168,7 +163,7 @@ const voice = () => {
                                             <div className="comment">
                                             <div className="chu sec">
                                                 <dl>
-                                                <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                 <dd>
                                                     <p className="b">中央リサーチから一言</p>
                                                     <p className="nm">ご利用ありがとうございました。無事に裁判が終わったと聞いてスタッフ一同、ホッと一安心しております。これからご依頼者様に明るい未来が訪れるように願っております。</p>
@@ -191,9 +186,9 @@ const voice = () => {
                                     
                                     <div className="head">
                                         <p className="case serif">浮気調査</p>
-                                        <input id="acd-check4" class="acd-check4" type="checkbox" />
-                                        <label class="acd-label" for="acd-check4">妻の浮気を放置しないで良かった！不利な立場で離婚する結果にならないために… <FontAwesomeIcon icon={faAngleDown} /></label>
-                                        <div className='acd-content'>
+                                        <input id="case-check4" className="case-check4" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check4">妻の浮気を放置しないで良かった！不利な立場で離婚する結果にならないために… <FontAwesomeIcon icon={faAngleDown} /></label>
+                                        <div className='case-content'>
                                             <div className="info">
                                                 <div className="hito">
                                                 <span>ご依頼者様：K様　会社員、夫（40代）</span>
@@ -219,7 +214,7 @@ const voice = () => {
                                                 <div className="comment">
                                                     <div className="chu sec">
                                                         <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                             <p className="b">中央リサーチから一言</p>
                                                             <p className="nm">こちらこそ、ご利用ありがとうございました。調査で浮気の事実が発覚し、早い段階から離婚を決断されて、慰謝料請求もできたとお伺いして安心しております。ご依頼者様がお幸せになることを心から祈っております。</p>
@@ -241,9 +236,9 @@ const voice = () => {
                                     
                                     <div className="head">
                                         <p className="case serif">結婚調査</p>
-                                        <input id="acd-check5" class="acd-check5" type="checkbox" />
-                                        <label class="acd-label" for="acd-check5">娘の婚約者に謎が多い…結婚調査でもモヤモヤが晴れました <FontAwesomeIcon icon={faAngleDown} /></label>
-                                        <div className='acd-content'>
+                                        <input id="case-check5" className="case-check5" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check5">娘の婚約者に謎が多い…結婚調査でもモヤモヤが晴れました <FontAwesomeIcon icon={faAngleDown} /></label>
+                                        <div className='case-content'>
                                             <div className="info">
                                                 <div className="hito">
                                                 <span>ご依頼者様：娘の母親（50代）　娘の婚約者を結婚調査</span>
@@ -269,7 +264,7 @@ const voice = () => {
                                                 <div className="comment">
                                                     <div className="chu sec">
                                                         <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                             <p className="b">中央リサーチから一言</p>
                                                             <p className="nm">今回は当探偵社の結婚調査をご利用いただき、ありがとうございます。最近は、ネットやアプリを通じて知り合い、婚約に至るケースが多く、親御さんからの結婚調査依頼が増えています。同様のお悩みや気になることがございましたら、一度お気軽にご相談ください。</p>
@@ -291,9 +286,9 @@ const voice = () => {
                                     
                                     <div className="head">
                                         <p className="case serif">結婚調査</p>
-                                        <input id="acd-check6" class="acd-check6" type="checkbox" />
-                                        <label class="acd-label" for="acd-check6">結婚調査の重要性を痛感しています…本当に依頼してよかった <FontAwesomeIcon icon={faAngleDown} /></label>
-                                        <div className='acd-content'>
+                                        <input id="case-check6" className="case-check6" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check6">結婚調査の重要性を痛感しています…本当に依頼してよかった <FontAwesomeIcon icon={faAngleDown} /></label>
+                                        <div className='case-content'>
                                             <div className="info">
                                             <div className="hito">
                                             <span>ご依頼者様：息子の母親（60代）　息子の婚約者を結婚調査</span>
@@ -319,7 +314,7 @@ const voice = () => {
                                             <div className="comment">
                                                 <div className="chu sec">
                                                     <dl>
-                                                    <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                         <p className="b">中央リサーチから一言</p>
                                                         <p className="nm">今回はご利用ありがとうございました。お子様の婚約者に離婚歴がある場合、親御さんがその理由を知っておいて損はありません。また同じ離婚を繰り返さないためにも、結婚調査は有効です。</p>
@@ -341,9 +336,9 @@ const voice = () => {
                                     
                                     <div className="head">
                                         <p className="case serif">家出調査</p>
-                                        <input id="acd-check7" class="acd-check7" type="checkbox" />
-                                        <label class="acd-label" for="acd-check7">高校生の息子が急に家出！早急に対応して頂いて感謝しきれません <FontAwesomeIcon icon={faAngleDown} /></label>
-                                        <div className='acd-content'>
+                                        <input id="case-check7" className="case-check7" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check7">高校生の息子が急に家出！早急に対応して頂いて感謝しきれません <FontAwesomeIcon icon={faAngleDown} /></label>
+                                        <div className='case-content'>
                                             <div className="info">
                                                 <div className="hito">
                                                 <span>ご依頼者様：息子のご両親　50代　高校生の息子さんの家出調査</span>
@@ -369,7 +364,7 @@ const voice = () => {
                                                 <div className="comment">
                                                     <div className="chu sec">
                                                         <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                             <p className="b">中央リサーチから一言</p>
                                                             <p className="nm">今回はご依頼いただきありがとうございました。息子様が無事に帰宅されてスタッフ一同胸を撫でおろしております。こちらこそ満足いただけたことを嬉しく思っています。</p>
@@ -391,9 +386,9 @@ const voice = () => {
                                     
                                     <div className="head">
                                         <p className="case serif">家出調査</p>
-                                        <input id="acd-check8" class="acd-check8" type="checkbox" />
-                                        <label class="acd-label" for="acd-check8">認知症のおじいちゃんが帰ってこない！早急な安否確認に安心しました <FontAwesomeIcon icon={faAngleDown} /></label>
-                                        <div className='acd-content'>
+                                        <input id="case-check8" className="case-check8" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check8">認知症のおじいちゃんが帰ってこない！早急な安否確認に安心しました <FontAwesomeIcon icon={faAngleDown} /></label>
+                                        <div className='case-content'>
                                             <div className="info">
                                                 <div className="hito">
                                                 <span>ご依頼者様：主婦　50代　おじいちゃんの家出調査</span>
@@ -419,7 +414,7 @@ const voice = () => {
                                                 <div className="comment">
                                                     <div className="chu sec">
                                                         <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                             <p className="b">中央リサーチから一言</p>
                                                             <p className="nm">今回は、ご依頼いただきありがとうございました。無事に帰宅され、無傷で問題がなかったとお聞きして、スタッフ皆、胸を撫でおろしています。お困りの時はお力になりますので、いつでもお気軽にご相談いただければと思います。</p>
@@ -441,9 +436,9 @@ const voice = () => {
                                     
                                     <div className="head">
                                         <p className="case serif">嫌がらせ対策</p>
-                                        <input id="acd-check9" class="acd-check9" type="checkbox" />
-                                        <label class="acd-label" for="acd-check9">元彼が自宅マンションに来て悪質な嫌がらせを…証拠のおかげで無事解決して平穏に！ <FontAwesomeIcon icon={faAngleDown} /></label>
-                                        <div className='acd-content'>
+                                        <input id="case-check9" className="case-check9" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check9">元彼が自宅マンションに来て悪質な嫌がらせを…証拠のおかげで無事解決して平穏に！ <FontAwesomeIcon icon={faAngleDown} /></label>
+                                        <div className='case-content'>
                                             <div className="info">
                                                 <div className="hito">
                                                 <span>ご依頼者様：Kさん（30代）　事務職</span>
@@ -469,7 +464,7 @@ const voice = () => {
                                                 <div className="comment">
                                                     <div className="chu sec">
                                                         <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                             <p className="b">中央リサーチから一言</p>
                                                             <p className="nm">今回は、ご依頼いただきありがとうございました。嫌がらせ被害が止まったと聞いて、安心いたしました。嫌がらせは時間とともにエスカレートする傾向にあります。同様の被害でお悩みの方は一度ご相談いただければと思います。</p>
@@ -491,9 +486,9 @@ const voice = () => {
                                     
                                     <div className="head">
                                         <p className="case serif">嫌がらせ対策</p>
-                                        <input id="acd-check10" class="acd-check10" type="checkbox" />
-                                        <label class="acd-label" for="acd-check10">ネットの誹謗中傷の犯人は身近にいた！嫌がらせ調査で仕事も順調に！ <FontAwesomeIcon icon={faAngleDown} /></label>
-                                        <div className='acd-content'>
+                                        <input id="case-check10" className="case-check10" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check10">ネットの誹謗中傷の犯人は身近にいた！嫌がらせ調査で仕事も順調に！ <FontAwesomeIcon icon={faAngleDown} /></label>
+                                        <div className='case-content'>
                                             <div className="info">
                                                 <div className="hito">
                                                 <span>ご依頼者様：料理教室運営（30代）　ネットでの誹謗中傷による嫌がらせ調査</span>
@@ -519,7 +514,7 @@ const voice = () => {
                                                 <div className="comment">
                                                     <div className="chu sec">
                                                         <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                             <p className="b">中央リサーチから一言</p>
                                                             <p className="nm">嫌がらせ調査をご依頼いただきありがとうございました。最近は、ネット上での誹謗中傷、個人情報の漏えい等、様々なご相談があります。犯人は意外にも近くにいるケースも少なくありません。気になるお悩みがございましたら、一度ご相談いただければと思います。</p>
@@ -547,13 +542,13 @@ const voice = () => {
         </>
     )
 }
-
 export const Head = () => (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
+        <Seo
+            title="お客様の声"
+            description="広島の探偵社「中央リサーチ」、お客様の声についてのページです。"
+            keyword="お客様の声,広島,探偵,中央リサーチ"
+            />
     </>
 )
-
 export default voice

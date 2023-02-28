@@ -15,10 +15,7 @@ const sitemap = () => {
     }    
     return (
         <>
-        <Seo
-        title={pagemeta.title}
-        description="広島の探偵社「中央リサーチ」ホームページのサイトマップです。"
-        />
+        
             <div id="wrap">
             <Header h1title="広島の探偵社「中央リサーチ」のサイトマップ" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -88,13 +85,12 @@ const sitemap = () => {
         </>
     )
 }
-
 export const Head = () => (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
+       <Seo
+        title="サイトマップ"
+        description="広島の探偵社「中央リサーチ」ホームページのサイトマップです。"
+        /> 
     </>
 )
-
 export default sitemap

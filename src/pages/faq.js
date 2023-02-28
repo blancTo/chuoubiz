@@ -14,11 +14,7 @@ const faq = () => {
     }
     return (
         <>
-            <Seo
-            title="よくある質問"
-            keyword="よくある質問,広島,探偵,中央リサーチ"
-            description="広島の探偵社「中央リサーチ」、よくある質問についての説明ページです。"
-            />
+            
             <div id="wrap">
             <Header h1title="よくある質問｜総合探偵社中央リサーチ" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -76,13 +72,13 @@ const faq = () => {
         </>
     )
 }
-
 export const Head = () => (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
+        <Seo
+            title="よくある質問"
+            keyword="よくある質問,広島,探偵,中央リサーチ"
+            description="広島の探偵社「中央リサーチ」、よくある質問についての説明ページです。"
+            />
     </>
 )
-
 export default faq

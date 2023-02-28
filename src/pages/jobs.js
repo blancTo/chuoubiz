@@ -15,10 +15,7 @@ const jobs = () => {
     }
     return (
         <>
-        <Seo
-        title="採用情報"
-        description="広島の探偵社「中央リサーチ」の採用情報です。私達と共にお客様のお悩みの解決に尽力する人材を募集しています。"
-        />
+        
             <div id="wrap">
             <Header h1title="採用情報について" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -28,7 +25,7 @@ const jobs = () => {
                         <p>中央リサーチでは、私達と共にお客様の悩みの解決に尽力する人材を募集しています。<br />
                         ご希望の方はプロフィールをお書き添えの上、下記アドレスまでお願い致します。<br />
                         ※定員になり次第締め切らせていただきます。</p>
-                        <p className="red">中央リサーチ：採用担当　<Link to="mailto:info@chuou.biz">info@chuou.biz</Link></p>
+                        <p className="red">中央リサーチ：採用担当　<a href="mailto:info@chuou.biz">info@chuou.biz</a></p>
                         <div id="jobs">
                             <div className="pb">
                             <h3 className="headline">事務相談員</h3>
@@ -198,12 +195,83 @@ const jobs = () => {
     )
 }
 
+const jsonN = "広島探偵 中央リサーチ",
+jsonT = "採用情報",
+jsonS = "jirei",
+jsonD = "広島の探偵社「中央リサーチ」の採用情報です。私達と共にお客様のお悩みの解決に尽力する人材を募集しています。";
+
+const jsonLd = {
+    "@context": "http://schema.org/",
+    "@graph":[
+        {
+            "@type":"WebSite",
+            "@id":`https://www.chuou.biz/${jsonS}/#website`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonT}| 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "publisher":{
+                "@id":`https://www.chuou.biz/${jsonS}/#person`
+            }
+        },
+        {
+            "@type":"WebPage",
+            "@id":`https://www.chuou.biz/${jsonS}/#webpage`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "isPartOf":{
+                "@id":`https://www.chuou.biz/${jsonS}/#website`
+            },
+            "breadcrumb":{
+                "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`
+            },
+            "datePublished":"2023-2-22T21:00:00+09:00",
+            "dateModified":"2023-2-24T19:00:00+09:00"
+        },
+        {
+            "@type":"BreadcrumbList",
+            "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`,
+            "itemListElement":[
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/#listItem`,
+                    "position":1,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/`,
+                        "name":`${jsonN}`,
+                        "description":"当探偵社は広島に本社を構え、皆様の信頼に支えられ55年の実績を重ねてまいりました。調査・解決共経験豊富な当社にまずはお気軽にご相談ください。",
+                        "url":`https://www.chuou.biz/`
+                    },
+                    "nextItem":`https://www.chuou.biz/${jsonS}/#listItem`
+                },
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/${jsonS}/#listItem`,
+                    "position":2,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/${jsonS}/`,
+                        "name":`${jsonT}｜${jsonN}`,
+                        "description":`${jsonD}`,
+                        "url":`https://www.chuou.biz/${jsonS}/`
+                    },
+                    "previousItem":`https://www.chuou.biz/#listItem`
+                }
+            ]
+        }
+    ]
+}
+
 export const Head = () => (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
+        <Seo
+        title="採用情報"
+        description="広島の探偵社「中央リサーチ」の採用情報です。私達と共にお客様のお悩みの解決に尽力する人材を募集しています。"
+        />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
     </>
 )
-
 export default jobs

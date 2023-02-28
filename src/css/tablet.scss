@@ -1,41 +1,9 @@
 @charset "utf-8";
-/*==================================================
-	タブレットのみ適応
-==================================================*/
-@media only screen and (max-width: 768px) and (min-width: 641px){
-	.dsp_smt { display: none!important; }
-	#footer .contact .txt span {
-		display: inline-block;
-		margin-left: 10px;
-	}
-	
-	/*--------------------------------------------------
-		ページタイトル
-	--------------------------------------------------*/
-	#page_title .sub {
-			padding: 25px 0;
-	}
-}
-/*==================================================
-	タブレット・スマホに適応
-==================================================*/
-@media only screen and (max-width: 768px) {
-	.dsp_hp { display: none; }
+/*タブレットのみ適応*/
 
-	/* ヘッダ */
-	#header {
-		overflow: hidden;
-		height: 65px;
-		padding: 0;
-		background: #fff;
-	}
-	#header p.title {
-		padding: 10px;
-	}
-	#header p.title img {
-		width: auto;
-		max-height: 30px;
-	}
+/*タブレット・スマホに適応*/
+@media only screen and (max-width: 768px) {
+	/* ヘッダ */	
 	#sticky {
 		z-index: 9997;
 		position: fixed;
@@ -44,20 +12,16 @@
 		width: 100%;
 		padding: 1%;
 		background: rgba(255,255,255,0.7);
-		/*box-shadow: 0 0 5px rgba(0,0,0,0.2);*/
+		height: 65px;
+		box-sizing: border-box;
+		display: flex;
 	}
 	#sticky.sticky {
 		top: 0;
 		padding: 3px 2px 2px;
 	}
-	/* お問い合わせ */
-	#header .contact {
-		display: none;
-	}
-	/* コンテナ */
-	/*#container {
-		padding-top: 18px;
-	}*/
+
+	/* コンテナ */	
 	#container h3.sub {
 		margin-bottom: 30px;
 		font-size: 20px;
@@ -87,159 +51,40 @@
 		padding-bottom: 30px;
 	}
 	/* ６つのメニュー */
-	#menu_sp ul {
+	#menu_sp {
 		display:flex;
 		flex-wrap:wrap;
 		justify-content: space-between;
 		border-bottom: 3px solid #14AAD5;
 	}
-	#menu_sp ul li {
+	#menu_sp ul {
+		width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+	}
+	#menu_sp li {
 		width: 33%;
 		border-bottom: 1px solid #ddd;
 		box-sizing: border-box;
 		list-style: none;
 	}
-
-	
-
-	#menu_sp ul li:nth-child(2),
-	#menu_sp ul li:nth-child(5) {
+	#menu_sp li:nth-child(2),
+	#menu_sp li:nth-child(5) {
 		width: 34%;
 		border-left: 1px solid #ddd;
 		border-right: 1px solid #ddd;
 	}
-	#menu_sp ul li a {
+	#menu_sp li a {
 		display: block;
 		padding: 10px 0;
-		background: linear-gradient(top, #fff, #eee);
-		background: -ms-linear-gradient(top, #fff, #eee);
-		background: -moz-linear-gradient(top, #fff, #eee);
-		background: -webkit-linear-gradient(top, #fff, #eee);
+		background: linear-gradient(to top, #fff, #eee);
 		color: #054a97;
 		font-size: 12px;
 		text-align: center;
 	}
 
 	#menu_sp.shimane ul li,#menu_sp.ehime ul li,#menu_sp.okayama ul li,#menu_sp.yamaguchi ul li { width: calc(100% / 4);}
-
-	/* フッター */
-	#footer {
-		padding-bottom: 142px;
-	}
-	#footer .contact {
-		padding: 20px 0;
-		background-image: none;
-	}
-	#footer .contact .in {
-		float: none;
-		width: 100%;
-	}
-	#footer .contact .in h3 span {
-		font-size: 30px;
-	}
-	#footer .contact .in h3 {
-		font-size: 25px;
-	}
-	#footer .contact .in .box {
-		padding: 15px;
-	}
-	#footer .contact .in .box h4 {
-		font-size: 23px;
-	}
-	#footer .contact .in .box .wrap {
-		width: 553px;
-		margin: 0 auto;
-	}
-	#footer .contact .in .box .txt2 {
-		font-size: 21px;;
-	}
-	#footer .contact .in .box .txt2 span {
-		font-size: 18px;
-	}
-	#copyright {
-		height: 30px;
-		line-height: 30px;
-	}
-	/**/
-	#footer_btn {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		display: block;
-		width: 100%;
-		background: rgba(0,0,0,0.5);
-		box-sizing: border-box;
-		z-index: 10;
-	}
-	#footer_btn ul {
-		display:flex;
-		flex-wrap:wrap;
-		justify-content: space-between;
-		width: 400px;
-		max-width: 100%;
-		margin: auto;
-		padding: 10px 0 0;
-		box-sizing: border-box;
-	}
-	#footer_btn ul li {
-		width: 48.5%;
-		margin-bottom: 10px;
-		list-style: none;
-	}
-	#footer_btn ul li:last-child {
-		width: 100%;
-	}
-	#footer_btn ul li a {
-		display: block;
-		padding: 5px 3px;
-		border-radius: 5px;
-		text-align: center;
-	}
-	#footer_btn ul li.mail a {
-		background: linear-gradient(top, #0A82B7, #054A97);
-		background: -ms-linear-gradient(top, #0A82B7, #054A97);
-		background: -moz-linear-gradient(top, #0A82B7, #054A97);
-		background: -webkit-linear-gradient(top, #0A82B7, #054A97);
-		border: 1px solid #054A97;
-	}
-	#footer_btn ul li.line a {
-		position: relative;
-		background: linear-gradient(top, #30d950, #06C755);
-		background: -ms-linear-gradient(top, #30d950, #06C755);
-		background: -moz-linear-gradient(top, #30d950, #06C755);
-		background: -webkit-linear-gradient(top, #30d950, #06C755);
-		border: 1px solid #06C755;
-	}
-	#footer_btn ul li.line a::before {
-		position: absolute;
-		top: -5px;
-		right: -5px;
-		display: block;
-		width: 20px;
-		height: 20px;
-		background: #FF0004;
-		border-radius: 50%;
-		color: #fff;
-		font-size: 10px;
-		text-align: center;
-		line-height: 20px;
-		content: "1";
-	}
-	#footer_btn ul li.tel a {
-		padding: 0;
-		background: linear-gradient(top, #c1362d, #C1272D);
-		background: -ms-linear-gradient(top, #c1362d, #C1272D);
-		background: -moz-linear-gradient(top, #c1362d, #C1272D);
-		background: -webkit-linear-gradient(top, #c1362d, #C1272D);
-		border: 1px solid #C1272D;
-	}
-	#footer_btn p {
-		padding: 2px 0;
-		background: #C1272D;
-		color: #fff;
-		font-size: 12px;
-		text-align: center;
-	}
+	
 	/* パンくずリスト */
 	#page_navi {
 		margin-bottom: 20px;
@@ -291,36 +136,6 @@
 		margin-top: -0.7em;
 	}
 
-	.acd-check:checked + .acd-label + .acd-content,
-	.acd-check1:checked + .acd-label + .acd-content,
-	.acd-check2:checked + .acd-label + .acd-content,
-	.acd-check3:checked + .acd-label + .acd-content,
-	.acd-check4:checked + .acd-label + .acd-content,
-	.acd-check5:checked + .acd-label + .acd-content,
-	.acd-check6:checked + .acd-label + .acd-content,
-	.acd-check7:checked + .acd-label + .acd-content,
-	.acd-check8:checked + .acd-label + .acd-content,
-	.acd-check9:checked + .acd-label + .acd-content
-	{
-		height: 100%;
-		opacity: 1;
-		visibility: visible;
-	}
-
-	.jirei-check:checked + .jirei-label + .jirei-content,
-	.jirei-check1:checked + .jirei-label + .jirei-content,
-	.jirei-check2:checked + .jirei-label + .jirei-content,
-	.jirei-check3:checked + .jirei-label + .jirei-content,
-	.jirei-check4:checked + .jirei-label + .jirei-content,
-	.jirei-check5:checked + .jirei-label + .jirei-content
-	{
-		height: 100%;
-		opacity: 1;
-		visibility: visible;
-	}
-
-
-
 	.img_headline_area .sec {
 		flex-wrap: wrap;
 		margin-bottom: 20px;
@@ -351,9 +166,7 @@
 	/*--------------------------------------------------
 		トップページ
 	--------------------------------------------------*/
-	/*#img_top_msg {
-		margin-top: 18px;
-	}*/
+
 	#img_top_msg .mp {
 		margin-right: 0;
 		font-size: 30px;
@@ -548,10 +361,7 @@
 	#top_hiroshima .wrap {
 		display: block;
 	}
-	#top_hiroshima .wrap .map {
-		width: 100%;
-		text-align: center;
-	}
+	#top_hiroshima .wrap .map {	width: 100%; text-align: center; margin-bottom: 3%; }
 	#top_hiroshima .wrap .img {
 		margin: 0 auto;
 	}
@@ -657,8 +467,6 @@
 	}
 	#beginner_flow .flow_box01 {
 		padding-top: 5px;
-		-webkit-box-align: end;
-		-ms-flex-align: end;
 		align-items: flex-end;
 	}
 	#beginner_flow .flow_box01 .txt_area {
@@ -688,14 +496,8 @@
 		vertical-align: 1px;
 	}
 	#beginner_flow .flow_box02 .flow_flex {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-align: stretch;
-		-ms-flex-align: stretch;
 		align-items: stretch;
-		-webkit-box-pack: start;
-		-ms-flex-pack: start;
 		justify-content: flex-start;
 	}
 	#beginner_flow .flow_flex .flow_txt04 {
@@ -730,9 +532,7 @@
 	#beginner_flow .flow_txt06 span {
 		font-size: 15px;
 	}
-	/*--------------------------------------------------
-		探偵社の選び方
-	--------------------------------------------------*/
+	/*探偵社の選び方*/
 	#choose h3.headline {
 		padding-bottom: 10px;
 		margin-bottom: 20px;
@@ -916,9 +716,7 @@
 	#choose_caution .caution_txt01 {
 		font-size: 15px;
 	}
-	/*--------------------------------------------------
-		浮気・不倫調査
-	--------------------------------------------------*/
+	/*浮気・不倫調査*/
 	#fickleness .fickleness_about h3 {
 		font-size: 25px;
 		margin-bottom: 20px;
@@ -987,9 +785,7 @@
 	#fickleness .fickleness_request .list .sec p.mp {
 		font-size: 18px;
 	}
-	/*--------------------------------------------------
-		浮気調査報告書サンプル
-	--------------------------------------------------*/
+	/*浮気調査報告書サンプル*/
 	#sample dl {
 		padding: 20px 0;
 	}
@@ -1000,15 +796,11 @@
 		display: block;
 		padding-left: 0;
 	}
-	/*--------------------------------------------------
-		当社の取り組み
-	--------------------------------------------------*/
+	/*当社の取り組み*/
 	#service p.msg {
 		font-size: 24px;
 	}
-	/*--------------------------------------------------
-		お客様の声
-	--------------------------------------------------*/
+	/*お客様の声*/
 	#voice .letter h3 {
 		font-size: 25px;
 		background-size: 25px auto;
@@ -1016,9 +808,7 @@
 		padding-left: 35px;
 		margin-bottom: 30px;
 	}
-	/*--------------------------------------------------
-		料金表
-	--------------------------------------------------*/
+	/*料金表*/
 	#price_msg .in {
 		padding: 30px 30px 0 10px;
 	}
@@ -1041,23 +831,19 @@
 	#price_msg .txt p.b {
 		font-size: 115%;
 	}
-	/**/
+	
 	#price .box .tbl td b {
 		display: block;
 		margin: 0;
 	}
-	/*--------------------------------------------------
-		事例紹介
-	--------------------------------------------------*/
+	/*事例紹介*/
 	#jirei .bg_blue .wrap {
 		padding: 0 100px 20px 0;
 	}
 	#jirei .bg_blue .wrap .img img {
 		width: 100px;
 	}
-	/*--------------------------------------------------
-		会社概要
-	--------------------------------------------------*/
+	/*会社概要*/
 	#company .bg .waku h3 {
 		font-size: 25px;
 		margin-bottom: 15px;
@@ -1112,9 +898,7 @@
 		right: auto;
 		margin-left: 20px;
 	}
-	/*--------------------------------------------------
-		素行調査
-	--------------------------------------------------*/
+	/*素行調査*/
 	#behavior .bg h3 {
 		font-size: 25px;
 		margin-bottom: 20px
@@ -1142,9 +926,7 @@
 		font-size: 20px;
 		line-height: 50px;
 	}
-	/*--------------------------------------------------
-		裁判証拠収集
-	--------------------------------------------------*/
+	/*裁判証拠収集*/
 	#trial .bg h3 {
 		font-size: 25px;
 	}
@@ -1179,9 +961,7 @@
 		margin-top: 20px;
 		order: 2;
 	}
-	/*--------------------------------------------------
-		結婚・身上調査
-	--------------------------------------------------*/
+	/*結婚・身上調査*/
 	#marriage .about {
 		display: block;
 	}
@@ -1201,9 +981,7 @@
 	#marriage .about .img {
 		text-align: center;
 	}
-	/*--------------------------------------------------
-		家出・所在調査
-	--------------------------------------------------*/
+	/*家出・所在調査*/
 	#whereabouts .bg h3 {
 		font-size: 25px;
 	}
@@ -1244,9 +1022,7 @@
 	#whereabouts .about .sec .box_flex .info h3.line {
 		font-size: 17px;
 	}
-	/*--------------------------------------------------
-		嫌がらせ対策
-	--------------------------------------------------*/
+	/*嫌がらせ対策*/
 	#stalker > .bg h3 {
 		font-size: 25px;
 	}
@@ -1258,7 +1034,6 @@
 	}
 	#stalker .measures .chk_box dl dd {
 		padding: 15px;
-		-webkit-justify-content: space-between;
 		justify-content: space-between;
 	}
 	#stalker .measures .chk_box dl dd ul {
@@ -1324,9 +1099,7 @@
 		padding-bottom: 30px;
 	}
 
-	/*--------------------------------------------------
-		盗聴器発見
-	--------------------------------------------------*/
+	/*盗聴器発見*/
 	#tapping .bg .man_area {
 		padding-bottom: 0;
 	}
@@ -1372,14 +1145,11 @@
 	#tapping .notice dd {
 		padding: 15px;
 	}
-	/*--------------------------------------------------
-		指紋・筆跡鑑定
-	--------------------------------------------------*/
+	/*指紋・筆跡鑑定*/
 	#fingerprint .bg h3 {
 		font-size: 25px;
 	}
 	#fingerprint .bg dl dd {
-		-webkit-justify-content: space-between;
 		justify-content: space-between;
 	}
 	#fingerprint .bg dl dd ul {
@@ -1396,9 +1166,7 @@
 		width: 100%;
 	}
 
-	/*--------------------------------------------------
-		離婚の種類について
-	--------------------------------------------------*/
+	/*離婚の種類について*/
 	#type .box_flex dl {
 		width: 49%;
 		margin-bottom: 2%;
@@ -1423,9 +1191,7 @@
 		margin-bottom: 15px;
 	}
 
-	/*--------------------------------------------------
-		内容証明について
-	--------------------------------------------------*/
+	/*内容証明について*/
 	#proof .img_headline_area .sec .info {
 		order: 1;
 	}
@@ -1473,9 +1239,7 @@
 	#proof .notice .box ol li {
 		width: 100%;
 	}
-	/*--------------------------------------------------
-		法人様向けプラン
-	--------------------------------------------------*/
+	/*法人様向けプラン*/
 	#corporation .box_flex > div {
 		width: 49%;
 		background: none;
@@ -1496,9 +1260,7 @@
 		width: 553px;
 		margin: 0 auto 15px;
 	}
-	/*--------------------------------------------------
-		お問い合せ
-	--------------------------------------------------*/
+	/*お問い合せ*/
 	#mailform .tbl {
 		border-bottom: 1px solid #BBB;
 	}
@@ -1512,11 +1274,7 @@
 	#mailform .tbl textarea {
 		font-size: 120%;
 	}
-	#mailform .btn input {
-		width: 120px;
-	}
-
-/*------------------------------------------------*/
+	#mailform .btn input { width: 120px; }
 }
 
 @media screen and (orientation: landscape) and (max-width:768px){

@@ -17,7 +17,7 @@ const NotFound = () => {
     }
     return (
         <>
-        <Seo title="お探しの記事は見つかりませんでした" />
+        
     <div id="wrap">
         <Header h1title="お探しの記事は見つかりませんでした" />
         <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -36,5 +36,11 @@ const NotFound = () => {
         </>
     )
 }
+
+export const Head = () => (
+    <>
+        <Seo title="お探しの記事は見つかりませんでした" />
+    </>
+)
 
 export default NotFound

@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -15,11 +14,7 @@ const trial = () => {
     }
     return (
         <>
-        <Seo
-        title2="離婚調停や裁判で証拠収集が必要なケース"
-        description="裁判証拠収集には熟練された技術と経験が必要です。広島の探偵社として長年の実績を持つ当社にお任せください。"
-        keyword="裁判,証拠,探偵,広島,中央リサーチ"
-        />
+        
             <div id="wrap">
             <Header h1title="裁判証拠収集について" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -58,7 +53,7 @@ const trial = () => {
                           また、この精神的苦痛を理由に慰謝料を請求したいけど、どうすればよいのか悩んでいる、そういった方は多いと思います。<br />
                           離婚裁判において双方の主張が異なる場合、裁判を有利に進めるためには、不貞の証拠が最も重要になります。</p>
                         <div className="box_flex">
-                          <p className="img"><StaticImage src="../img/trial/img01.jpg" alt="" /></p>
+                          <p className="img"><img src="../img/trial/img01.jpg" alt="" /></p>
                           <div className="info">
                             <div className="sec">
                               <h3 className="mp line">裁判になる前に証拠をそろえておく必要があります</h3>
@@ -82,7 +77,7 @@ const trial = () => {
                         <div className="bg02 bg_wide pt pb">
                           <div className="box_flex">
                             <dl>
-                              <dt><StaticImage src="../img/trial/jirei01.jpg" alt="" /></dt>
+                              <dt><img src="../img/trial/jirei01.jpg" alt="" /></dt>
                               <dd>
                                 <p className="no nm serif">01</p>
                                 <p className="line mp cen"><span>不貞の証拠</span></p>
@@ -90,7 +85,7 @@ const trial = () => {
                               </dd>
                             </dl>
                             <dl>
-                              <dt><StaticImage src="../img/trial/jirei02.jpg" alt="" /></dt>
+                              <dt><img src="../img/trial/jirei02.jpg" alt="" /></dt>
                               <dd>
                                 <p className="no nm serif">02</p>
                                 <p className="line mp cen"><span>いじめ・嫌がらせの証拠</span></p>
@@ -98,7 +93,7 @@ const trial = () => {
                               </dd>
                             </dl>
                             <dl>
-                              <dt><StaticImage src="../img/trial/jirei03.jpg" alt="" /></dt>
+                              <dt><img src="../img/trial/jirei03.jpg" alt="" /></dt>
                               <dd>
                                 <p className="no nm serif">03</p>
                                 <p className="line mp cen"><span>従業員の不正の証拠</span></p>
@@ -106,7 +101,7 @@ const trial = () => {
                               </dd>
                             </dl>
                             <dl>
-                              <dt><StaticImage src="../img/trial/jirei04.jpg" alt="" /></dt>
+                              <dt><img src="../img/trial/jirei04.jpg" alt="" /></dt>
                               <dd>
                                 <p className="no nm serif">04</p>
                                 <p className="line mp cen"><span>盗難や住居侵入の証拠</span></p>
@@ -114,7 +109,7 @@ const trial = () => {
                               </dd>
                             </dl>
                             <dl>
-                              <dt><StaticImage src="../img/trial/jirei05.jpg" alt="" /></dt>
+                              <dt><img src="../img/trial/jirei05.jpg" alt="" /></dt>
                               <dd>
                                 <p className="no nm serif">05</p>
                                 <p className="line mp cen"><span>交通事故の事実関係の証拠</span></p>
@@ -122,7 +117,7 @@ const trial = () => {
                               </dd>
                             </dl>
                             <dl>
-                              <dt><StaticImage src="../img/trial/jirei06.jpg" alt="" /></dt>
+                              <dt><img src="../img/trial/jirei06.jpg" alt="" /></dt>
                               <dd>
                                 <p className="no nm serif">06</p>
                                 <p className="line mp cen"><span>隠匿資産の証拠</span></p>
@@ -142,7 +137,7 @@ const trial = () => {
                               夜間、相手に気づかれることなく尾行しながら、ホテルまたはマンションに出入りする瞬間の対象者の顔写真（約2秒間）を捉えるのは、経験豊富な調査員でも苦労が絶えないのが現状です。（ピントが合っていないと証拠不十分で認められません）<br />
                               調査現場は様々な状況があり、人目につく場所もあれば、全く灯りがない場所もあります。また、調査現場では近所の住民に不審に思われたりしないように配慮もしなければなりません。だから技術と経験が必要なのです。</p>
                           </div>
-                          <p className="img"><StaticImage src="../img/trial/img02.jpg" alt="" /></p>
+                          <p className="img"><img src="../img/trial/img02.jpg" alt="" /></p>
                         </div>
                         <div className="box_flex">
                           <div className="info">
@@ -153,7 +148,7 @@ const trial = () => {
                             <p>裁判に提出する証拠の信憑性や重要度は、その記録、証拠写真、映像など調査報告書の内容により結果が大きく変わります。<br />
                               実績のある弊社の調査報告書はお客様にとって必要なものであり、裁判証拠として認められ、必ずお役に立てるものと自負しております。</p>
                           </div>
-                          <p className="img"><StaticImage src="../img/trial/img03.jpg" alt="" /></p>
+                          <p className="img"><img src="../img/trial/img03.jpg" alt="" /></p>
                         </div>
                       </div>
                       <div className="img_headline_area">
@@ -167,7 +162,7 @@ const trial = () => {
                             <br />
                             <p className="nm"><b className="fm blue2">｢最初からプロにお願いしておけばよかった｣</b>と後悔されない為にも、まずは現状を早期に、ご相談ください。</p>
                           </div>
-                          <p className="img"><StaticImage src="../img/trial/img04.jpg" alt="" /></p>
+                          <p className="img"><img src="../img/trial/img04.jpg" alt="" /></p>
                         </div>
                       </div>
                     </div>
@@ -177,13 +172,13 @@ const trial = () => {
         </>
     )
 }
-
 export const Head = () => (
-    <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
-    </>
+  <>
+     <Seo
+        title2="離婚調停や裁判で証拠収集が必要なケース"
+        description="裁判証拠収集には熟練された技術と経験が必要です。広島の探偵社として長年の実績を持つ当社にお任せください。"
+        keyword="裁判,証拠,探偵,広島,中央リサーチ"
+        /> 
+  </>
 )
-
 export default trial

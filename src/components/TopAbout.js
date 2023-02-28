@@ -55,7 +55,7 @@ const TopAbout = () => {
                 </dl>
             </div>
             <ul className="wrap">
-                <Link to="https://www.ncia-research.or.jp/" target="_blank" rel="noopener noreferrer"><li>内閣総理大臣認可<br />全国調査業協同組合組合員<br />第3266号</li></Link>
+                <li><a href="https://www.ncia-research.or.jp/" target="_blank" rel="noopener noreferrer">内閣総理大臣認可<br />全国調査業協同組合組合員<br />第3266号</a></li>
                 <li>広島県公安委員会<br />探偵業届出証明書番号<br />第73070084号</li>
                 <li>広島商工会議所<br />正会員<br />第9700302号</li>
             </ul>

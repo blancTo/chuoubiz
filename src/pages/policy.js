@@ -14,10 +14,7 @@ const policy = () => {
     }
     return (
         <>
-        <Seo
-        title="個人情報保護に関する取り組み"
-        description="広島の探偵社「中央リサーチ」の個人情報保護に関する取り組みについて。"
-        />
+        
             <div id="wrap">
             <Header h1title="広島の探偵社「中央リサーチ」の個人情報保護に関する取り組み" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -89,13 +86,12 @@ const policy = () => {
         </>
     )
 }
-
 export const Head = () => (
-    <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
-    </>
+  <>
+      <Seo
+        title="個人情報保護に関する取り組み"
+        description="広島の探偵社「中央リサーチ」の個人情報保護に関する取り組みについて。"
+        />
+  </>
 )
-
 export default policy

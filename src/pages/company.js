@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -11,14 +11,11 @@ import Footer from '../components/Footer'
 const company = () => {
     const pagemeta = {
         title:`会社概要`,
-        slug:`company`
+        slug:jsonS
     }
     return (
         <>
-        <Seo
-        title="広島の総合探偵社中央リサーチ会社概要について"
-        description="長年の実績を持つ広島の探偵社「中央リサーチ」の会社概要です。"
-        />
+        
             <div id="wrap">
             <Header h1title="会社概要について" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -32,13 +29,13 @@ const company = () => {
                                 そんなごく当たり前の考え方がおろそかにされ、現代社会に於いても事実関係を調べる事を怠り、先送りし大きな問題となるなど、同じ失敗を繰り返す事の多い時代となっております。<br />
                                 いくらスピード重視の時代とはいえ、問題解決は一方的な憶測で判断できるものではなく、事実関係を明らかにした上で成り立つものです。それを怠ってしまうと逆に問題解決まで遠回りとなり、収拾がつかなくなるなど、誤解・誤認による２重３重のトラブルにも繋がりかねません。<br />
                                 当社では真実を調べる事と、それを基に的確なアドバイスを行う事で「つらい思いをして悩んでいる方に対し、1日も早く解決できる様にお手伝いしたい」という真摯な姿勢で、これからも社会貢献していきたいと考えております。</p>
-                                <p className="nm rit">株式会社中央リサーチ　代表取締役<StaticImage src="../img/company/name.png" alt="樋之本 浩章" /></p>
+                                <p className="nm rit">株式会社中央リサーチ　代表取締役<img src="../img/company/name.png" alt="樋之本 浩章" /></p>
                             </div>
                         </div>
                         <div className="pt">
                             <h3 className="headline">会社概要</h3>
                             <div className="box">
-                                <div className="in dsp_hpt"><StaticImage src="../img/company/img05.jpg" alt="" /></div>
+                                <div className="in dsp_hpt"><img src="../img/company/img05.jpg" alt="" /></div>
                                 <table>
                                 <tbody><tr>
                                     <th>社名</th><td>株式会社　中央リサーチ</td>
@@ -100,33 +97,33 @@ const company = () => {
                             </div>
                             <div className="photo">
                                 <dl>
-                                <dt><StaticImage src="../img/company/img01.jpg" alt="" /></dt>
+                                <dt><img src="../img/company/img01.jpg" alt="" /></dt>
                                 <dd>
                                     <p className="cen blue b nm">弊社代表が、元 衆議院議員 議長<br />
                                     灘尾 弘吉先生筆の書を頂きました。</p>
-                                    <p className="nm cen">灘尾弘吉先生については<Link to="https://ja.wikipedia.org/wiki/%E7%81%98%E5%B0%BE%E5%BC%98%E5%90%89" target="_blank">こちら</Link></p>
+                                    <p className="nm cen">灘尾弘吉先生については<a href="https://ja.wikipedia.org/wiki/%E7%81%98%E5%B0%BE%E5%BC%98%E5%90%89" target="_blank"rel="noopener noreferrer">こちら</a></p>
                                 </dd>
                                 </dl>
                                 <dl>
-                                <dt><StaticImage src="../img/company/img02.jpg" alt="" /></dt>
+                                <dt><img src="../img/company/img02.jpg" alt="" /></dt>
                                 <dd>
                                     <p className="cen blue b nm">表彰状</p>
                                 </dd>
                                 </dl>
                                 <dl>
-                                <dt><StaticImage src="../img/company/img03.jpg" alt="" /></dt>
+                                <dt><img src="../img/company/img03.jpg" alt="" /></dt>
                                 <dd>
                                     <p className="cen blue b nm">組合員証</p>
                                 </dd>
                                 </dl>
                                 <dl>
-                                <dt><StaticImage src="../img/company/img04.jpg" alt="" /></dt>
+                                <dt><img src="../img/company/img04.jpg" alt="" /></dt>
                                 <dd>
                                     <p className="cen blue b nm">委嘱状</p>
                                 </dd>
                                 </dl>
                                 <dl className="dsp_smt">
-                                <dt><StaticImage src="../img/company/img05.jpg" alt="" /></dt>
+                                <dt><img src="../img/company/img05.jpg" alt="" /></dt>
                                 <dd>
                                     <p className="cen blue b nm">商標登録証</p>
                                 </dd>
@@ -172,7 +169,7 @@ const company = () => {
                                     広島県広島市中区上幟町2-45 今田ビル2F<br />
                                     (家庭裁判所前 白島線電車道り沿い)<br />
                                     TEL：082-211-1600(代)<br />
-                                    MAIL：<Link to="mailto:hiroshima@chuou.biz">hiroshima@chuou.biz</Link></dd>
+                                    MAIL：<a href="mailto:hiroshima@chuou.biz">hiroshima@chuou.biz</a></dd>
                                 </dl>
                                 <dl>
                                     <dt>山口相談室</dt>
@@ -180,7 +177,7 @@ const company = () => {
                                     山口県周南市平和通2丁目31 三真樹ビル2階<br />
                                     （徳山駅徒歩3分）<br />
                                     TEL：0834-22-7513(代)<br />
-                                    MAIL：<Link to="mailto:yamaguchi@chuou.biz">yamaguchi@chuou.biz</Link></dd>
+                                    MAIL：<a href="mailto:yamaguchi@chuou.biz">yamaguchi@chuou.biz</a></dd>
                                 </dl>
                                 <dl>
                                     <dt>島根相談室</dt>
@@ -188,15 +185,15 @@ const company = () => {
                                     島根県松江市津田町305番 ツダマチビル1階<br />
                                     （松江駅徒歩5分）<br />
                                     TEL：0852-67-6573(代)
-                                    MAIL：<Link to="mailto:shimane@chuou.biz">shimane@chuou.biz</Link></dd>
+                                    MAIL：<a href="mailto:shimane@chuou.biz">shimane@chuou.biz</a></dd>
                                 </dl>
                                 <dl>
                                     <dt>岡山相談室</dt>
-                                    <dd><Link to="https://detective-okayama.biz/" target="_blank">総合探偵社中央リサーチ岡山</Link><br />
+                                    <dd><a href="https://detective-okayama.biz/" target="_blank" rel="noopener noreferrer">総合探偵社中央リサーチ岡山</a><br />
                                     岡山県岡山市北区富田町1丁目1-1<br />
                                     富士野ビル2階<br />
                                     TEL：086-231-6661(代)<br />
-                                    MAIL：<Link to="mailto:okayama@chuou.biz">okayama@chuou.biz</Link></dd>
+                                    MAIL：<a href="mailto:okayama@chuou.biz">okayama@chuou.biz</a></dd>
                                 </dl>
                                 <dl>
                                     <dt>愛媛相談室</dt>
@@ -204,15 +201,15 @@ const company = () => {
                                     愛媛県松山市三番町7-7-1 村上ビル2階<br />
                                     （松山市民病院徒歩2分）<br />
                                     TEL：089-931-3800(代)<br />
-                                    MAIL：<Link to="mailto:ehime@chuou.biz">ehime@chuou.biz</Link></dd>
+                                    MAIL：<a href="mailto:ehime@chuou.biz">ehime@chuou.biz</a></dd>
                                 </dl>
                                 <dl>
                                     <dt>広島本社</dt>
                                     <dd>広島県広島市中区上幟町2-45 今田ビル2F<br />
-                                    (家庭裁判所前 白島線電車道り沿い) <Link to="https://goo.gl/maps/diLXEpJKHk94C7jA6" target="_blank">»MAP</Link><br />
+                                    (家庭裁判所前 白島線電車道り沿い) <a href="https://goo.gl/maps/diLXEpJKHk94C7jA6" target="_blank" rel="noopener noreferrer">»MAP</a><br />
                                     TEL：082-211-1600(代)<br />
                                     FAX：082-211-1688<br />
-                                    MAIL：<Link to="mailto:info@chuou.biz">info@chuou.biz</Link></dd>
+                                    MAIL：<a href="mailto:info@chuou.biz">info@chuou.biz</a></dd>
                                 </dl>
                                 </div>
                             </div>
@@ -224,7 +221,7 @@ const company = () => {
                             <p className="txt cen nm">経験豊富な相談員があなたのご要望にお答えする為、親身になってアドバイスいたします。<br />
                                 負担の軽い<b>納得料金</b>で、<b>迅速・的確な調査</b>を行い、成果は確実にお約束いたします。<br />
                                 真実を知る事から解決に至るまで責任を持ってサポートいたします。</p>
-                            <p className="img"><StaticImage src="../img/company/woman.png" alt="" /><StaticImage src="../img/company/man.png" alt="" /></p>
+                            <p className="img"><img src="../img/company/woman.png" alt="" /><img src="../img/company/man.png" alt="" /></p>
                         </div>
 
 
@@ -237,12 +234,83 @@ const company = () => {
     )
 }
 
+const jsonN = "広島探偵 中央リサーチ",
+jsonT = "会社概要",
+jsonS = "company",
+jsonD = "長年の実績を持つ広島の探偵社「中央リサーチ」の会社概要です。";
+
+const jsonLd = {
+    "@context": "http://schema.org/",
+    "@graph":[
+        {
+            "@type":"WebSite",
+            "@id":`https://www.chuou.biz/${jsonS}/#website`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonT}| 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "publisher":{
+                "@id":`https://www.chuou.biz/${jsonS}/#person`
+            }
+        },
+        {
+            "@type":"WebPage",
+            "@id":`https://www.chuou.biz/${jsonS}/#webpage`,
+            "url":`https://www.chuou.biz/${jsonS}/`,
+            "name":`${jsonN}`,
+            "description":`${jsonD}${jsonT}`,
+            "inLanguage":"ja",
+            "isPartOf":{
+                "@id":`https://www.chuou.biz/${jsonS}/#website`
+            },
+            "breadcrumb":{
+                "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`
+            },
+            "datePublished":"2023-2-22T21:00:00+09:00",
+            "dateModified":"2023-2-24T19:00:00+09:00"
+        },
+        {
+            "@type":"BreadcrumbList",
+            "@id":`https://www.chuou.biz/${jsonS}/#breadcrumblist`,
+            "itemListElement":[
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/#listItem`,
+                    "position":1,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/`,
+                        "name":`${jsonN}`,
+                        "description":`当探偵社は広島に本社を構え、皆様の信頼に支えられ55年の実績を重ねてまいりました。調査・解決共経験豊富な当社にまずはお気軽にご相談ください。`,
+                        "url":`https://www.chuou.biz/`
+                    },
+                    "nextItem":`https://www.chuou.biz/${jsonS}/#listItem`
+                },
+                {
+                    "@type":"ListItem",
+                    "@id":`https://www.chuou.biz/${jsonS}/#listItem`,
+                    "position":2,
+                    "item":{
+                        "@type":"WebPage",
+                        "@id":`https://www.chuou.biz/${jsonS}/`,
+                        "name":`${jsonT}｜${jsonN}`,
+                        "description":`${jsonD}${jsonT}`,
+                        "url":`https://www.chuou.biz/${jsonS}/`
+                    },
+                    "previousItem":`https://www.chuou.biz/#listItem`
+                }
+            ]
+        }
+    ]
+}
+
 export const Head = () => (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
+        <Seo
+        title="広島の総合探偵社中央リサーチ会社概要について"
+        description="長年の実績を持つ広島の探偵社「中央リサーチ」の会社概要です。"
+        />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
     </>
 )
-
 export default company

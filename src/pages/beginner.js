@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -15,10 +14,7 @@ const beginner = () => {
     }
   return (
     <>
-    <Seo
-        title="初めての方へ、浮気調査の相談から解決まで。"
-        description="探偵の調査方法については沢山の方法がございます。お客様からご相談いただいた内容を元に、もっとも適切で有効な方法をご提案させていただきます。広島で長年の実績を持つ当社にご相談ください。"
-    />
+    
     <div id="wrap">
         <Header h1title="はじめての方への、ご説明" />
         <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -35,7 +31,7 @@ const beginner = () => {
                             お客様の状況や、ご相談内容は多種多様ですので、お客様と相談員の細かい対話を最も重要視し高い成果で無駄のない調査プランをご提案しております。</p>
                         <p className="msg_txt02">お客様の心に寄り添う対応を致します。</p>
                         </div>
-                        <StaticImage src="../img/beginner/img01.jpg" alt="一歩踏み出して私たちにご相談をされてみませんか？" className="img01" />
+                        <img src="../img/beginner/img01.jpg" alt="一歩踏み出して私たちにご相談をされてみませんか？" className="img01" />
                     </div>
                     <p className="msg_txt03">ご相談は無料ですので<br className="dsp_smt" />安心してお問い合わせ下さい!</p>
                     <div className="msg_box02">
@@ -43,9 +39,9 @@ const beginner = () => {
                         <dl className="box02_flex">
                             <dt><span className="txt_free mp">無料<span>相談窓口</span></span></dt>
                             <dd className="tel_area">
-                            <Link to="tel:0120-30-6630" className="tel tel_m sans"><StaticImage src="../img/free.png" alt="フリーダイヤル" />0120-30-6630</Link>
+                            <a href="tel:0120-30-6630" className="tel tel_m sans"><img src="../img/free.png" alt="フリーダイヤル" />0120-30-6630</a>
                             <p className="msg_txt04">女性相談員ご希望の方はこちら</p>
-                            <Link to="tel:0120-20-3399" className="tel sans"><StaticImage src="../img/free.png" alt="フリーダイヤル" />0120-20-3399</Link>
+                            <a href="tel:0120-20-3399" className="tel sans"><img src="../img/free.png" alt="フリーダイヤル" />0120-20-3399</a>
                             </dd>
                         </dl>
                         <p className="msg_txt05">年中無休！ 24時間受付！<span>携帯電話でもOK! </span></p>
@@ -64,7 +60,7 @@ const beginner = () => {
                         調査終了後、<span className="flow_txt02">再発防止対策や今後のアフターフォローまで</span>責任をもって担当者が対応させていただきます。<br />
                         <span className="flow_txt03">秘密厳守、ご相談、お見積り無料</span>です。些細なことでもお悩みをお聞かせください。</p>
                     </div>
-                    <StaticImage src="../img/beginner/flow01.png" alt="ご相談から解決までの流れ" className="img_flow01" />
+                    <img src="../img/beginner/flow01.png" alt="ご相談から解決までの流れ" className="img_flow01" />
                     </div>
                     <div className="flow_box02">
                     <div className="step">STEP</div>
@@ -74,8 +70,8 @@ const beginner = () => {
                         <div className="flow_flex">
                         <p className="flow_txt04 mp">無料<span>相談窓口</span></p>
                         <div className="tel">
-                            <Link to="tel:0120-30-6630" className="tel01 sans"><StaticImage src="../img/free.png" alt="フリーダイヤル" />0120-30-6630</Link>
-                            <p className="nm"><span className="flow_txt05 mp">女性相談員ご希望の方はこちら</span><Link to="tel:0120-20-3399" className="tel02 sans"><StaticImage src="../img/free.png" alt="フリーダイヤル" />0120-20-3399</Link></p>
+                            <a href="tel:0120-30-6630" className="tel01 sans"><img src="../img/free.png" alt="フリーダイヤル" />0120-30-6630</a>
+                            <p className="nm"><span className="flow_txt05 mp">女性相談員ご希望の方はこちら</span><a href="tel:0120-20-3399" className="tel02 sans"><img src="../img/free.png" alt="フリーダイヤル" />0120-20-3399</a></p>
                         </div>
                         <p className="flow_txt06 mp nm">年中無休!24時間受付!<span>携帯電話でもOK! </span></p>
                         </div>
@@ -149,12 +145,10 @@ const beginner = () => {
 
 export const Head = () => (
     <>
-      <script src="/js/respond.js"></script>
-      <script src="/js/jquery.min.js"></script>
-  
-      
-      <script src="/js/fetch.min.js"></script>
+        <Seo
+        title="初めての方へ、浮気調査の相談から解決まで。"
+        description="探偵の調査方法については沢山の方法がございます。お客様からご相談いただいた内容を元に、もっとも適切で有効な方法をご提案させていただきます。広島で長年の実績を持つ当社にご相談ください。"
+    />
     </>
 )
-
 export default beginner

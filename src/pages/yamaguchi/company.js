@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+
 import Seo from '../../components/SEO'
 import HeaderYamaguchi from '../../components/HeaderYamaguchi'
 import FooterYamaguchi from '../../components/FooterYamaguchi'
@@ -15,11 +15,7 @@ const company = () => {
     }
     return (
         <>
-        <Seo
-            title2="山口の総合探偵社中央リサーチ会社概要について"
-            description="長年の実績を持つ山口の探偵社「中央リサーチ山口」の会社概要です。"
-            keyword="中央リサーチ,山口,会社概要,中央リサーチ山口"
-            />
+        
             <div id="wrap">
                 <HeaderYamaguchi h1title="会社概要について" pagetitle="JR徳山駅前にある探偵事務所" />
                 <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -33,13 +29,13 @@ const company = () => {
                                 そんなごく当たり前の考え方がおろそかにされ、現代社会に於いても事実関係を調べる事を怠り、先送りし大きな問題となるなど、同じ失敗を繰り返す事の多い時代となっております。<br />
                                 いくらスピード重視の時代とはいえ、問題解決は一方的な憶測で判断できるものではなく、事実関係を明らかにした上で成り立つものです。それを怠ってしまうと逆に問題解決まで遠回りとなり、収拾がつかなくなるなど、誤解・誤認による２重３重のトラブルにも繋がりかねません。<br />
                                 当社では真実を調べる事と、それを基に的確なアドバイスを行う事で「つらい思いをして悩んでいる方に対し、1日も早く解決できる様にお手伝いしたい」という真摯な姿勢で、これからも社会貢献していきたいと考えております。</p>
-                            <p className="nm rit">株式会社中央リサーチ　代表取締役<StaticImage src="../../img/yamaguchi/company/name.png" alt="樋之本 浩章" /></p>
+                            <p className="nm rit">株式会社中央リサーチ　代表取締役<img src="../../img/yamaguchi/company/name.png" alt="樋之本 浩章" /></p>
                             </div>
                         </div>
                         <div className="pt">
                             <h3 className="headline">会社概要</h3>
                             <div className="box">
-                            <div className="in dsp_hpt"><StaticImage src="../../img/yamaguchi/company/img05.jpg" alt="" /></div>
+                            <div className="in dsp_hpt"><img src="../../img/yamaguchi/company/img05.jpg" alt="" /></div>
                             <table>
                                 <tbody><tr>
                                     <th>社名</th><td>株式会社　中央リサーチ</td>
@@ -99,7 +95,7 @@ const company = () => {
                             </div>
                             <div className="photo">
                             <dl>
-                                <dt><StaticImage src="../../img/yamaguchi/company/img01.jpg" alt="" /></dt>
+                                <dt><img src="../../img/yamaguchi/company/img01.jpg" alt="" /></dt>
                                 <dd>
                                 <p className="cen blue b nm">弊社代表が、元 衆議院議員 議長<br />
                                     灘尾 弘吉先生筆の書を頂きました。</p>
@@ -107,25 +103,25 @@ const company = () => {
                                 </dd>
                             </dl>
                             <dl>
-                                <dt><StaticImage src="../../img/yamaguchi/company/img02.jpg" alt="" /></dt>
+                                <dt><img src="../../img/yamaguchi/company/img02.jpg" alt="" /></dt>
                                 <dd>
                                 <p className="cen blue b nm">表彰状</p>
                                 </dd>
                             </dl>
                             <dl>
-                                <dt><StaticImage src="../../img/yamaguchi/company/img03.jpg" alt="" /></dt>
+                                <dt><img src="../../img/yamaguchi/company/img03.jpg" alt="" /></dt>
                                 <dd>
                                 <p className="cen blue b nm">組合員証</p>
                                 </dd>
                             </dl>
                             <dl>
-                                <dt><StaticImage src="../../img/yamaguchi/company/img04.jpg" alt="" /></dt>
+                                <dt><img src="../../img/yamaguchi/company/img04.jpg" alt="" /></dt>
                                 <dd>
                                 <p className="cen blue b nm">委嘱状</p>
                                 </dd>
                             </dl>
                             <dl className="dsp_smt">
-                                <dt><StaticImage src="../../img/yamaguchi/company/img05.jpg" alt="" /></dt>
+                                <dt><img src="../../img/yamaguchi/company/img05.jpg" alt="" /></dt>
                                 <dd>
                                 <p className="cen blue b nm">商標登録証</p>
                                 </dd>
@@ -204,15 +200,8 @@ const company = () => {
                             </div>
                             </div>
                         </div>
-                        {/*div class="support">
-                                        <p class="cen mp b blue">全力であなたの幸せを<br class="dsp_smt">勝ち取るサポートをいたします</p>
-                                        <p class="cen red b">全国主要都市で探偵業55年の<br class="dsp_smt">実績があります。</p>
-                                        <p class="txt cen nm">経験豊富な相談員があなたのご要望にお答えする為、親身になってアドバイスいたします。<br>
-                                            負担の軽い<b>納得料金</b>で、<b>迅速・的確な調査</b>を行い、成果は確実にお約束いたします。<br>
-                                            真実を知る事から解決に至るまで責任を持ってサポートいたします。</p>
-                                        <p class="img"><StaticImage src="../../img/yamaguchi/company/woman.png" alt=""><StaticImage src="../../img/yamaguchi/company/man.png" alt=""></p>
-                                    </div*/}
-                        </div>
+                        
+                    </div>
 
                 </Layout>
             </div>
@@ -220,5 +209,13 @@ const company = () => {
         </>
     )
 }
-
+export const Head = () => (
+    <>
+        <Seo
+            title2="山口の総合探偵社中央リサーチ会社概要について"
+            description="長年の実績を持つ山口の探偵社「中央リサーチ山口」の会社概要です。"
+            keyword="中央リサーチ,山口,会社概要,中央リサーチ山口"
+            />
+    </>
+  )
 export default company

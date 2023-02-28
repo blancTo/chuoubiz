@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
-
 import Seo from '../../components/SEO'
 import Layout from '../../components/Layout'
 import SubpageTitle from '../../components/SubpageTitle'
@@ -18,11 +16,7 @@ const voice = () => {
     }
     return (
         <>
-        <Seo
-            title2="お客様の声｜愛媛の総合探偵社中央リサーチ"
-            description="愛媛の興信所・探偵社の中央リサーチ愛媛のお客様の声について。浮気調査を最も得意とする探偵社です。ご依頼者様の心のお悩みを解決し、平穏な日々を取り戻せるよう全力を尽くします。浮気調査に多くの実績を持つ当社にお任せください。"
-            keyword="お客様の声,探偵,愛媛,興信所,浮気調査,中央リサーチ愛媛"
-            />
+        
             <div id="wrap">
                 <HeaderEhime h1title="お客様の声" pagetitle="松山市民病院前にある探偵事務所" />
                 <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -33,20 +27,20 @@ const voice = () => {
                         <h3 className="headline mp">お客様の声</h3>
 
                         <div className="investigation_case pb">
-                            {/*h3 class="line">浮気調査</h3*/}
+                            {/*h3 className="line">浮気調査</h3*/}
                             <div className="box"><div className="bg">
                                 <div className="head">
                                 <p className="case serif">浮気調査</p>
                                 
-                                    <input id="case-check1" class="case-check1" type="checkbox" />
-                                    <label class="case-label" for="case-check1">夫のスマホにマッチングアプリが３つあります！浮気調査で分かった依存症の問題 <FontAwesomeIcon icon={faAngleDown} /></label>
+                                    <input id="case-check1" className="case-check1" type="checkbox" />
+                                    <label className="case-label" htmlFor="case-check1">夫のスマホにマッチングアプリが３つあります！浮気調査で分かった依存症の問題 <FontAwesomeIcon icon={faAngleDown} /></label>
                                     <div className='case-content'>
                                         <div className="info">
                                             <div className="hito">
                                                 <span>ご依頼者様：主婦（30代）K様</span>
                                                 <span className="time">調査期間：30時間</span>
                                             </div>
-                                            {/*p class="img"><img src="img/investigation_case/img01.jpg" alt=""></p*/}
+                                            {/*p className="img"><img src="img/investigation_case/img01.jpg" alt=""></p*/}
                                             <dl className="content">
                                                 <dt>浮気調査を依頼されたきっかけは？</dt>
                                                 <dd>ある情報サイトで浮気する男はマッチングアプリを隠してインストールしているという記事を読みました。アプリが隠れているというので気になって夫がお風呂中にチェックしたのです。そのやり方をやってみると夫のスマホに３つのマッチングアプリが見つかりました。分かりやすく「マッチングアプリ」とカテゴリ分けしています。怒りを覚えましたがグッと我慢。最近、お小遣いが足りずに銀行預金から万単位で引き出すことが増えて、それはデートするためだったのか…と考えると眠れなくなってしまい…。浮気調査の依頼を決めたのです。</dd>
@@ -66,7 +60,7 @@ const voice = () => {
                                             <div className="comment">
                                                 <div className="chu sec">
                                                 <dl>
-                                                    <dt><StaticImage src="../../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                     <p className="b">中央リサーチから一言</p>
                                                     <p className="nm">ご家族全員で過ごす時間が楽しく幸せだとご報告を頂いて、これ以上の喜びはありません。同様のお悩みがある方は、中央リサーチまでお気軽にご相談ください。</p>
@@ -84,15 +78,15 @@ const voice = () => {
                                 <div className="head">
                                 <p className="case serif">浮気調査</p>
                                 
-                                    <input id="case-check2" class="case-check2" type="checkbox" />
-                                    <label class="case-label" for="case-check2">夫の財布からラブホテルのメンバーズカードを発見！浮気調査で夫婦関係を改善しました <FontAwesomeIcon icon={faAngleDown} /></label>
+                                    <input id="case-check2" className="case-check2" type="checkbox" />
+                                    <label className="case-label" htmlFor="case-check2">夫の財布からラブホテルのメンバーズカードを発見！浮気調査で夫婦関係を改善しました <FontAwesomeIcon icon={faAngleDown} /></label>
                                     <div className='case-content'>
                                         <div className="info">
                                             <div className="hito">
                                                 <span>ご依頼者様：主婦・パート従業員（40代）　N様</span>
                                                 <span className="time">調査時間：20時間</span>
                                             </div>
-                                            {/*p class="img"><img src="img/investigation_case/img02.jpg" alt=""></p*/}
+                                            {/*p className="img"><img src="img/investigation_case/img02.jpg" alt=""></p*/}
                                             <dl className="content">
                                                 <dt>浮気調査を依頼されたきっかけは？</dt>
                                                 <dd>つい先月、着払いの小包郵便が届いて、小銭がなかったので夫の財布を借りて中身を見た時にラブホテルのメンバーズカードを発見し、見てはいけないものを見てしまった気分に…。結婚10年以上、子どもたちも中学生なので夫の浮気で離婚するつもりはありませんが、夜中に考えだしたら不安になってしまって…。夫婦の会話も少なく、夜の営みもないので余計に。夫は会社員ですが相手が誰なのか分からず、浮気の事実と相手を特定してもらいたくて探偵社に調査をお願いすることにしたのです。</dd>
@@ -112,7 +106,7 @@ const voice = () => {
                                             <div className="comment">
                                                 <div className="chu sec">
                                                 <dl>
-                                                    <dt><StaticImage src="../../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                     <p className="b">中央リサーチから一言</p>
                                                     <p className="nm">こちらこそ、当社を信頼して頂きご依頼ありがとうございました。今後、ご家族全員が平穏で幸せな日々を送れるように望んでおります。</p>
@@ -129,15 +123,15 @@ const voice = () => {
                                 <div className="head">
                                     <p className="case serif">素行調査</p>
                                 
-                                    <input id="case-check3" class="case-check3" type="checkbox" />
-                                    <label class="case-label" for="case-check3">老舗の和菓子店を長男家族に継がせたいが…素行調査でスッキリしました！ <FontAwesomeIcon icon={faAngleDown} /></label>
+                                    <input id="case-check3" className="case-check3" type="checkbox" />
+                                    <label className="case-label" htmlFor="case-check3">老舗の和菓子店を長男家族に継がせたいが…素行調査でスッキリしました！ <FontAwesomeIcon icon={faAngleDown} /></label>
                                     <div className='case-content'>
                                         <div className="info">
                                             <div className="hito">
                                                 <span>ご依頼者様：和菓子店経営（80代）S様</span>
                                                 <span className="time">調査時間：20時間</span>
                                             </div>
-                                            {/*p class="img"><img src="img/investigation_case/img02.jpg" alt=""></p*/}
+                                            {/*p className="img"><img src="img/investigation_case/img02.jpg" alt=""></p*/}
                                             <dl className="content">
                                                 <dt>素行調査を依頼されたきっかけは？</dt>
                                                 <dd>県内で和菓子店を経営しています。私と妻はどちらも80代、高齢によりリタイアしたいと考えており、長男家族に跡を継いでほしいと考えています。本人たちはやる気があります。しかし、次男がいうには「兄夫婦はケンカばかりしていつ離婚するか分からない状態だから、安心して任せられないよ！」と説得されました。次男夫婦は自営業のため継がせられません。そこで、離れて暮らす長男家族の家庭の様子はどうか、お嫁さんや子どもたちと上手くやっているのか、事実を知りたくて探偵社に調査依頼をお願いすることにしました。</dd>
@@ -157,7 +151,7 @@ const voice = () => {
                                             <div className="comment">
                                                 <div className="chu sec">
                                                 <dl>
-                                                    <dt><StaticImage src="../../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                     <p className="b">中央リサーチから一言</p>
                                                     <p className="nm">調査にご満足いただけてこちらこそ嬉しく思っております。ご長男家族様がお店を引き継がれて一層お店が繁盛されますことをスタッフ一同、心より祈っております。</p>
@@ -175,15 +169,15 @@ const voice = () => {
                                 <div className="head">
                                     <p className="case serif">結婚調査</p>
                                 
-                                    <input id="case-check4" class="case-check4" type="checkbox" />
-                                    <label class="case-label" for="case-check4">娘の婚約者が罵倒、暴言癖の可能性…結婚調査をして婚約解消させてリセット！ <FontAwesomeIcon icon={faAngleDown} /></label>
+                                    <input id="case-check4" className="case-check4" type="checkbox" />
+                                    <label className="case-label" htmlFor="case-check4">娘の婚約者が罵倒、暴言癖の可能性…結婚調査をして婚約解消させてリセット！ <FontAwesomeIcon icon={faAngleDown} /></label>
                                     <div className='case-content'>
                                         <div className="info">
                                             <div className="hito">
                                                 <span>ご依頼者様：娘の母親（50代）N様</span>
                                                 <span className="time">調査時間：30時間</span>
                                             </div>
-                                            {/*p class="img"><img src="img/investigation_case/img02.jpg" alt=""></p*/}
+                                            {/*p className="img"><img src="img/investigation_case/img02.jpg" alt=""></p*/}
                                             <dl className="content">
                                                 <dt>結婚調査を依頼されたきっかけは？</dt>
                                                 <dd>県内の戸建てに1階は私達夫婦、2階は娘と娘の婚約者が住んでいます。いわゆる2世帯住宅になりますが、ある悩みがありまして…。６ヶ月前に娘は婚約者を家に連れてきました。初めの頃はおしゃべりが面白いお兄さんという感じでしたが、次第に怒鳴ったり、暴言を履くようになり、うるさい声が1階まで響くのです。娘に言っても聞く耳持たず、解決しません。私としては婚約者と別れてもらい、家を出てほしいのが本音です。しかし、私の夫は「娘の婚約者なんだから二人で家を出てもらえばいいじゃないか」と言い、納得いきません。私は婚約者のことをよく知らないので、家族構成や職歴、年収や交友関係などを調べてもらいたいと思い、結婚調査をお願いすることにしました。</dd>
@@ -203,7 +197,7 @@ const voice = () => {
                                             <div className="comment">
                                                 <div className="chu sec">
                                                 <dl>
-                                                    <dt><StaticImage src="../../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                     <p className="b">中央リサーチから一言</p>
                                                     <p className="nm">色々と大変な時間を過ごされて心労を察します。ご家族様の全員が安心して幸せな生活が送れるようにスタッフ一同、心より祈っております。</p>
@@ -220,15 +214,15 @@ const voice = () => {
                                 <div className="head">
                                     <p className="case serif">家出調査</p>
                                 
-                                    <input id="case-check5" class="case-check5" type="checkbox" />
-                                    <label class="case-label" for="case-check5">認知症のおじいちゃんが夜中に家出！安全に保護して頂いた調査員全員に感謝します。 <FontAwesomeIcon icon={faAngleDown} /></label>
+                                    <input id="case-check5" className="case-check5" type="checkbox" />
+                                    <label className="case-label" htmlFor="case-check5">認知症のおじいちゃんが夜中に家出！安全に保護して頂いた調査員全員に感謝します。 <FontAwesomeIcon icon={faAngleDown} /></label>
                                     <div className='case-content'>
                                         <div className="info">
                                             <div className="hito">
                                                 <span>ご依頼者様：認知症のお祖父様のご家族／M様</span>
                                                 <span className="time">調査時間：20時間</span>
                                             </div>
-                                            {/*p class="img"><img src="img/investigation_case/img02.jpg" alt=""></p*/}
+                                            {/*p className="img"><img src="img/investigation_case/img02.jpg" alt=""></p*/}
                                             <dl className="content">
                                                 <dt>家出調査を依頼されたきっかけは？</dt>
                                                 <dd>我が家は夫婦と中学生の娘、おじいちゃんの4人暮らし。朝、いつも通りにおじいちゃんの部屋に「朝食の用意ができたよ」と言うと返事がないので、部屋に入ると姿がありません！認知症のおじいちゃんは85歳で何処へ行ったのか分からず不安になりました。警察に電話をしても捜索はしてもらえず、困り果てた上に探偵社に依頼することを思いつきました。</dd>
@@ -248,7 +242,7 @@ const voice = () => {
                                             <div className="comment">
                                                 <div className="chu sec">
                                                 <dl>
-                                                    <dt><StaticImage src="../../img/investigation_case/human.png" alt="" /></dt>
+                                                    <dt><img src="../../img/investigation_case/human.png" alt="" /></dt>
                                                     <dd>
                                                     <p className="b">中央リサーチから一言</p>
                                                     <p className="nm">今回は家出調査のご依頼ありがとうございました。お祖父様がご無事にご帰宅されたとのことで本当に良かったです。ご家族の平穏を祈っております。</p>
@@ -271,5 +265,13 @@ const voice = () => {
         </>
     )
 }
-
+export const Head = () => (
+    <>
+        <Seo
+            title2="お客様の声｜愛媛の総合探偵社中央リサーチ"
+            description="愛媛の興信所・探偵社の中央リサーチ愛媛のお客様の声について。浮気調査を最も得意とする探偵社です。ご依頼者様の心のお悩みを解決し、平穏な日々を取り戻せるよう全力を尽くします。浮気調査に多くの実績を持つ当社にお任せください。"
+            keyword="お客様の声,探偵,愛媛,興信所,浮気調査,中央リサーチ愛媛"
+            />
+    </>
+  )
 export default voice

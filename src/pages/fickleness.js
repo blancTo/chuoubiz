@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import SubpageTitle from '../components/SubpageTitle'
@@ -17,11 +17,7 @@ const fickleness = () => {
     }
     return (
         <>
-            <Seo
-            title="広島で浮気・不倫調査のご依頼を悩まれている方へ"
-            description="浮気調査・不倫調査・素行調査は広島本社で55年の実績を持つ中央リサーチにお任せください。皆様に少しでも早く安心をお届けできるよう責任と誠意を持ってサポートいたします。"
-            keyword="浮気調査,不倫調査,広島,探偵,中央リサーチ"
-            />
+            
             <div id="wrap">
             <Header h1title="浮気・不倫調査について" />
             <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -45,7 +41,7 @@ const fickleness = () => {
                                 <li><b>離婚はしたくない</b>ので、より良い解決方法が知りたい。</li>
                                 <li>すでに離婚を考えているので、<b>裁判を有利に進める確実な証拠が欲しい。</b></li>
                                 </ul>
-                                <p className="img nm"><StaticImage src="../img/fickleness/img01.png" alt="" /></p>
+                                <p className="img nm"><img src="../img/fickleness/img01.png" alt="" /></p>
                             </dd>
                             </dl>
                         </div>
@@ -57,7 +53,7 @@ const fickleness = () => {
                                 <p className="txt"><b>ただ、ずっと考えているだけでは、前に進みません。良い未来に向けて、一歩踏み出すためにも、私たちにお悩みをお聞かせください。</b></p>
                                 <p className="txt"><b className="red">私たちはあなたの味方です。</b><b>きっとお役に立てると思いますし、相談員のアドバイスで早期に解決できる事もあります。私たちは、</b><b className="red">お客様の気持ちを大切にし全力でサポートいたします。</b></p>
                             </div>
-                            <p className="img nm"><StaticImage src="../img/fickleness/img01.jpg" alt="" /></p>
+                            <p className="img nm"><img src="../img/fickleness/img01.jpg" alt="" /></p>
                             </div>
                             <div className="sec">
                             <div className="txt_area">
@@ -65,7 +61,7 @@ const fickleness = () => {
                                 <p className="txt"><b className="red">今、必要なのは真実であり不貞の証拠を収集する事です｡</b>お悩みになられている方も<b>「このまま様子をみていようか？」</b>とか、<b>｢私だけが我慢したらいいのかな？」</b>とか思われていませんか?</p>
                                 <p className="txt"><b>お悩みを早期に解決する為、大切なことは調査を行い、まず事実を確認する事です。その結果、解決の糸口を見い出し、<span className="red">必ずお力になることをお約束いたします。</span></b></p>
                             </div>
-                            <p className="img nm"><StaticImage src="../img/fickleness/img02.jpg" alt="" /></p>
+                            <p className="img nm"><img src="../img/fickleness/img02.jpg" alt="" /></p>
                             </div>
                         </div>
                         <div className="fickleness_point bg_wide pb">
@@ -73,31 +69,31 @@ const fickleness = () => {
                             <dl>
                             <dt className="bg_blue_grad2 mp"><span>1</span>浮気調査経験10年以上の<br className="dsp_smt" />探偵が調査に対応</dt>
                             <dd>「継続は力なり」と言いますが、場数を重ねることで目に見えない起点や、機敏な動き、行動予測などを把握し調査を進める能力を持っています。
-                                <p className="img nm"><StaticImage src="../img/fickleness/point01.jpg" alt="" /></p>
+                                <p className="img nm"><img src="../img/fickleness/point01.jpg" alt="" /></p>
                             </dd>
                             </dl>
                             <dl>
                             <dt className="bg_blue_grad2 mp"><span>2</span>難しい調査もバイクと車を<br className="dsp_smt" />併用し必ず証拠を掴む</dt>
                             <dd>もともと浮気をする人物はある程度警戒しています。警戒の厳しい対象者に気づかれずに追尾する場合、交通事情など考慮すると数名の調査員とバイクの存在は欠かせません。
-                                <p className="img nm"><StaticImage src="../img/fickleness/point02.jpg" alt="" /></p>
+                                <p className="img nm"><img src="../img/fickleness/point02.jpg" alt="" /></p>
                             </dd>
                             </dl>
                             <dl>
                             <dt className="bg_blue_grad2 mp"><span>3</span>プロの探偵は最新の撮影機材<br className="dsp_smt" />を使用しています</dt>
                             <dd>最近では４K、８Kの高画質カメラやビデオ、高感度レンズなども使用し深夜の真っ暗な環境でも顔をはっきり写すことが可能です。また車内などの不貞も立証します。
-                                <p className="img nm"><StaticImage src="../img/fickleness/point03.jpg" alt="" /></p>
+                                <p className="img nm"><img src="../img/fickleness/point03.jpg" alt="" /></p>
                             </dd>
                             </dl>
                             <dl>
                             <dt className="bg_blue_grad2 mp"><span>4</span>不貞の証拠と浮気相手を<br className="dsp_smt" />特定します</dt>
                             <dd>せっかく不貞の証拠をつかんでも浮気相手の帰宅先が解らなければ内容証明や慰謝料も請求できず泣き寝入り。弊社は追加料金不要で帰宅先まで割り出すよう進めます。
-                                <p className="img nm"><StaticImage src="../img/fickleness/point04.jpg" alt="" /></p>
+                                <p className="img nm"><img src="../img/fickleness/point04.jpg" alt="" /></p>
                             </dd>
                             </dl>
                             <dl>
                             <dt className="bg_blue_grad2 mp"><span>5</span>弊社の報告書はご依頼者様の<br className="dsp_smt" />期待にこたえます</dt>
                             <dd><p className="txt">動かぬ証拠となる報告書は裁判に進む上で、非常に有利となりますが、対象者に証拠をつきつけることで、裁判に進むことなく非を謝罪し、和解に進むこともあります。動かぬ証拠はあなたに精神的な余裕を与え、今ある悩み、苦しみを解決する糸口となります。</p>
-                                <p className="img nm"><StaticImage src="../img/fickleness/point05.jpg" alt="" /></p>
+                                <p className="img nm"><img src="../img/fickleness/point05.jpg" alt="" /></p>
                             </dd>
                             </dl>
                             <div className="wrap">
@@ -105,7 +101,7 @@ const fickleness = () => {
                                 <dt className="bg_blue_grad2 mp">夫婦（恋人）間の関係を<br className="dsp_smt" />修復したい場合</dt>
                                 <dd><p className="txt nm"><b className="red">事実関係を調査</b>し、それを基に夫婦間で話し合いを行い、関係を元に戻すためのアドバイスをいたします。<br />
                                     浮気相手と二度と会わない（完全に別れる）事はもちろん重要ですが、なぜ浮気・不貞に至ってしまったのか、相手を理解することも大切です。信頼を裏切られたことでパートナーを責めたくなる気持ちが大きくなりがちですが、これからの人生を共に歩むためには、二人で努力し、歩み寄る話し合いが必要です。</p>
-                                <p className="img nm"><StaticImage src="../img/fickleness/point06.jpg" alt="" /></p>
+                                <p className="img nm"><img src="../img/fickleness/point06.jpg" alt="" /></p>
                                 </dd>
                             </dl>
                             <dl>
@@ -113,7 +109,7 @@ const fickleness = () => {
                                 <dd><p className="txt nm">浮気が原因で離婚となる場合、不貞の証拠（性的関係の事実）が必要です。ふたりで食事しているだけの証拠では有利にならないのです。裁判では不貞の証拠がないと、こちらの主張が認められず不利な立場になってしまいます。何故なら裁判は証拠を基に審理するからです。<br />
                                     離婚後のご不安についても、優秀な弁護士のご紹介など、最善の選択肢を選べるよう、全力でサポートしますのでご安心ください。</p>
                                 <p className="more rit  nm"><Link to="/type/">» 詳しくはこちら</Link></p>
-                                <p className="img nm nm"><StaticImage src="../img/fickleness/point07.jpg" alt="" /></p>
+                                <p className="img nm nm"><img src="../img/fickleness/point07.jpg" alt="" /></p>
                                 </dd>
                             </dl>
                             </div>
@@ -125,7 +121,7 @@ const fickleness = () => {
                                 </dd>
                             </dl>
                             </div>
-                            <p className="img cen"><StaticImage src="../img/fickleness/point00.png" alt="" /></p>
+                            <p className="img cen"><img src="../img/fickleness/point00.png" alt="" /></p>
                             <br />
                             <p className="link nm"><Link to="/sample/">調査報告書サンプルはコチラ</Link></p>
                         </div>
@@ -134,7 +130,7 @@ const fickleness = () => {
                             <p>パートナーが浮気をすると、普段のちょっとした行動に変化が現れます。「あれ？おかしいな？」と思うような行動がリストの半分以上当てはまるようでしたら、浮気をしている可能性が高いです。<br />
                             ※このリストはあくまでも浮気をしている人の傾向であり、浮気の可能性を100％保障するものではありません。</p>
                             <div className="bg bg_blue_grad2">
-                            <p className="ico cen nm"><StaticImage src="../img/fickleness/ico.png" alt="" /></p>
+                            <p className="ico cen nm"><img src="../img/fickleness/ico.png" alt="" /></p>
                             <dl>
                                 <dt><span className="no serif">01</span><span className="line mp">LINEにロック画面をし始めた</span></dt>
                                 <dd><p className="txt nm">以前はLINEにロックをかけていなかったのに、浮気をし始めたと同時にLINEにロック画面を設定する人がいます。<br />
@@ -203,16 +199,16 @@ const fickleness = () => {
                         </div>
                         <div className="fickleness_request pt pb bg_wide">
                             <h3 className="headline">浮気調査はどうやって<br className="dsp_smt" />依頼するの？<br className="dsp_smt" /><span>Ａ子さんの場合</span></h3>
-                            <p className="ico"><StaticImage src="../img/fickleness/woman.png" alt="" /></p>
+                            <p className="ico"><img src="../img/fickleness/woman.png" alt="" /></p>
                             <div className="list">
                             <div className="sec">
                                 <p className="mp"><span className="no">1</span>HPを見て、フリーダイヤルへ電話する</p>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/woman01.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/woman01.png" alt="" /></dt>
                                 <dd><p className="txt nm">「相談無料」と書いてあるので、勇気を出して電話を掛けてみた。怖い人が出るかも、うまく説明できるかしら…と不安な気持ちでいたけれど、窓口のスタッフは優しく話してくれたし、説明しにくい事情も上手に聞き出してくれた。電話で話した内容で想定できる見積り金額もはっきりと教えてもらえた。</p></dd>
                                 </dl>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/man.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/man.png" alt="" /></dt>
                                 <dd><p className="b nm">相談員から一言</p>
                                     <p className="txt nm">最初は皆さん不安いっぱいなお気持ちで電話を掛けてこられます。どんな状況のお客様でも私たちがしっかりお聞きしますから大丈夫ですよ。女性相談員専用の電話番号や、メール窓口、LINE窓口もありますので、一番相談しやすいものを選んでくださいね。</p></dd>
                                 </dl>
@@ -220,11 +216,11 @@ const fickleness = () => {
                             <div className="sec chk">
                                 <p className="mp"><span className="no">2</span>もっと具体的な話をしたいので、面談を申し込む</p>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/woman02.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/woman02.png" alt="" /></dt>
                                 <dd><p className="txt nm">夫の生活習慣や帰宅時間、帰りの遅い日や休日出勤のこと、親しげにメールのやりとりをしている女性のことなど、詳しく話した上で正確な見積りを提案してもらった。どうしても調べてほしい日のことや、予算のこともすべて伝えると、私にぴったりな調査プランを作ってもらえた。面談室は予約制で、ほかの人に会わずに済んだのも安心。</p></dd>
                                 </dl>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/man.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/man.png" alt="" /></dt>
                                 <dd><p className="b nm">相談員から一言</p>
                                     <p className="txt nm">面談のご予約は当日でも可能です。また、遠方にお住まいなどで弊社面談室へお越しになるのが難しい場合は、ご指定の場所へ相談員がお伺いすることもできますので、遠慮なくご相談ください。</p></dd>
                                 </dl>
@@ -233,11 +229,11 @@ const fickleness = () => {
                             <div className="sec">
                                 <p className="mp"><span className="no">3</span>これから先のことを考えて決断、浮気調査を依頼する</p>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/woman03.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/woman03.png" alt="" /></dt>
                                 <dd><p className="txt nm">夫の帰りが遅い夜、疑いながら眠れずに過ごすのは終わりにしたい。やっぱり調査を頼もう、と決断して調査を申し込むことに。もちろん、見積金額以外にお金がかからないこともチェックしておく。<br className="dsp_hp" />&nbsp;</p></dd>
                                 </dl>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/man.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/man.png" alt="" /></dt>
                                 <dd><p className="b nm">相談員から一言</p>
                                     <p className="txt nm">浮気調査のご契約時には、書類の内容もしっかりご説明しますので、わからないところは遠慮なく質問してくださいね。</p></dd>
                                 </dl>
@@ -245,11 +241,11 @@ const fickleness = () => {
                             <div className="sec chk">
                                 <p className="mp"><span className="no">4</span>調査開始から終了まで…</p>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/woman04.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/woman04.png" alt="" /></dt>
                                 <dd><p className="txt nm">担当相談員と一緒に調査の日時も決めて、あとは結果を待つのみ。いつも通りに過ごしてください、と言われたけど意識しすぎてないか心配。調査の結果はこまめに担当相談員から教えてもらえるので、ただじっと待つよりはずいぶん気が楽になったかも。<br className="dsp_hp" />&nbsp;</p></dd>
                                 </dl>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/man.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/man.png" alt="" /></dt>
                                 <dd><p className="b nm">相談員から一言</p>
                                     <p className="txt nm">お客様とのご連絡・ご相談は担当相談員が引き続き行いますので、気兼ねなく何でもご相談くださいね。</p></dd>
                                 </dl>
@@ -258,11 +254,11 @@ const fickleness = () => {
                             <div className="sec">
                                 <p className="mp"><span className="no">5</span>調査報告書を受けとる</p>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/woman05.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/woman05.png" alt="" /></dt>
                                 <dd><p className="txt nm">調査日程分すべての報告書を受け取った。「２０時XX分　『△△ホテル』へ入る」…時間まで詳しく書いてあるし、浮気相手の顔もばっちり写っていてビックリ。浮気相手と腕を組んでホテルに入る夫の姿を見ると腹が立つけど、「このまま放っておかなくて良かった…」とスッキリする自分もいる。</p></dd>
                                 </dl>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/man.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/man.png" alt="" /></dt>
                                 <dd><p className="b nm">相談員から一言</p>
                                     <p className="txt nm">弊社の調査報告書は、対象者の行動がよく分かる詳細な報告書です。いい加減な報告書は絶対にお渡ししません。裁判になっても認められるような不貞の証拠を確実に捉えた写真や動画（DVD）「動かぬ証拠」です。</p></dd>
                                 </dl>
@@ -270,11 +266,11 @@ const fickleness = () => {
                             <div className="sec">
                                 <p className="mp"><span className="no">6</span>浮気相手ときっちり別れてもらうために…</p>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/woman06.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/woman06.png" alt="" /></dt>
                                 <dd><p className="txt nm">夫と別れることは考えられないけれど、浮気を許すこともできない。浮気相手にはきちんと慰謝料を請求して、夫とも絶対に別れてもらいたい。浮気の証拠は手に入れたけれど、これからどうしたらいいんだろう？<br className="dsp_hp" />&nbsp;</p></dd>
                                 </dl>
                                 <dl>
-                                <dt><StaticImage src="../img/fickleness/man.png" alt="" /></dt>
+                                <dt><img src="../img/fickleness/man.png" alt="" /></dt>
                                 <dd><p className="b nm">相談員から一言</p>
                                     <p className="txt nm">浮気調査で判明した結果をどのように活かすか、ということは一番大切な問題です。中央リサーチでは、問題が解決するまで責任をもって対応致します。そのほか法的な問題に関しては、優秀な弁護士等を無料でご紹介できますのでご安心ください。</p></dd>
                                 </dl>
@@ -291,8 +287,8 @@ const fickleness = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">case01</p>                                    
-                                        <input id="case-check1" class="case-check1" type="checkbox" />
-                                        <label class="case-label" for="case-check1">夫が貯金をおろして浮気のデート代に使っている予感！妻の予想が的中した調査事例<br />
+                                        <input id="case-check1" className="case-check1" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check1">夫が貯金をおろして浮気のデート代に使っている予感！妻の予想が的中した調査事例<br />
                                         <span>会社員の夫が頻繁にATMでお金をおろすようになり、貯金額が減って浮気の疑惑が…。妻の予想が見事に当たった浮気調査事例です。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -300,7 +296,7 @@ const fickleness = () => {
                                                     <span>依頼者：妻（34歳）</span>
                                                     <span className="target">対象者：会社員の夫（36歳）</span>
                                                 </div>
-                                                <p className="img"><StaticImage src="../img/investigation_case/img01.jpg" alt="" /></p>
+                                                <p className="img"><img src="../img/investigation_case/img01.jpg" alt="" /></p>
                                                 <dl className="content">
                                                     <dt>依頼内容</dt>
                                                     <dd>夫は土日祝休みの会社員です。休みの日はテレビを見るか、昼寝をするか、のんびりした性格ですが、この1ヶ月の間にコンビニのATMで頻繁に3万円ずつお金をおろしている事が発覚。子供の教育費に貯めている預金口座から、10万円以上なくなっていたので、夫に問いただしたところ、いきなり怒り出して、休みの日は家を空けるようになりました。普段の会話も上の空で、気持ちがここにあらずという感じです。もしかして、浮気でもしているのか？と感じています。早く解決したいので、浮気調査を依頼することにしました。</dd>
@@ -318,7 +314,7 @@ const fickleness = () => {
                                                 <div className="comment">
                                                     <div className="requester sec">
                                                         <dl>
-                                                            <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                            <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                             <dd>
                                                             <p className="b">依頼者様からのコメント</p>
                                                             <p className="nm">夫の浮気が確実だと分かり、ショックな気持ちと呆れた気持ちが入り混じっています。不器用で騙されやすい性格なので、女性の言いなりになっていると想像できます。会社の慰安旅行で行った温泉旅館の領収書やデパートでのブランド品のレシートも浮気相手とのデートだったんですね…。<br />
@@ -328,7 +324,7 @@ const fickleness = () => {
                                                     </div>
                                                     <div className="chu sec">
                                                         <dl>
-                                                            <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                            <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                             <dd>
                                                             <p className="b">中央リサーチから一言</p>
                                                             <p className="nm">今回は奥様の鋭いカンが浮気の早期発見に繋がった事例でした。いつもと違う様子や言動は浮気のシグナルかもしれません。同様のケースでお悩みの方は、一度ご相談くださいませ。</p>
@@ -347,8 +343,8 @@ const fickleness = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">case02</p>                                    
-                                        <input id="case-check2" class="case-check2" type="checkbox" />
-                                        <label class="case-label" for="case-check2">急に離婚を切り出してきた夫が怪しい!朝帰りが多く、無口になった夫の浮気調査でわかったこと<br />
+                                        <input id="case-check2" className="case-check2" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check2">急に離婚を切り出してきた夫が怪しい!朝帰りが多く、無口になった夫の浮気調査でわかったこと<br />
                                         <span>結婚7年目で小学生のお子様が一人いるご夫婦。半年くらい前から夫の朝帰りが多くなり、いきなり離婚を切り出された奥様は真実を知るために浮気調査を依頼されました。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -356,7 +352,7 @@ const fickleness = () => {
                                                     <span>依頼者：妻（38歳）</span>
                                                     <span className="target">対象者：営業職・夫（34歳）</span>
                                                 </div>
-                                                <p className="img"><StaticImage src="../img/investigation_case/img02.jpg" alt="" /></p>
+                                                <p className="img"><img src="../img/investigation_case/img02.jpg" alt="" /></p>
                                                 <dl className="content">
                                                     <dt>依頼内容</dt>
                                                     <dd>夫はコロナ禍以降残業がなくなり、仕事が終わると19時ごろに家に帰ってきます。しかし、半年くらい前から夫の様子が変になりました。朝帰りが多くなり、家では無口になったのです。<br />
@@ -375,7 +371,7 @@ const fickleness = () => {
                                                 <div className="comment">
                                                     <div className="requester sec">
                                                         <dl>
-                                                            <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                            <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                             <dd>
                                                             <p className="b">依頼者様からのコメント</p>
                                                             <p className="nm">夫が部下の女性と半年間の不倫関係にあり、その相手と再婚するため私に離婚を切り出したのですね。最近、会話が減って無口になった理由が分かりました。<br />
@@ -385,7 +381,7 @@ const fickleness = () => {
                                                     </div>
                                                     <div className="chu sec">
                                                         <dl>
-                                                            <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                            <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                             <dd>
                                                             <p className="b">中央リサーチから一言</p>
                                                             <p className="nm">対象者は会社の部下と浮気関係になりました。会社から3つ先の駅前のラブホテルに宿泊したり、行動が大胆だったので、浮気の証拠も一目瞭然です。<br />
@@ -405,8 +401,8 @@ const fickleness = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">case03</p>
-                                        <input id="case-check3" class="case-check3" type="checkbox" />
-                                        <label class="case-label" for="case-check3">田舎あるある！なんと浮気現場は人が多いお店の駐車場だった<br />
+                                        <input id="case-check3" className="case-check3" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check3">田舎あるある！なんと浮気現場は人が多いお店の駐車場だった<br />
                                         <span>結婚して3年目になるご夫婦。3歳のお子様がいる幸せそうなご家庭ですが、ご主人様は妻の浮気を疑うように…。妻が浮気をする現場は驚くことに人が多いお店の駐車場だったケース。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -414,7 +410,7 @@ const fickleness = () => {
                                                     <span>依頼者：販売職・夫（28歳）</span>
                                                     <span className="target">対象者：パート従業員・妻（27歳）</span>
                                                 </div>
-                                                <p className="img"><StaticImage src="../img/investigation_case/img03.jpg" alt="" /></p>
+                                                <p className="img"><img src="../img/investigation_case/img03.jpg" alt="" /></p>
                                                 <dl className="content">
                                                     <dt>依頼内容</dt>
                                                     <dd>妻は１００円ショップでパートタイマーとして働いています。性格は明るく社交的で人当たりもいい方だと思います。最近、夜の夫婦生活がなくなり、同じベッドに寝ていても体を離すように…。<br />
@@ -437,7 +433,7 @@ const fickleness = () => {
                                                 <div className="comment">
                                                     <div className="requester sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">依頼者様からのコメント</p>
                                                         <p className="nm">今回は中央リサーチさんの素晴らしい調査力で短期間で証拠を掴んでもらい、大変感謝しております。田舎のショッピングセンターは街の住民が買い物をする定番のスポットです。<br />
@@ -448,7 +444,7 @@ const fickleness = () => {
                                                     </div>
                                                     <div className="chu sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">中央リサーチから一言</p>
                                                         <p className="nm">近年は、妻が浮気をしてご主人様が悩まれるケースが増えています。なかなか人には言えない相談も実績豊富な中央リサーチにぜひご相談ください。</p>
@@ -466,8 +462,8 @@ const fickleness = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">case04</p>                                        
-                                        <input id="case-check4" class="case-check4" type="checkbox" />
-                                        <label class="case-label" for="case-check4">幸せな新婚カップルに起こった真実！夫が独身を装って5人の女性と交際？！<br />
+                                        <input id="case-check4" className="case-check4" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check4">幸せな新婚カップルに起こった真実！夫が独身を装って5人の女性と交際？！<br />
                                         <span>今回は結婚したばかりの新婚カップルに実際に起こった衝撃の真実をご紹介します。夫は独身のフリをして出会い系アプリを使い、結婚を前提に複数人の女性と交際していたケースです。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -475,7 +471,7 @@ const fickleness = () => {
                                                     <span>依頼者：販売職・妻（31歳）</span>
                                                     <span className="target">対象者：営業職・夫（34歳）</span>
                                                 </div>
-                                                <p className="img"><StaticImage src="../img/investigation_case/img04.jpg" alt="" /></p>
+                                                <p className="img"><img src="../img/investigation_case/img04.jpg" alt="" /></p>
                                                 <dl className="content">
                                                     <dt>依頼内容</dt>
                                                     <dd>大学生の頃に知り合った夫とは交際１０年の末に結婚しました。お付き合いの期間が長いのでお互いに短所もすべて受け入れて、信頼関係が強いです。<br />
@@ -497,7 +493,7 @@ const fickleness = () => {
                                                 <div className="comment">
                                                     <div className="requester sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">依頼者様からのコメント</p>
                                                         <p className="nm">自宅のゴミ箱から、女性の化粧品を購入したコンビニのレシートや個室の居酒屋のレシートが出てきたので浮気していると薄々感じていましたが、やはり事実でしたね。<br />
@@ -508,7 +504,7 @@ const fickleness = () => {
                                                     </div>
                                                     <div className="chu sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">中央リサーチから一言</p>
                                                         <p className="nm">最近は、スマホの出会い系アプリやSNSをきっかけに既婚者も出会いを求めて、大胆な行動に出るケースが増えています。同様のケースでお悩みの方は、一度ご相談頂ければと思います。</p>
@@ -526,8 +522,8 @@ const fickleness = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">case05</p>                                        
-                                        <input id="case-check5" class="case-check5" type="checkbox" />
-                                        <label class="case-label" for="case-check5">W不倫の再婚カップルは浮気を繰り返す？次は浮気の被害者になってしまった妻の事例<br />
+                                        <input id="case-check5" className="case-check5" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check5">W不倫の再婚カップルは浮気を繰り返す？次は浮気の被害者になってしまった妻の事例<br />
                                         <span>今回ご紹介する浮気調査の事例は、社内でのW不倫の末に再婚されたカップルに待ち受けていた意外な結末です。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -535,7 +531,7 @@ const fickleness = () => {
                                                     <span>依頼者：主婦（37歳）</span>
                                                     <span className="target">対象者：会社員・夫（42歳）</span>
                                                 </div>
-                                                <p className="img"><StaticImage src="../img/investigation_case/img05.jpg" alt="" /></p>
+                                                <p className="img"><img src="../img/investigation_case/img05.jpg" alt="" /></p>
                                                 <dl className="content">
                                                     <dt>依頼内容</dt>
                                                     <dd>私には夫がいましたが、職場で今の主人と知り合ってW不倫の関係になり、再婚しました。私は二人の子連れ再婚、主人は子供一人の親権を妻に渡しての再婚です。<br />
@@ -559,7 +555,7 @@ const fickleness = () => {
                                                 <div className="comment">
                                                     <div className="requester sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">依頼者様からのコメント</p>
                                                         <p className="nm">予想的中で妙に納得しました。ラブホテルに入る前からマスクを外して随分と強気ですね。でも今回の浮気調査で自分が過去にやったW不倫の過ちを反省するきっかけになりました。<br />
@@ -569,7 +565,7 @@ const fickleness = () => {
                                                     </div>
                                                     <div className="chu sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">中央リサーチから一言</p>
                                                         <p className="nm">人には相談できない浮気問題は、中央リサーチのベテランカウンセラーが丁寧にお話をお伺いいたします。お困りごと、浮気調査のご相談はお気軽にどうぞ。</p>
@@ -587,8 +583,8 @@ const fickleness = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">case06</p>
-                                        <input id="case-check6" class="case-check6" type="checkbox" />
-                                        <label class="case-label" for="case-check6">夫がSNS経由で昔の彼女と連絡を取り密会していた…浮気調査で分かった事実<br />
+                                        <input id="case-check6" className="case-check6" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check6">夫がSNS経由で昔の彼女と連絡を取り密会していた…浮気調査で分かった事実<br />
                                         <span>最近は、SNSを通じて人と簡単に出会える時代です。今回ご紹介する事例は妻が夫のスマホ画面をキッカケに浮気発覚したケースです。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -596,7 +592,7 @@ const fickleness = () => {
                                                     <span>依頼者：妻（43歳）</span>
                                                     <span className="target">対象者：会社員・夫　（45 歳）</span>
                                                 </div>
-                                                <p className="img"><StaticImage src="../img/investigation_case/img06.jpg" alt="" /></p>
+                                                <p className="img"><img src="../img/investigation_case/img06.jpg" alt="" /></p>
                                                 <dl className="content">
                                                     <dt>依頼内容</dt>
                                                     <dd>夫は家族思いで優しい性格ですが、ここ半年ぐらい家庭で話をしなくなり、休みの日は逃げるように外出するので、外で夫が何をしているのか気になります。<br />
@@ -620,7 +616,7 @@ const fickleness = () => {
                                                 <div className="comment">
                                                     <div className="requester sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">依頼者様からのコメント</p>
                                                         <p className="nm">今回はスピーディーな調査をして頂きありがとうございました。夫は高校時代の同級生と浮気関係になったと分かり、大変驚きました。<br />
@@ -630,7 +626,7 @@ const fickleness = () => {
                                                     </div>
                                                     <div className="chu sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">中央リサーチから一言</p>
                                                         <p className="nm">近頃は、SNSを通じて昔の知り合いや交際相手と連絡を取るようになり、浮気関係に発展するケースが増えています。同様のケースでお悩みの方は一度お気軽にご相談ください。</p>
@@ -648,8 +644,8 @@ const fickleness = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">case07</p>
-                                        <input id="case-check7" class="case-check7" type="checkbox" />
-                                        <label class="case-label" for="case-check7">息子の嫁の行動が怪しい…衝撃事実発覚！パート勤めではなく〇〇で働いていた<br />
+                                        <input id="case-check7" className="case-check7" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check7">息子の嫁の行動が怪しい…衝撃事実発覚！パート勤めではなく〇〇で働いていた<br />
                                         <span>夫・妻は距離が近すぎて、意外と本心がわからないもの。今回の事例は姑さんの素晴らしいカンが的中した浮気調査の事例をご紹介しましょう。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -657,7 +653,7 @@ const fickleness = () => {
                                                     <span>依頼者：息子の母親（61歳）</span>
                                                     <span className="target">対象者：息子の嫁（27歳）</span>
                                                 </div>
-                                                <p className="img"><StaticImage src="../img/investigation_case/img07.jpg" alt="" /></p>
+                                                <p className="img"><img src="../img/investigation_case/img07.jpg" alt="" /></p>
                                                 <dl className="content">
                                                     <dt>依頼内容</dt>
                                                     <dd>会社員の息子は現在35歳。1年前に知人の紹介で知り合った女性と結婚しました。年末年始やお盆休みには夫婦で実家に来てくれて、結婚生活も安定していて幸せそうに見えます。<br />
@@ -681,7 +677,7 @@ const fickleness = () => {
                                                 <div className="comment">
                                                     <div className="requester sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">依頼者様からのコメント</p>
                                                         <p className="nm">お嫁さんが男性とラブホテルに入っていく調査報告書を見て、絶句しました。複数の男性と関係を持ち、風俗の仕事をしているなんて信じられずにショックを受けています。<br />
@@ -691,7 +687,7 @@ const fickleness = () => {
                                                     </div>
                                                     <div className="chu sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">中央リサーチから一言</p>
                                                         <p className="nm">今回のように、奥様が秘密の仕事をしているケースは珍しくありません。気になることがございましたら、中央リサーチまでお気軽にご相談頂ければと思います。</p>
@@ -711,8 +707,8 @@ const fickleness = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">case08</p>
-                                        <input id="case-check8" class="case-check8" type="checkbox" />
-                                        <label class="case-label" for="case-check8">知らない女性から夫に向けて電話がかかってきます・・・浮気調査で浮気相手の素行が発覚！<br />
+                                        <input id="case-check8" className="case-check8" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check8">知らない女性から夫に向けて電話がかかってきます・・・浮気調査で浮気相手の素行が発覚！<br />
                                         <span>専業主婦の奥様が不思議な電話がかかってくると悩んでいました。その相手とは夫の浮気相手のストレス発散だった、という驚きの事例です。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -720,7 +716,7 @@ const fickleness = () => {
                                                     <span>依頼者：専業主婦（36歳）</span>
                                                     <span className="target">対象者：夫（37歳）</span>
                                                 </div>
-                                                <p className="img"><StaticImage src="../img/investigation_case/img08.jpg" alt="" /></p>
+                                                <p className="img"><img src="../img/investigation_case/img08.jpg" alt="" /></p>
                                                 <dl className="content">
                                                     <dt>依頼内容</dt>
                                                     <dd>私はコロナ禍でパートを辞めて、専業主婦になり、ずっと自宅にいるのですが、最近家の留守番電話に、知らない女性からの伝言が残るようになり、不気味に思っています。<br />
@@ -743,7 +739,7 @@ const fickleness = () => {
                                                 <div className="comment">
                                                     <div className="requester sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">依頼者様からのコメント</p>
                                                         <p className="nm">今回は素早い対応をして頂いて感謝しております。夫は会社の仲間と飲み歩くのが好きですが、まさかスナック勤務の女性と浮気をして困っているとは情けない話です。<br />
@@ -753,7 +749,7 @@ const fickleness = () => {
                                                     </div>
                                                     <div className="chu sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">中央リサーチから一言</p>
                                                         <p className="nm">会社での飲み会がキッカケでホステスやスナック勤務の女性と知り合うケースは珍しくありません。<br />
@@ -774,8 +770,8 @@ const fickleness = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">case09</p>                                        
-                                        <input id="case-check9" class="case-check9" type="checkbox" />
-                                        <label class="case-label" for="case-check9">浮気期間が30年超え！夫が妻に隠し続けたもう一つの家庭が浮気調査で発覚<br />
+                                        <input id="case-check9" className="case-check9" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check9">浮気期間が30年超え！夫が妻に隠し続けたもう一つの家庭が浮気調査で発覚<br />
                                         <span>当社は多くの浮気問題のご相談を受けますが、多くの浮気カップルの平均的な交際期間は1年から1年半くらいです。今回ご紹介するのは浮気期間がなんと35年という驚きのケースです。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -783,7 +779,7 @@ const fickleness = () => {
                                                     <span>依頼者：専業主婦（63歳）</span>
                                                     <span className="target">対象者：会社代表・夫（65歳）</span>
                                                 </div>
-                                                <p className="img"><StaticImage src="../img/investigation_case/img09.jpg" alt="" /></p>
+                                                <p className="img"><img src="../img/investigation_case/img09.jpg" alt="" /></p>
                                                 <dl className="content">
                                                     <dt>依頼内容</dt>
                                                     <dd>私の夫は地元広島県で不動産業を営んでおります。私は事務の手伝いをしていましたが、退職して今は専業主婦です。最近、近所の方に我が家の車を温泉施設で見かけたというのです。<br />
@@ -805,7 +801,7 @@ const fickleness = () => {
                                                 <div className="comment">
                                                     <div className="requester sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">依頼者様からのコメント</p>
                                                         <p className="nm">夫の浮気相手がまさか職場の女性だったとは…。私も何度か話をしたことがある女性だったので驚きとショックを隠しきれません。今年で結婚生活は40年、しかし浮気期間が35年だなんて、今まで気が付かなかった自分が情けないです。決定的な証拠をありがとうございました。</p>
@@ -814,7 +810,7 @@ const fickleness = () => {
                                                     </div>
                                                     <div className="chu sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">中央リサーチから一言</p>
                                                         <p className="nm">浮気関係もズルズルと続くとお互いに馴れ合って別れられなくなるケースがあります。離婚は考えていなくても、もう一つの家庭を持つような感じです。実際にありますので要注意です。</p>
@@ -833,8 +829,8 @@ const fickleness = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">case10</p>
-                                        <input id="case-check10" class="case-check10" type="checkbox" />
-                                        <label class="case-label" for="case-check10">夫に浮気をされた妻が取った行動は…浮気のリベンジだった！浮気調査の衝撃事実<br />
+                                        <input id="case-check10" className="case-check10" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check10">夫に浮気をされた妻が取った行動は…浮気のリベンジだった！浮気調査の衝撃事実<br />
                                         <span>専業主婦はずっと家にいるイメージがあるかもしれません。最近は、スマホのアプリ、SNS、習い事やスポーツジムで既婚者同士の出会いを求めるケースが起きています。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -842,7 +838,7 @@ const fickleness = () => {
                                                     <span>依頼者：会社員・夫（41歳）</span>
                                                     <span className="target">対象者：専業主婦（32歳）</span>
                                                 </div>
-                                                <p className="img"><StaticImage src="../img/investigation_case/img10.jpg" alt="" /></p>
+                                                <p className="img"><img src="../img/investigation_case/img10.jpg" alt="" /></p>
                                                 <dl className="content">
                                                     <dt>依頼内容</dt>
                                                     <dd>結婚2年目の夫婦です。実は去年、私は出会い系アプリで知り合った女性と浮気関係にあり、妻にスマホを見られたことで浮気がバレ、、大喧嘩したことがありました。<br />
@@ -862,7 +858,7 @@ const fickleness = () => {
                                                 <div className="comment">
                                                     <div className="requester sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">依頼者様からのコメント</p>
                                                         <p className="nm">まず、丁寧な調査報告書を作成いただきありがとうございました。悲しい結果となり、ショックで立ち直れそうもありません。妻に見せたらリベンジだと反論されダブルショックです。<br />
@@ -872,7 +868,7 @@ const fickleness = () => {
                                                     </div>
                                                     <div className="chu sec">
                                                     <dl>
-                                                        <dt><StaticImage src="../img/investigation_case/human.png" alt="" /></dt>
+                                                        <dt><img src="../img/investigation_case/human.png" alt="" /></dt>
                                                         <dd>
                                                         <p className="b">中央リサーチから一言</p>
                                                         <p className="nm">自宅に籠もりきりの専業主婦であっても、簡単に異性と出会える時代ですから、思わぬ事実が発覚することがあります。何かお困りのことがありましたら、一度ご相談ください。</p>
@@ -897,13 +893,13 @@ const fickleness = () => {
         </>
     )
 }
-
 export const Head = () => (
     <>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/respond.js"></script>
-        <script src="/js/fetch.min.js"></script>
+        <Seo
+            title="広島で浮気・不倫調査のご依頼を悩まれている方へ"
+            description="浮気調査・不倫調査・素行調査は広島本社で55年の実績を持つ中央リサーチにお任せください。皆様に少しでも早く安心をお届けできるよう責任と誠意を持ってサポートいたします。"
+            keyword="浮気調査,不倫調査,広島,探偵,中央リサーチ"
+            />
     </>
 )
-
 export default fickleness

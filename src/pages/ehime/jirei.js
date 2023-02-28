@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { StaticImage } from "gatsby-plugin-image"
-
 import Seo from '../../components/SEO'
 import Layout from '../../components/Layout'
 import SubpageTitle from '../../components/SubpageTitle'
@@ -19,11 +17,7 @@ const jirei = () => {
     }
     return (
         <>
-        <Seo
-                title2="当探偵社へのご相談事例｜総合探偵社中央リサーチ愛媛"
-                description="愛媛の探偵社「中央リサーチ愛媛」、事例紹介についての説明ページです。"
-                keyword="ご相談事例,探偵,愛媛,問合せ,中央リサーチ愛媛"
-                />
+        
                 <div id="wrap">
                     <HeaderEhime h1title="調査事例について" pagetitle="松山市民病院前にある探偵事務所" />
                     <SubpageTitle subtitle={pagemeta.title} id={pagemeta.slug} />
@@ -38,8 +32,8 @@ const jirei = () => {
                                 <div id="case01" className="pad_anchor"><div className="box"><div className="bg">
                                     <div className="head">
                                         <p className="case serif">case01</p>
-                                        <input id="case-check1" class="case-check1" type="checkbox" />
-                                        <label class="case-label" for="case-check1">お料理教室に通っているはずの妻が向かった行き先とは…20代新妻の大胆行動に驚き！<br />
+                                        <input id="case-check1" className="case-check1" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check1">お料理教室に通っているはずの妻が向かった行き先とは…20代新妻の大胆行動に驚き！<br />
                                         <span>浮気調査の事例</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                         <div className="info">
@@ -47,7 +41,7 @@ const jirei = () => {
                                         <span>依頼者：夫／34歳</span>
                                         <span className="target">対象者：妻／27歳</span>
                                         </div>
-                                        <p className="img"><StaticImage src="../../img/ehime/jirei/img01.jpg" alt="" /></p>
+                                        <p className="img"><img src="../../img/ehime/jirei/img01.jpg" alt="" /></p>
                                         <dl className="content">
                                         <dt>依頼内容</dt>
                                         <dd>結婚して1年目の夫婦です。20代の妻が「料理のレパートリーを増やしたい」と言い、週に2回お料理教室に通い始めました。<br />
@@ -76,7 +70,7 @@ const jirei = () => {
                                         <div className="comment">
                                         <div className="requester sec">
                                             <dl>
-                                            <dt><StaticImage src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
+                                            <dt><img src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
                                             <dd>
                                                 <p className="b">依頼者様からのコメント</p>
                                                 <p className="nm">お世話になりました。ある程度は予想範囲内でしたが、実際に証拠を見ると精神的にキツイですね。新婚ですがとても後悔しています。夫婦で話し合って今後について話し合います。</p>
@@ -85,7 +79,7 @@ const jirei = () => {
                                         </div>
                                         <div className="chu sec">
                                             <dl>
-                                            <dt><StaticImage src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
+                                            <dt><img src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
                                             <dd>
                                                 <p className="b">中央リサーチから一言</p>
                                                 <p className="nm">ご主人様の辛いお気持ちを察します。浮気の証拠はご自身が被害者である証拠になりますので今後の将来のためにお役立て頂ければ幸いです。</p>
@@ -103,8 +97,8 @@ const jirei = () => {
                                 <div id="case02" className="pad_anchor"><div className="box"><div className="bg">
                                     <div className="head">
                                         <p className="case serif">case02</p>
-                                        <input id="case-check2" class="case-check2" type="checkbox" />
-                                        <label class="case-label" for="case-check2">試食販売のスタッフが大量万引き犯だった？！素行調査で分かった衝撃の事実<br />
+                                        <input id="case-check2" className="case-check2" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check2">試食販売のスタッフが大量万引き犯だった？！素行調査で分かった衝撃の事実<br />
                                         <span>素行調査の事例</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -112,7 +106,7 @@ const jirei = () => {
                                                 <span>依頼者：地元の小規模スーパー経営者／男性／67歳</span>
                                                 <span className="target">対象者：大量万引き犯</span>
                                                 </div>
-                                                <p className="img"><StaticImage src="../../img/ehime/jirei/img02.jpg" alt="" /></p>
+                                                <p className="img"><img src="../../img/ehime/jirei/img02.jpg" alt="" /></p>
                                                 <dl className="content">
                                                 <dt>依頼内容</dt>
                                                 <dd>県内の小さな商店街で小規模のスーパーを経営しています。生鮮食品と日用品などを取り揃えており、お客様はほとんど地元住民です。最近、不気味な現象が起きて困っています。<br />
@@ -134,7 +128,7 @@ const jirei = () => {
                                                 <div className="comment">
                                                 <div className="requester sec">
                                                     <dl>
-                                                    <dt><StaticImage src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
+                                                    <dt><img src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
                                                     <dd>
                                                         <p className="b">依頼者様からのコメント</p>
                                                         <p className="nm">今回はこんなにも早く犯人を特定して頂き本当に感謝しています。大量万引き犯は試食販売に来ている派遣社員だったなんて想像もできませんでした！店がヒマな日も盗まれたので納得です。本当にプロの調査に脱帽しました。派遣会社に電話をして適切に対処してもらいます。</p>
@@ -143,7 +137,7 @@ const jirei = () => {
                                                 </div>
                                                 <div className="chu sec">
                                                     <dl>
-                                                    <dt><StaticImage src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
+                                                    <dt><img src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
                                                     <dd>
                                                         <p className="b">中央リサーチから一言</p>
                                                         <p className="nm">繰り返す万引き犯が派遣社員の仕業とは我々スタッフも驚いています。事実が分かりましたので今後の対策にお役立て頂ければ幸いです。</p>
@@ -160,8 +154,8 @@ const jirei = () => {
                                 <div id="case03" className="pad_anchor"><div className="box"><div className="bg">
                                     <div className="head">
                                         <p className="case serif">case03</p>                                        
-                                        <input id="case-check3" class="case-check3" type="checkbox" />
-                                        <label class="case-label" for="case-check3">自宅のポストにあった謎の怪文書が不気味…。嫌がらせ調査でわかった意外な犯人とは？<br />
+                                        <input id="case-check3" className="case-check3" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check3">自宅のポストにあった謎の怪文書が不気味…。嫌がらせ調査でわかった意外な犯人とは？<br />
                                         <span>嫌がらせの事例</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                         <div className="info">
@@ -169,7 +163,7 @@ const jirei = () => {
                                         <span>依頼者：英会話スクール経営者／42歳</span>
                                         <span className="target">対象者：不明</span>
                                         </div>
-                                        <p className="img"><StaticImage src="../../img/ehime/jirei/img03.jpg" alt="" /></p>
+                                        <p className="img"><img src="../../img/ehime/jirei/img03.jpg" alt="" /></p>
                                         <dl className="content">
                                         <dt>依頼内容</dt>
                                         <dd>夫と小学1年生の娘と3人暮らしです。最近、自宅マンションのポストに怪文書が届くようになりました。1回目は切手なしだったので、犯人は私の住所を知っている人物だと思います。<br />
@@ -193,7 +187,7 @@ const jirei = () => {
                                         <div className="comment">
                                         <div className="requester sec">
                                             <dl>
-                                            <dt><StaticImage src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
+                                            <dt><img src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
                                             <dd>
                                                 <p className="b">依頼者様からのコメント</p>
                                                 <p className="nm">調査報告書を見て驚いて倒れそうになりました。今でも信じられませんし、信じたくない気持ちです。いつもメールや電話をして話をする師匠でしたので世の中がおかしく見えています。<br />
@@ -204,7 +198,7 @@ const jirei = () => {
                                         </div>
                                         <div className="chu sec">
                                             <dl>
-                                            <dt><StaticImage src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
+                                            <dt><img src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
                                             <dd>
                                                 <p className="b">中央リサーチから一言</p>
                                                 <p className="nm">悪質な嫌がらせ行為は見知らぬ人だけでなく、意外な身近な人物だったというケースはよくあります。エスカレートする前に中央リサーチまで一度、お気軽にご相談ください。</p>
@@ -222,8 +216,8 @@ const jirei = () => {
                                 <div id="case04" className="pad_anchor"><div className="box"><div className="bg">
                                     <div className="head">
                                         <p className="case serif">case04</p>
-                                        <input id="case-check4" class="case-check4" type="checkbox" />
-                                        <label class="case-label" for="case-check4">昼間は仕事をせずにパチンコ三昧？！婚約者を結婚調査したら驚いた．．．<br />
+                                        <input id="case-check4" className="case-check4" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check4">昼間は仕事をせずにパチンコ三昧？！婚約者を結婚調査したら驚いた．．．<br />
                                         <span>結婚調査の事例</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                         <div className="info">
@@ -231,7 +225,7 @@ const jirei = () => {
                                         <span>依頼者：派遣社員女性／38歳</span>
                                         <span className="target">対象者：貿易会社勤務の婚約者／43歳</span>
                                         </div>
-                                        <p className="img"><StaticImage src="../../img/ehime/jirei/img04.jpg" alt="" /></p>
+                                        <p className="img"><img src="../../img/ehime/jirei/img04.jpg" alt="" /></p>
                                         <dl className="content">
                                         <dt>依頼内容</dt>
                                         <dd>婚活サイトで知り合った男性とお付き合いをして半年。私は早く子供が欲しくて、いい人がいればすぐにでも結婚したいと思っています。婚約者も家庭を欲しいと望んでいて意気投合。<br />
@@ -256,7 +250,7 @@ const jirei = () => {
                                         <div className="comment">
                                         <div className="requester sec">
                                             <dl>
-                                            <dt><StaticImage src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
+                                            <dt><img src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
                                             <dd>
                                                 <p className="b">依頼者様からのコメント</p>
                                                 <p className="nm">婚約者が仕事をしていない事実を知り、ショックです。しかも、何年も仕事をしていない、気にしていないとは…。結婚して子供ができたら私が一家の大黒柱になる運命だったのか…。<br />
@@ -267,7 +261,7 @@ const jirei = () => {
                                         </div>
                                         <div className="chu sec">
                                             <dl>
-                                            <dt><StaticImage src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
+                                            <dt><img src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
                                             <dd>
                                                 <p className="b">中央リサーチから一言</p>
                                                 <p className="nm">婚約者の実態は意外と結婚後に分かることが多く、「結婚調査をしておけばよかった！」というお声をよく聞きます。今回は早めに事実が分かって良かったです。</p>
@@ -284,8 +278,8 @@ const jirei = () => {
                                 <div id="case05" className="pad_anchor"><div className="box"><div className="bg">
                                     <div className="head">
                                         <p className="case serif">case05</p>
-                                        <input id="case-check5" class="case-check5" type="checkbox" />
-                                        <label class="case-label" for="case-check5">高校生の娘が家庭教師のレッスン後に消息を断った？！どこで何をやっているのか？？<br />
+                                        <input id="case-check5" className="case-check5" type="checkbox" />
+                                        <label className="case-label" htmlFor="case-check5">高校生の娘が家庭教師のレッスン後に消息を断った？！どこで何をやっているのか？？<br />
                                         <span>家出調査の事例</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                         <div className="info">
@@ -293,7 +287,7 @@ const jirei = () => {
                                         <span>依頼者：女子高生のご両親／40代</span>
                                         <span className="target">対象者：高校3年生女子／17歳</span>
                                         </div>
-                                        <p className="img"><StaticImage src="../../img/ehime/jirei/img05.jpg" alt="" /></p>
+                                        <p className="img"><img src="../../img/ehime/jirei/img05.jpg" alt="" /></p>
                                         <dl className="content">
                                         <dt>依頼内容</dt>
                                         <dd>大学受験を控えている高3の娘がいます。週3回、学習塾に通い、塾の授業についていくために家庭教師も付けています。現役で国公立大学に絶対に合格すると意気込んでいます。<br />
@@ -317,7 +311,7 @@ const jirei = () => {
                                         <div className="comment">
                                         <div className="requester sec">
                                             <dl>
-                                            <dt><StaticImage src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
+                                            <dt><img src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
                                             <dd>
                                                 <p className="b">依頼者様からのコメント</p>
                                                 <p className="nm">
@@ -327,7 +321,7 @@ const jirei = () => {
                                         </div>
                                         <div className="chu sec">
                                             <dl>
-                                            <dt><StaticImage src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
+                                            <dt><img src="../../img/yamaguchi/jirei/human.png" alt="" /></dt>
                                             <dd>
                                                 <p className="b">中央リサーチから一言</p>
                                                 <p className="nm">
@@ -341,80 +335,8 @@ const jirei = () => {
                                     </div>
                                     
                                     </div></div></div>
-                            </div>
+                            </div>                            
                             
-                            {/*div class="bg_blue bg_wide pt pb">
-                                            <div class="wrap">
-                                                <p class="cen_pc txt nm"><b class="blue">中央リサーチに調査をご依頼いただいたお客様からの感想の一部をご紹介致します。</b><br>
-                                                    当社にご依頼いただいたお客様の問題解決の力になれたことを誇りに思い、<br>
-                                                    今後ともお客様からの喜びの声をいただけるよう頑張ってまいりたいと思います。</p>
-                                                <p class="img nm"><img src="../img/jirei/woman.png" alt=""></p>
-                                            </div>
-                                            <div class="bg_dia">
-                                                <dl class="plan">
-                                                    <dt><span class="mp">浮気・不倫調査</span><a href="../fickleness.html">浮気・不倫調査について詳しくはこちら &raquo;</a></dt>
-                                                    <dd>
-                                                        <p class="txt">夫は残業と言いながら帰宅が遅い日々が続いていました。何かあるかも？と、夫の携帯を見たら浮気相手と思われる女性とのメールを見ました。<br>
-                                                            話し合う為にも動かぬ証拠と浮気相手がどんな人物か知りたい。</p>
-                                                        <div class="bg_gray">
-                                                            <p class="nm">浮気する可能性の高い給料日後や、残業が多い日等の行動予測をしていただき、わずかな調査時間で浮気の証拠と相手女性の帰宅先が判明しました。<br>
-                                                                その後、相手女性の人物性までもはっきり分かり、問題解決に向けて一気に加速できました。<br>
-                                                                無駄な調査費用もかからず、調査費用も低料金に抑えていただき、本当に感謝しております。</p>
-                                                        </div>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="plan">
-                                                    <dt><span class="mp">素行調査</span><a href="../behavior.html">素行調査について詳しくはこちら &raquo;</a></dt>
-                                                    <dd>
-                                                        <p class="txt">厳しい時代の中、営業社員の業績が上がらないことで、悩んでいました。このままでは会社が倒産してしまうという不安がよぎり、思い切って相談してみました。</p>
-                                                        <div class="bg_gray">
-                                                            <p class="nm">相談員の適正なアドバイスから、従業員の勤務時間中の行動を確認した結果、まったく仕事をしていないことが判明しました。証拠が有ることで、トラブルなく、この営業社員を解雇することが出来ました。早く事実確認でき、意欲のない営業社員が居なくなることで職場の雰囲気も良くなりました。</p>
-                                                        </div>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="plan">
-                                                    <dt><span class="mp">浮気・不倫調査</span><a href="../fickleness.html">浮気・不倫調査について詳しくはこちら &raquo;</a></dt>
-                                                    <dd>
-                                                        <p class="txt">夫が急に離婚しようと言い出し、その原因はと問いただすと、こちらばかり責められます。もしかして愛人がいるのでは？と疑問だったのです。</p>
-                                                        <div class="bg_gray">
-                                                            <p class="nm">的確なアドバイスを頂き、行動調査を依頼した結果、離婚に係わる浮気の動かぬ証拠が撮れました。有能な弁護士さんも紹介され、おかげで慰謝料、親権、養育費等について、有利に進めることが出来ました。これからは気持ちを切り替えて、一からがんばります。</p>
-                                                        </div>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="plan">
-                                                    <dt><span class="mp">家出・所在調査</span><a href="../whereabouts.html">家出・所在調査について詳しくはこちら &raquo;</a></dt>
-                                                    <dd>
-                                                        <p class="txt">娘が家出をしてしまい、眠れない日々を過ごしています。今、何処で何をしているのか、気になります。</p>
-                                                        <div class="bg_gray">
-                                                            <p class="nm">どうしてもっと早く相談しなかったのかと思います。私たちだけではどう対応していいのかわかりませんでしたが、探偵さんの的確な調査により、探し出すことができました。この先やらなければならないことを一からやり直すつもりで、娘共々頑張っていきたいと思っています。</p>
-                                                        </div>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="plan">
-                                                    <dt><span class="mp">浮気・不倫調査</span><a href="../fickleness.html">浮気・不倫調査について詳しくはこちら &raquo;</a></dt>
-                                                    <dd>
-                                                        <p class="txt">交際相手には女性の影が？「いま付き合っている相手と別れた方がよいのか？」と悩んでいます。しかし自分が別れを持ち出すはっきりとした判断材料がありません。<br>
-                                                            自分の気持ちに、ふん切りを付けるためにも事実関係を確認したいのです。</p>
-                                                        <div class="bg_gray">
-                                                            <p class="nm">相談員のアドバイスで数日間、交際相手と会わないようにして、彼の休日を中心に素行を確認してもらいました。その結果、別の女性との交際が発覚したのです。<br>
-                                                                このままだとズルズル交際を続けて、自分の婚期まで失うところでした。はっきりした事実が解かり自分にも心のけじめを付ける事ができました。</p>
-                                                        </div>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="plan">
-                                                    <dt><span class="mp">素行調査</span><a href="../behavior.html">素行調査について詳しくはこちら &raquo;</a></dt>
-                                                    <dd>
-                                                        <p class="txt">離婚した元妻とは、定期的に連絡をとって子どもの近況報告は受けています。実際に会うことで子どもが迷ってはいけませんので、会う勇気もありません。<br>
-                                                            しかし、「元妻の報告内容は本当なのか？」「虐待を受けていないか？」「学校でいじめられていないか？」「元気に学校へ通っているか？」等、気になります。<br>
-                                                            子供の父には変わりないのです。離婚したと言えども心配です。</p>
-                                                        <div class="bg_gray">
-                                                            <p class="nm">元妻の現住所はあらかじめ聞いていましたので、その情報をもとに、子どもの生活実態（虐待・いじめの有無、健康面等）を確認していただきました。<br>
-                                                                毎日きちんと決まった時間に、笑顔で通学する我が子の姿を確認でき、また、虐待やいじめの事実もなかったと聞き、安堵の涙が堪えられませんでした。お願いして本当によかったと思っております。</p>
-                                                        </div>
-                                                    </dd>
-                                                </dl>
-                                            </div>
-                                        </div*/}
 
 
                         </div>
@@ -424,5 +346,13 @@ const jirei = () => {
         </>
     )
 }
-
+export const Head = () => (
+    <>
+        <Seo
+                title2="当探偵社へのご相談事例｜総合探偵社中央リサーチ愛媛"
+                description="愛媛の探偵社「中央リサーチ愛媛」、事例紹介についての説明ページです。"
+                keyword="ご相談事例,探偵,愛媛,問合せ,中央リサーチ愛媛"
+                />
+    </>
+  )
 export default jirei

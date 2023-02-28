@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>広島の探偵　浮気調査なら55年の実績｜総合探偵社 中央リサーチ広島本社</title>
-<link type="text/css" href="/css/blog_list.css" rel="stylesheet">
+<link type="text/css" href="https://www.chuou.biz/css/blog_list.css" rel="stylesheet">
 </head>
 <body>
 

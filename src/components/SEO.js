@@ -1,5 +1,5 @@
 import React from "react"
-import { Helmet } from "react-helmet"
+
 import { useStaticQuery, graphql } from "gatsby"
 import { useLocation } from "@reach/router"
 import PropTypes from "prop-types"
@@ -24,8 +24,7 @@ const SEO = ({ title,title2, description,keyword, image, article }) => {
   }
 
   return (
-    <Helmet>
-      <html lang="ja" />
+    <>      
       <title>{seo.title}</title>
       <meta name="Keywords" content={seo.keyword} />
       <meta name="description" content={seo.description} />
@@ -44,7 +43,7 @@ const SEO = ({ title,title2, description,keyword, image, article }) => {
         <meta name="twitter:description" content={seo.description} />
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
-    </Helmet>
+    </>
   )
 }
 
