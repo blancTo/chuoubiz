@@ -33,7 +33,7 @@ const jirei = () => {
                                     <div className="bg">
                                         <div className="head">
                                             <p className="case serif">case01</p>                                            
-                                            <input id="case-check1" className="case-check1" type="checkbox" />
+                                            <input id="case-check1" className="case-check1" type="checkbox" checked />
                                             <label className="case-label" htmlFor="case-check1">夫のスーツからいつも同じ女性用の香水が漂い…浮気調査で分かった社内不倫の結末とは？<br />
                                             <span>浮気調査の事例</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                             <div className='case-content'>

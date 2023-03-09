@@ -6,6 +6,11 @@
 .pt { padding-top: 80px; }
 .pb { padding-bottom: 80px; }
 
+@media only screen and (max-width: 640px) {
+.pb0_smp { padding-bottom: 0!important;}
+.mb0_smp { margin-bottom: 0!important;}
+}
+
 /* 横100％背景 */
 .bg_wide { position: relative; }
 .bg_wide::before {
@@ -577,6 +582,9 @@
 #top_plan .box .wrap dl.plan dd {
 	box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
 	padding: 20px;
+	p {
+		&:first-child { margin-bottom: 20px;}
+	}
 }
 #top_plan .box .wrap dl.plan dd .red_waku {
 	display: inline-block;
@@ -609,10 +617,22 @@
 }
 #top_profile h3 {	
 	font-size: 37px;
-	font-weight: 500;
+	font-weight: 900;
 	padding: 15px;
+	&.ehime,&.okayama,&.shimane,&.yamaguchi {
+	@media only screen and (max-width: 640px){
+		padding: 15px 0;
+	}
 }
-#top_profile h3 img { vertical-align: middle;  margin-right: 10px;}
+}
+#top_profile h3 img {
+	vertical-align: middle;
+	margin-right: 10px;
+	@media only screen and (max-width: 640px){
+		vertical-align: bottom;
+		width: 30px;
+	}
+}
 #top_profile .bg:before {
 	background: url("../img/top/bg05.jpg") no-repeat right top /cover;
 }
@@ -648,6 +668,9 @@
 	color: #333;
 	border-radius: 5px;
 	padding: 8px;
+	@media only screen and (max-width: 768px) {
+		margin-top: 10px;
+	}
 }
 #top_profile dl dt .label.very {
 	background: #fff;
@@ -1539,14 +1562,18 @@
 	flex:1;
 	margin-right: 30px;
 }
+
+#beginner_flow .flow_flex .tel .nm { display: flex; flex-wrap: wrap;}
+
 #beginner_flow .flow_flex .tel01 {
 	display: block;
-	font-size: 51px;
+	font-size: 46px;
 	font-weight: 900;
 	color: #c1272d;
 	line-height: 1;
 	margin-bottom: 10px;
 }
+
 #beginner_flow .flow_flex .tel01 img {
 	width: 68px;
 	vertical-align: middle;
@@ -1559,7 +1586,7 @@
 }
 #beginner_flow .flow_flex .tel02 {
 	display: inline-block;
-	font-size: 27px;
+	font-size: 24px;
 	font-weight: 900;
 	color: #c1272d;
 	line-height: 1;
@@ -1570,7 +1597,7 @@
 #beginner_flow .flow_flex .tel02 img {
 	width: 30px;
 	vertical-align: middle;
-	margin-right: 10px;
+	margin-right: 5px;
 	margin-top: -4px;
 }
 #beginner_flow .flow_txt06 {
@@ -2611,6 +2638,11 @@
 	bottom: 0;
 	right: 0;
 }
+
+@media only screen and (max-width: 640px){
+	#jirei .plan dt .mp { display: block; }
+}
+
 /*会社概要*/
 #company .bg:before {
 	background: url("../img/company/bg.jpg") no-repeat center /cover;

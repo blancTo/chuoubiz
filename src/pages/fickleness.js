@@ -287,7 +287,7 @@ const fickleness = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">case01</p>                                    
-                                        <input id="case-check1" className="case-check1" type="checkbox" />
+                                        <input id="case-check1" className="case-check1" type="checkbox" checked />
                                         <label className="case-label" htmlFor="case-check1">夫が貯金をおろして浮気のデート代に使っている予感！妻の予想が的中した調査事例<br />
                                         <span>会社員の夫が頻繁にATMでお金をおろすようになり、貯金額が減って浮気の疑惑が…。妻の予想が見事に当たった浮気調査事例です。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
@@ -937,7 +937,7 @@ const jsonLd = {
             "@type":"WebSite",
             "@id":`https://www.chuou.biz/${jsonS}/#website`,
             "url":`https://www.chuou.biz/${jsonS}/`,
-            "name":`${jsonT}| 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
+            "name":`${jsonT}｜ 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
             "description":`${jsonD}${jsonT}`,
             "inLanguage":"ja",
             "publisher":{

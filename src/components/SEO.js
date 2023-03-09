@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { useLocation } from "@reach/router"
 import PropTypes from "prop-types"
 
-const SEO = ({ title,title2, description,keyword, image, article }) => {
+const SEO = ({ title, title2, description,keyword, image, article }) => {
   const { site } = useStaticQuery(query)
   const {
     defaultTitle,

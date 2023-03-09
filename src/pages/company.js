@@ -189,7 +189,7 @@ const company = () => {
                                 </dl>
                                 <dl>
                                     <dt>岡山相談室</dt>
-                                    <dd><a href="https://detective-okayama.biz/" target="_blank" rel="noopener noreferrer">総合探偵社中央リサーチ岡山</a><br />
+                                    <dd><Link to="/okayama/">総合探偵社中央リサーチ岡山</Link><br />
                                     岡山県岡山市北区富田町1丁目1-1<br />
                                     富士野ビル2階<br />
                                     TEL：086-231-6661(代)<br />
@@ -246,7 +246,7 @@ const jsonLd = {
             "@type":"WebSite",
             "@id":`https://www.chuou.biz/${jsonS}/#website`,
             "url":`https://www.chuou.biz/${jsonS}/`,
-            "name":`${jsonT}| 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
+            "name":`${jsonT}｜ 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
             "description":`${jsonD}${jsonT}`,
             "inLanguage":"ja",
             "publisher":{

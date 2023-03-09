@@ -112,13 +112,13 @@ const behavior = () => {
                           <div className="bg">
                             <div className="head">
                               <p className="case serif">case01</p>
-                              <input id="case-check1" className="case-check1" type="checkbox" />
+                              <input id="case-check1" className="case-check1" type="checkbox" checked />
                               <label className="case-label" htmlFor="case-check1">妻は見抜いた！消防士の夫が借金してまで貢いだ女性の影…素行調査で判明した真実<br />
                               <span>探偵社には毎日多くの浮気相談が寄せられますが、奥様が旦那様の浮気に気がつくカンの鋭さには感心するものがあります。素行調査で分かった浮気発覚の事例です。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                               <div className='case-content'>
 
                                 <div className="info">
-                                  <div className="hito"> <span>依頼者：妻・保育士（23歳）</span> <span className="target">対象者：夫・消防士（27歳）</span> <span className="time">調査時間：●時間</span></div>
+                                  <div className="hito"> <span>依頼者：妻・保育士（23歳）</span> <span className="target">対象者：夫・消防士（27歳）</span></div>
                                   <p className="img"><img src="../img/behavior/jirei01.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>
@@ -178,7 +178,7 @@ const behavior = () => {
                               <span>娘さんや息子さんから「結婚する」と報告を受けた親御さんは喜びでいっぱいな気持ちになりますが、「あれ？本当に大丈夫かな」と心配になるケースも少なくありません。今回は、娘の婚約者が両親にご挨拶をしてもなかなか結婚せずに3年もジラしている…というケースの素行調査をご紹介します。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                               <div className='case-content'>
                                 <div className="info">
-                                  <div className="hito"> <span>依頼者：娘の母親（64歳）</span> <span className="target">対象者：娘の婚約者（36歳）</span> <span className="time">調査時間：●時間</span></div>
+                                  <div className="hito"> <span>依頼者：娘の母親（64歳）</span> <span className="target">対象者：娘の婚約者（36歳）</span></div>
                                   <p className="img"><img src="../img/behavior/jirei02.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>
@@ -238,7 +238,7 @@ const behavior = () => {
                               <div className='case-content'>
 
                                 <div className="info">
-                                  <div className="hito"> <span>依頼者：夫・会社員（41歳）</span> <span className="target">対象者：妻・パート従業員（37歳）</span> <span className="time">調査時間：●時間</span></div>
+                                  <div className="hito"> <span>依頼者：夫・会社員（41歳）</span> <span className="target">対象者：妻・パート従業員（37歳）</span></div>
                                   <p className="img"><img src="../img/behavior/jirei03.jpg" alt="" /></p>
                                   <dl className="content">
                                     <dt>依頼内容</dt>

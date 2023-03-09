@@ -32,7 +32,7 @@ const voice = () => {
                                 <div className="head">
                                 <p className="case serif">浮気調査</p>
                                 
-                                    <input id="case-check1" className="case-check1" type="checkbox" />
+                                    <input id="case-check1" className="case-check1" type="checkbox" checked />
                                     <label className="case-label" htmlFor="case-check1">夫のスマホにマッチングアプリが３つあります！浮気調査で分かった依存症の問題 <FontAwesomeIcon icon={faAngleDown} /></label>
                                     <div className='case-content'>
                                         <div className="info">

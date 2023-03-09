@@ -29,10 +29,10 @@ const index = () => {
     {/* タブレット・スマホ時メイン画の下に表示されるメニュー */}
     <div id="menu_sp" className="dsp_tbs okayama">
       <ul>
-        <li><Link to="voice.html">お客様の声</Link></li>
-        <li><Link to="contact.html">お問い合わせ</Link></li>
-        <li><Link to="company.html">会社概要</Link></li>
-        <li><Link to="price.html">料金表</Link></li>
+        <li><Link to="/okayama/voice/">お客様の声</Link></li>
+        <li><Link to="/okayama/contact/">お問い合わせ</Link></li>
+        <li><Link to="/okayama/company/">会社概要</Link></li>
+        <li><Link to="/okayama/price/">料金表</Link></li>
       </ul>
     </div>
     {/* ここまで */}
@@ -105,7 +105,7 @@ const index = () => {
             <dd>不審者の出入りによる盗難や紛失。遺言状や契約書、誹謗・中傷の手紙など指紋検出、筆跡鑑定で事実確認いたします。</dd>
           </dl>
         </div>
-        <p className="link nm"><Link to="jirei.html">調査事例はこちら</Link></p>
+        <p className="link nm"><Link to="/okayama/jirei/">調査事例はこちら</Link></p>
       </div></div>
     <div id="okayama_reason"><div className="main pt pb">
         <h3 className="serif">当探偵社が選ばれる理由</h3>
@@ -256,11 +256,11 @@ const index = () => {
             </dl>
           </div>
           <p className="cen"><img src="../../img/okayama/sample08.png" alt="" className /></p>
-          <p className="link mp"><Link to="/okayama/sample/">調査報告書サンプルはコチラ</Link></p>
+          <p className="link mp"><Link to="/sample/">調査報告書サンプルはコチラ</Link></p>
         </div>
       </div>
-      <div id="top_profile" className="pad_anchor">
-        <h3 className="mp bg_wide"><span>弁護士事務所からの推奨コメント</span></h3>
+      <div id="top_profile">
+        <h3 className="mp bg_wide okayama"><img src="../../img/top/medal_big.png" alt='' width={53} height={53} loading="lazy" /><span>弁護士事務所からの推奨コメント</span></h3>
         <div className="bg bg_wide pb">
           <dl>
             <dt><img src="../../img/okayama/profile_name01.png" alt="" /></dt>

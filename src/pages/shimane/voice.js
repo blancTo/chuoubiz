@@ -30,7 +30,7 @@ const voice = () => {
                                 <div className="bg">
                                     <div className="head">
                                         <p className="case serif">浮気調査</p>
-                                        <input id="case-check1" className="case-check1" type="checkbox" />
+                                        <input id="case-check1" className="case-check1" type="checkbox" checked />
                                         <label className="case-label" htmlFor="case-check1">急に離婚を切り出してきた夫を浮気調査して分かった衝撃の真実！最後まで諦めません <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>
                                             <div className="info">
@@ -145,7 +145,7 @@ const voice = () => {
                                                 </dl>
                                                 <dl className="content">
                                                     <dt>調査の内容はどうでしたか？</dt>
-                                                    <dd>前夫の情報は名前と現住所、前の職場の名前しか分からなかったのですが、その少ない情報をもとにして素早く調査して頂き、さすがプロでした。夫は退職後、すぐに同業他社へ入社。リストラにあったと言う話は嘘で実は自社退職。前職は年収700万円だったが、現職は1,000万円超えの高給取りと発覚したのです。養育費を支払わない理由は不動産投資を始めたから、という自分勝手な理由でした。本人にその事実を話すとあっさり認めて、毎月の養育費を支払うようになりました。</dd>
+                                                    <dd>前夫の情報は名前と現住所、前の職場の名前しか分からなかったのですが、その少ない情報をもとにして素早く調査して頂き、さすがプロでした。夫は退職後、すぐに同業他社へ入社。リストラにあったと言う話は嘘で実は自主退職。前職は年収700万円だったが、現職は1,000万円超えの高給取りと発覚したのです。養育費を支払わない理由は不動産投資を始めたから、という自分勝手な理由でした。本人にその事実を話すとあっさり認めて、毎月の養育費を支払うようになりました。</dd>
                                                 </dl>
                                                 <dl className="content">
                                                     <dt>ご利用になったご感想をお聞かせください</dt>

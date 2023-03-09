@@ -16,22 +16,31 @@ const FooterOkayama = () => {
         {/* ここまで */}
         <div className="contact bg bg_wide">
           <div className="main">
-            <div className="in">
-              <h3 className="mp"><span>まごころ調査</span>の当社へまずはお電話を!</h3>
-              <div className="box">
-                <h4 className="mp">話しやすい相談員が親身になって応対</h4>
-                <div className="wrap">
-                  <div className="shikaku">無料<br className="dsp_hpt" /><span>相談窓口</span></div>
+            <h3 className="mp"><span>まごころ調査</span>の当社へまずはお電話を!</h3>
+            <div className="box">
+              <h4 className="mp">話しやすい相談員が親身になって応対</h4>
+              <div className="wrap">
+                  <div className="shikaku">無料<span>相談窓口</span></div>
                   <div className="tel_area">
-                    <p className="free sans"><a href="tel:0120-30-6630">0120-30-6630</a></p>
-                    <p className="free2"><span className="txt mp">女性相談員ご希望の方はこちら</span><a href="tel:0120-20-3399">0120-20-3399</a></p>
+                    <p className="free sans">
+                        <a href="tel:0120-30-6630" aria-label="相談窓口電話番号">
+                            <img src="../img/tel.svg" width={60} height={39} alt="フリーダイヤル" />
+                            0120-30-6630
+                        </a>
+                    </p>
+                    <p className="free2">
+                        <span className="txt mp">女性相談員ご希望の方はこちら</span>
+                        <a href="tel:0120-20-3399" aria-label="女性相談員ご希望の方はこちら">
+                        <img src="../img/tel.svg" width={30} height={20} alt="フリーダイヤル" />
+                            0120-20-3399
+                        </a>
+                    </p>
                   </div>
                 </div>
-                <p className="mp txt2">年中無休！ 24時間受付！<span><br className="dsp_smt" />携帯電話でもOK!</span></p>
+                <p className="mp txt2">年中無休！ 24時間受付！<br className="dsp_smt" /><span>携帯電話でもOK!</span></p>
                 <p className="nm">※このお電話は、最寄りの営業所に繋がります。</p>
-              </div>
             </div>
-          </div>
+          </div>                
         </div>
         {/* PC時ページ下部に表示されるリンク */}
         <div className="links dsp_hp">

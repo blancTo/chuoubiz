@@ -71,7 +71,9 @@ const beginner = () => {
                         <p className="flow_txt04 mp">無料<span>相談窓口</span></p>
                         <div className="tel">
                             <a href="tel:0120-30-6630" className="tel01 sans"><img src="../img/free.png" alt="フリーダイヤル" />0120-30-6630</a>
-                            <p className="nm"><span className="flow_txt05 mp">女性相談員ご希望の方はこちら</span><a href="tel:0120-20-3399" className="tel02 sans"><img src="../img/free.png" alt="フリーダイヤル" />0120-20-3399</a></p>
+                            <div className="nm">
+                                <span className="flow_txt05 mp">女性相談員ご希望の方はこちら</span><a href="tel:0120-20-3399" className="tel02 sans"><img src="../img/free.png" alt="フリーダイヤル" />0120-20-3399</a>
+                            </div>
                         </div>
                         <p className="flow_txt06 mp nm">年中無休!24時間受付!<span>携帯電話でもOK! </span></p>
                         </div>

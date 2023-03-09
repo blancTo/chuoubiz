@@ -14,8 +14,8 @@ const yamaguchi = () => {
             <HeaderYamaguchi h1title="山口で浮気調査なら55年の実績と信頼｜山口の探偵社、中央リサーチ山口" pagetitle="JR徳山駅前にある探偵事務所" />  
                 <div id="img_top_msg" className="bg_blue_grad">
                     <p className="mp nm">内閣総理大臣認可 全国調査業協同組合組合員</p>
-                    <p className="txt nm">当探偵事務所は厳重な審査を経て<Link to="http://www.ncia-research.or.jp/" rel="nofollow" target="_blank">全国調査業協同組合</Link>に加盟しております。<br />
-                    広告は新聞・看板や<Link to="https://itp.ne.jp/info/341545111182370410/" rel="nofollow" target="_blank">NTT iタウンページ (探偵欄) </Link>にも掲載中！</p>
+                    <p className="txt nm">当探偵事務所は厳重な審査を経て<a href="http://www.ncia-research.or.jp/" rel="nofollow noopener noreferrer" target="_blank">全国調査業協同組合</a>に加盟しております。<br />
+                    広告は新聞・看板や<a href="https://itp.ne.jp/info/341545111182370410/" rel="nofollow noopener noreferrer" target="_blank">NTT iタウンページ (探偵欄) </a>にも掲載中！</p>
                 </div>
                 <section id="container" className="cf">
                         <div id="page_title">
@@ -42,9 +42,9 @@ const yamaguchi = () => {
                                 <div className="dsp_smt">
                                     <div className="star">
                                         <span>
-                                            <Link to="https://www.google.co.jp/search?tbm=lcl&ei=XWsGX-yqB4_W0gSAhYHwBA&q=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&oq=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&gs_l=psy-ab.3...155248.157868.0.158152.0.0.0.0.0.0.0.0..0.0....0...1c.1j4.64.psy-ab..0.0.0....0.8ef4ngT_iJU#rlfi=hd:;si:14351266089033009334;mv:[[34.40155767731903,132.4662481279093],[34.40119772268097,132.46581187209068]]" rel="nofollow" target="_blank">
+                                            <a href="https://www.google.co.jp/search?tbm=lcl&ei=XWsGX-yqB4_W0gSAhYHwBA&q=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&oq=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&gs_l=psy-ab.3...155248.157868.0.158152.0.0.0.0.0.0.0.0..0.0....0...1c.1j4.64.psy-ab..0.0.0....0.8ef4ngT_iJU#rlfi=hd:;si:14351266089033009334;mv:[[34.40155767731903,132.4662481279093],[34.40119772268097,132.46581187209068]]" rel="nofollow noopener noreferrer" target="_blank">
                                                 Googleクチコミ実績
-                                            </Link>
+                                            </a>
                                             <img src="../../img/top/hoshi4.5.png" alt="" />
                                         </span>
                                     </div>
@@ -56,9 +56,9 @@ const yamaguchi = () => {
                                 <div className="cen dsp_hpt">
                                 <div className="star">
                                     <span>
-                                        <Link to="https://www.google.co.jp/search?tbm=lcl&ei=XWsGX-yqB4_W0gSAhYHwBA&q=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&oq=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&gs_l=psy-ab.3...155248.157868.0.158152.0.0.0.0.0.0.0.0..0.0....0...1c.1j4.64.psy-ab..0.0.0....0.8ef4ngT_iJU#rlfi=hd:;si:14351266089033009334;mv:[[34.40155767731903,132.4662481279093],[34.40119772268097,132.46581187209068]]" rel="nofollow" target="_blank">
+                                        <a href="https://www.google.co.jp/search?tbm=lcl&ei=XWsGX-yqB4_W0gSAhYHwBA&q=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&oq=%E4%B8%AD%E5%A4%AE%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81%E5%BA%83%E5%B3%B6&gs_l=psy-ab.3...155248.157868.0.158152.0.0.0.0.0.0.0.0..0.0....0...1c.1j4.64.psy-ab..0.0.0....0.8ef4ngT_iJU#rlfi=hd:;si:14351266089033009334;mv:[[34.40155767731903,132.4662481279093],[34.40119772268097,132.46581187209068]]" rel="nofollow noopener noreferrer" target="_blank">
                                             Googleクチコミ実績
-                                        </Link>
+                                        </a>
                                         <img src="../../img/top/hoshi4.5.png" alt="" />
                                     </span>
                                 </div>
@@ -203,7 +203,7 @@ const yamaguchi = () => {
                             
                             </div>
                         </div>
-                        <div id="yamaguchi_point" className="bg_wide pt">
+                        <div id="yamaguchi_point" className="bg_wide pt mb0_smp">
                             <h3>浮気調査の重要なポイント</h3>
                             <div className="in">
                             <p className="cen_pc nm">裁判に勝つための浮気の動かぬ証拠とは、メールやSNSなどの会話の証拠ではなく裁判所が認める性的関係の立証でなくてはなりません。<br />
@@ -235,8 +235,8 @@ const yamaguchi = () => {
                             <p className="link mp"><Link to="/sample/">調査報告書サンプルはコチラ</Link></p>
                             </div>
                         </div>
-                        <div id="top_profile" className="pad_anchor">
-                            <h3 className="mp bg_wide"><span>弁護士事務所からの推奨コメント</span></h3>
+                        <div id="top_profile">
+                            <h3 className="mp bg_wide yamaguchi"><img src="../../img/top/medal_big.png" alt='' width={53} height={53} loading="lazy" /><span>弁護士事務所からの推奨コメント</span></h3>
                             <div className="bg bg_wide pb">
                             <dl>
                                 <dt><img src="../../img/yamaguchi/profile_name01.png" alt="" /></dt>
@@ -253,7 +253,7 @@ const yamaguchi = () => {
                             <dl>
                                 <dt>
                                 <img src="../../img/yamaguchi/profile_name04.png" alt="" />
-                                <span className="label very"><Link to="https://rikon.vbest.jp/" target="_blank" rel="nofollow"><img src="../../img/top/bery_best_btn.png" alt="ベリーベスト法律事務所" loading="lazy" /></Link></span>
+                                <span className="label very"><a href="https://rikon.vbest.jp/" target="_blank" rel="nofollow noopener noreferrer"><img src="../../img/top/bery_best_btn.png" alt="ベリーベスト法律事務所" loading="lazy" /></a></span>
                                 </dt>
                                 <dd><img src="../../img/yamaguchi/profile_txt04.png" alt="" className="dsp_hpt" /><img src="../../img/yamaguchi/profile_txt04_sp.png" alt="" className="dsp_smt" /></dd>
                             </dl>
@@ -322,35 +322,35 @@ const yamaguchi = () => {
                             <div className="wrap">
                                 <dl>
                                 <dt>山口相談室</dt>
-                                <dd><Link to="index/">総合探偵社中央リサーチ山口</Link><br />
+                                <dd><Link to="/yamaguchi/">総合探偵社中央リサーチ山口</Link><br />
                                     山口県周南市平和通2丁目31 三真樹ビル2階<br />
                                     （徳山駅徒歩3分）<br />
                                     TEL：0834-22-7513(代)</dd>
                                 </dl>
                                 <dl>
                                 <dt>広島相談室</dt>
-                                <dd><Link to="https://www.chuou.biz/">総合探偵社中央リサーチ広島</Link><br />
+                                <dd><a href="https://www.chuou.biz/">総合探偵社中央リサーチ広島</a><br />
                                     広島県広島市中区上幟町2-45 今田ビル2F<br />
                                     (家庭裁判所前 白島線電車道り沿い)<br />
                                     TEL：082-211-1600(代)</dd>
                                 </dl>
                                 <dl>
                                 <dt>島根相談室</dt>
-                                <dd><Link to="/shimane/index/">総合探偵社中央リサーチ島根</Link><br />
+                                <dd><Link to="/shimane/">総合探偵社中央リサーチ島根</Link><br />
                                     島根県松江市津田町305番 ツダマチビル1階<br />
                                     （松江駅徒歩5分）<br />
                                     TEL：0852-67-6573(代)</dd>
                                 </dl>
                                 <dl>
                                 <dt>岡山相談室</dt>
-                                <dd><Link to="/okayama/index/">総合探偵社中央リサーチ岡山</Link><br />
+                                <dd><Link to="/okayama/">総合探偵社中央リサーチ岡山</Link><br />
                                     岡山県岡山市北区富田町1丁目1-1<br />
                                     富士野ビル2階<br />
                                     TEL：086-231-6661(代)</dd>
                                 </dl>
                                 <dl>
                                 <dt>愛媛相談室</dt>
-                                <dd><Link to="/ehime/index/">総合探偵社中央リサーチ愛媛</Link><br />
+                                <dd><Link to="/ehime/">総合探偵社中央リサーチ愛媛</Link><br />
                                     愛媛県松山市三番町7-7-1 村上ビル2階<br />
                                     （松山市民病院徒歩2分）<br />
                                     TEL：089-931-3800(代)</dd>
@@ -364,7 +364,7 @@ const yamaguchi = () => {
                                 </dl>
                             </div>
                             <ul className="wrap">
-                                <Link to="https://www.ncia-research.or.jp/" target="_blank"><li>内閣総理大臣認可<br />全国調査業協同組合組合員<br />第3266号</li></Link>
+                                <a href="https://www.ncia-research.or.jp/" rel="noopener noreferrer" target="_blank"><li>内閣総理大臣認可<br />全国調査業協同組合組合員<br />第3266号</li></a>
                                 <li>山口県公安委員会<br />探偵業届出証明書番号<br />第74070021号</li>
                                 <li>商標登録証<br />第6531358号</li>
                             </ul>
@@ -377,7 +377,7 @@ const yamaguchi = () => {
                                 <p><img src="../../img/yamaguchi/img_yamaguchi.jpg" alt="" /><br />
                                 プライバシーを守る相談室</p>
                             </div>
-                            <p className="map"><Link to="https://goo.gl/maps/BkgVy32pUpaQQycG8" rel="nofollow" target="_blank"><img src="../../img/yamaguchi/map.png" loading="lazy" alt="" /></Link></p>
+                            <p className="map"><a href="https://goo.gl/maps/BkgVy32pUpaQQycG8" rel="nofollow noopener noreferrer" target="_blank" aria-label="GoogleMAP"><img src="../../img/yamaguchi/map.png" loading="lazy" aria-label="GoogleMAP" alt="GoogleMAP" /></a></p>
                             </div>
                             <div className="photo">
                             <h3 className="mp">当社の看板</h3>
@@ -394,7 +394,7 @@ const yamaguchi = () => {
                                 <div className="in">
                                 <p><img src="../../img/yamaguchi/logo_line.png" alt="" /></p>
                                 <p className="b">LINEからお問い合わせ<br className="dsp_smt" />できます！</p>
-                                <p>QRコードから<Link to="https://line.me/R/ti/p/65gpK3qcDs" target="_blank">「友だち登録」</Link>すると、LINEでお問い合わせができます。</p>
+                                <p>QRコードから<a href="https://line.me/R/ti/p/65gpK3qcDs" rel="noopener noreferrer" target="_blank">「友だち登録」</a>すると、LINEでお問い合わせができます。</p>
                                 </div>
                                 <p className="qr"><img src="../../img/yamaguchi/qr_line.png" alt="" /></p>
                             </div>
@@ -413,10 +413,10 @@ const yamaguchi = () => {
                             </dl>
                             </div>
                             <ul>
-                            <li><Link to="http://www.ncia-research.or.jp/" rel="nofollow" target="_blank"><img src="../../img/yamaguchi/bana01.png" alt="全国調査業協同組合" /></Link></li>
-                            <li><Link to="https://www.police.pref.yamaguchi.lg.jp/" rel="nofollow" target="_blank"><img src="../../img/yamaguchi/bana02.png" alt="山口県警察" /></Link></li>
-                            <li><Link to="http://www.rikonnsoudan.jp/" rel="nofollow" target="_blank"><img src="../../img/yamaguchi/bana03.png" alt="ベリーベスト法律事務所" /></Link></li>
-                            <li><Link to="https://best-legal.jp/want-to-claim-affair-alimony-3366" rel="nofollow" target="_blank"><img src="../../img/yamaguchi/bana04.png" alt="不倫・浮気の慰謝料請求ならベリーベスト法律事務所" /></Link></li>
+                            <li><a href="http://www.ncia-research.or.jp/" rel="nofollow noopener noreferrer" target="_blank"><img src="../../img/yamaguchi/bana01.png" alt="全国調査業協同組合" /></a></li>
+                            <li><a href="https://www.pref.yamaguchi.lg.jp/site/police/" rel="nofollow noopener noreferrer" target="_blank"><img src="../../img/yamaguchi/bana02.png" alt="山口県警察" /></a></li>
+                            <li><a href="http://www.rikonnsoudan.jp/" rel="nofollow noopener noreferrer" target="_blank"><img src="../../img/yamaguchi/bana03.png" alt="ベリーベスト法律事務所" /></a></li>
+                            <li><a href="https://best-legal.jp/want-to-claim-affair-alimony-3366" rel="nofollow noopener noreferrer" target="_blank"><img src="../../img/yamaguchi/bana04.png" alt="不倫・浮気の慰謝料請求ならベリーベスト法律事務所" /></a></li>
                             </ul>
                         </div>
                         <div id="top_area" className="bg_wide pt pb">

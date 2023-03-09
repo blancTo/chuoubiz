@@ -296,7 +296,7 @@ const jsonLd = {
             "@type":"WebSite",
             "@id":`https://www.chuou.biz/${jsonS}/#website`,
             "url":`https://www.chuou.biz/${jsonS}/`,
-            "name":`${jsonT}| 広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
+            "name":`${jsonT}｜広島の探偵　浮気調査なら55年の実績｜${jsonN}`,
             "description":`${jsonD}${jsonT}`,
             "inLanguage":"ja",
             "publisher":{

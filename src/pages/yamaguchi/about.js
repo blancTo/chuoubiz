@@ -28,7 +28,7 @@ const about = () => {
                             <dl id="uwaki">
                                 <dt><img src="../../img/yamaguchi/about/img01.jpg" alt="" /><b className="mp">浮気・不倫調査</b></dt>
                                 <dd>浮気や不倫の疑いで不安な日々を過ごされている方のために、一日も早く笑顔を取り戻していただけるよう、迅速に調査し、動かぬ証拠をお撮りします。<br />
-                                <p className="link nm"><Link to="/jirei.html#case01">調査事例はこちら</Link></p></dd>
+                                <p className="link nm"><Link to="/jirei/#case01">調査事例はこちら</Link></p></dd>
                             </dl>
                             <dl id="saiban">
                                 <dt><img src="../../img/yamaguchi/about/img02.jpg" alt="" /><b className="mp">裁判証拠収集</b></dt>
@@ -38,17 +38,17 @@ const about = () => {
                                 <dt><img src="../../img/yamaguchi/about/img03.jpg" alt="" /><b className="mp">結婚・身上調査</b></dt>
                                 <dd>結婚は本人たちだけの問題ではなく、ご家族や親族にも影響があります。<br />
                                 結婚相手がどのような家族なのか、風評や人物性・職業など調査し<span className="red">信用性を知る為の調査</span>です。<br />
-                                <p className="link nm"><Link to="/jirei.html#case04">調査事例はこちら</Link></p></dd>
+                                <p className="link nm"><Link to="/jirei/#case04">調査事例はこちら</Link></p></dd>
                             </dl>
                             <dl id="iede">
                                 <dt><img src="../../img/yamaguchi/about/img04.jpg" alt="" /><b className="mp">家出・所在調査</b></dt>
                                 <dd>家出してしまったご家族を中心に、連絡の取れなくなってなった友人やかつての恩師、お金を借りたまま逃げてしまった相手などをお探しします。特に家出や失踪は人命に係ることもありますので、<span className="red">一刻も早く調査・捜索を行なう事が重要</span>です。<br />
-                                <p className="link nm"><Link to="/jirei.html#case05">調査事例はこちら</Link></p></dd>
+                                <p className="link nm"><Link to="/jirei/#case05">調査事例はこちら</Link></p></dd>
                             </dl>
                             <dl id="stalker">
                                 <dt><img src="../../img/yamaguchi/about/img05.jpg" alt="" /><b className="mp">嫌がらせ対策</b></dt>
                                 <dd>年々増加する、嫌がらせ、いじめ等の被害を<span className="red">徹底的に排除</span>する為、真実を明らかにし、安心した生活が送れるよう証拠収集をいたします。<br />
-                                <p className="link nm"><Link to="/jirei.html#case03">調査事例はこちら</Link></p></dd>
+                                <p className="link nm"><Link to="/jirei/#case03">調査事例はこちら</Link></p></dd>
                             </dl>
                             <dl id="touchouki">
                                 <dt><img src="../../img/yamaguchi/about/img06.jpg" alt="" /><b className="mp">盗聴器発見</b></dt>

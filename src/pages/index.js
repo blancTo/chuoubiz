@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import Seo from '../components/SEO'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import Iframe from 'react-iframe'
 
 import TopMenu from '../components/TopMenu'
 import TopComment from '../components/TopComment'
@@ -12,10 +11,10 @@ import TopAbout from '../components/TopAbout'
 import TopGuide from '../components/TopGuide'
 import TopArea from '../components/TopArea'
 
-const index = () => {
+const IndexPage = () => {
   return (
     <>
-      <Header h1title="広島の探偵　浮気調査なら55年の実績｜総合探偵社 中央リサーチ広島本社" />
+      <Header h1title="広島の探偵｜浮気調査は55年の実績と信頼｜総合探偵社 中央リサーチ" />
 
       <div id="img_top_msg" className="bg_blue_grad">
         <p className="mp nm">内閣総理大臣認可 全国調査業協同組合組合員</p>
@@ -34,7 +33,9 @@ const index = () => {
           <p className="nm cen">※弊社では探偵経験10年以上のスタッフが卓越した調査力で、<br className="dsp_tbs" />ご安心、ご納得できるサービスを提供します。</p>
         </div>
 
-        <p id="top_comment" className="dsp_smt"><Link to="/#top_profile">広島の弁護士から推奨されている<br /><b className="fm">唯一</b>の探偵社です！ »</Link></p>
+        <p id="top_comment" className="dsp_smt">
+          <Link to="/#top_profile">広島の弁護士から推奨されている<br /><b className="fm">唯一</b>の探偵社です！ »</Link>
+        </p>
         
         <ul id="menu_sp" className="dsp_tbs">
           <li><Link to="/beginner/">はじめての方へ</Link></li>
@@ -52,8 +53,8 @@ const index = () => {
           <TopMenu />          
         </div>
         <div className="bg_back">
-              <img src="../img/top/bg01.jpg" loading="lazy" width="100%" alt="" />
-          </div>
+          <img src="../img/top/bg01.jpg" loading="lazy" width="100%" alt="" />
+        </div>
       </section>
       <section id="topplan" className="cf">
         <div className="topplan">
@@ -196,7 +197,17 @@ const index = () => {
           <div id="top_column" className="top_column bg_wide pt pb">
             <h3 className="cen mp">浮気調査広島コラム</h3>
             <div className="box">
-              <Iframe url="https://www.chuou.biz/column_list.php" width="100%" display="block" position="relative" title="浮気調査広島コラム記事リスト" />
+              <div id="blog_list">
+                <dl>
+                  <dt>2023/02/23</dt>
+                  <dd><a href="https://www.chuou.biz/column/2003" target="_parent">浮気調査が上手な探偵社を見分けるチェックリスト７項目</a></dd>
+                </dl>
+                <dl>
+                  <dt>2023/02/16</dt>
+                  <dd><a href="https://www.chuou.biz/column/2002" target="_parent">【浮気調査編】探偵調査員ってどんな人？お仕事のやりがいをインタビュー</a></dd>
+                </dl>
+              </div>
+              
               <p className="rit nm"><Link to="/column/">一覧はこちら »</Link></p>
             </div>
           </div>
@@ -359,7 +370,16 @@ const index = () => {
             <div id="top_blog" className="top_column bg_wide pt pb">
               <h3 className="cen mp">探偵ブログ</h3>
               <div className="box">
-                  <Iframe url="https://www.chuou.biz/blog_list.php" width="100%" display="block" position="relative" title="探偵ブログ記事リスト" />
+                <div id="blog_list">
+                  <dl>
+                    <dt>2023/03/02</dt>
+                    <dd><a href="https://www.chuou.biz/info/2023/03021157252005.html" target="_parent">あの人の素行を知りたい！素行調査を依頼できる対象はどんな人？</a></dd>
+                  </dl>
+                  <dl>
+                    <dt>2023/02/08</dt>
+                    <dd><a href="https://www.chuou.biz/info/2023/02080844281999.html" target="_parent">家出調査・人探しは警察と探偵社どっち？両者の違いを徹底解説！</a></dd>
+                  </dl>
+                </div>
                 <p className="rit nm"><Link to="/info/">一覧はこちら »</Link></p>
               </div>
             </div>
@@ -444,7 +464,7 @@ const jsonLd = {
       "@id":"https://www.chuou.biz/#website",
       "url":"https://www.chuou.biz/",
       "name":"広島探偵 中央リサーチ",
-      "description":"中央リサーチ広島は｢浮気調査が最も得意｣な探偵社であり、裁判証拠収集ならお任せください!!ご相談は無料です。広島県公安委員会探偵業届出済で、浮気調査は信頼と実績ある当社にご相談ください！プロの探偵が全力でお悩みを解決いたします！高い追跡技術を持つ中央リサーチ広島が浮気・不倫の現場を突き止めます。",
+      "description":"総合探偵社中央リサーチ広島は「浮気調査、不倫調査が最も得意」な探偵事務所です。浮気調査なら高いスキルで浮気の証拠をとり早期解決に導きます。分かりやすい料金表でお見積り、ご相談無料です。所在地 広島県広島市中区上幟町2-45今田ビル2階(広島家庭裁判所前)広島県公安委員会届け出済み",
       "inLanguage":"ja",
       "publisher":{
         "@id":"https://www.chuou.biz/#person"
@@ -455,7 +475,7 @@ const jsonLd = {
       "@id":"https://www.chuou.biz/#webpage",
       "url":"https://www.chuou.biz/",
       "name":"広島探偵 中央リサーチ",
-      "description":"中央リサーチ広島は｢浮気調査が最も得意｣な探偵社であり、裁判証拠収集ならお任せください!!ご相談は無料です。広島県公安委員会探偵業届出済で、浮気調査は信頼と実績ある当社にご相談ください！プロの探偵が全力でお悩みを解決いたします！高い追跡技術を持つ中央リサーチ広島が浮気・不倫の現場を突き止めます。",
+      "description":"総合探偵社中央リサーチ広島は「浮気調査、不倫調査が最も得意」な探偵事務所です。浮気調査なら高いスキルで浮気の証拠をとり早期解決に導きます。分かりやすい料金表でお見積り、ご相談無料です。所在地 広島県広島市中区上幟町2-45今田ビル2階(広島家庭裁判所前)広島県公安委員会届け出済み",
       "inLanguage":"ja",
       "isPartOf":{
         "@id":"https://www.chuou.biz/#website"
@@ -478,7 +498,7 @@ const jsonLd = {
             "@type":"WebPage",
             "@id":"https://www.chuou.biz/",
             "name":"広島探偵 中央リサーチ",
-            "description":"中央リサーチ広島は｢浮気調査が最も得意｣な探偵社であり、裁判証拠収集ならお任せください!!ご相談は無料です。広島県公安委員会探偵業届出済で、浮気調査は信頼と実績ある当社にご相談ください！プロの探偵が全力でお悩みを解決いたします！高い追跡技術を持つ中央リサーチ広島が浮気・不倫の現場を突き止めます。",
+            "description":"総合探偵社中央リサーチ広島は「浮気調査、不倫調査が最も得意」な探偵事務所です。浮気調査なら高いスキルで浮気の証拠をとり早期解決に導きます。分かりやすい料金表でお見積り、ご相談無料です。所在地 広島県広島市中区上幟町2-45今田ビル2階(広島家庭裁判所前)広島県公安委員会届け出済み",
             "url":"https://www.chuou.biz/"
           },
           "nextItem":"https://www.chuou.biz/#listItem"
@@ -491,9 +511,9 @@ const jsonLd = {
 }
 
 export const Head = () => (
-  <>
+  <>  
     <Seo />
     <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
   </>
 )
-export default index
+export default IndexPage

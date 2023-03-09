@@ -30,7 +30,7 @@ const jirei = () => {
                                 <div id="case01" className="pad_anchor"><div className="box"><div className="bg">
                                     <div className="head">
                                         <p className="case serif">case01</p>                                        
-                                        <input id="case-check1" className="case-check1" type="checkbox" />
+                                        <input id="case-check1" className="case-check1" type="checkbox" checked />
                                         <label className="case-label" htmlFor="case-check1">浮気を繰り返す夫に証拠を突き付けて今度こそ反省させたい！<br />
                                         <span>浮気調査の事例</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                         <div className='case-content'>

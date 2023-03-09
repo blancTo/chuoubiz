@@ -30,7 +30,7 @@ const jirei = () => {
                             <div id="case01" className="pad_anchor"><div className="box"><div className="bg">
                                 <div className="head">
                                     <p className="case serif">case01</p>
-                                    <input id="case-check1" className="case-check1" type="checkbox" />
+                                    <input id="case-check1" className="case-check1" type="checkbox" checked />
                                     <label className="case-label" htmlFor="case-check1">昼間の嫁の行動が怪しい！スマホで何やら出会い系アプリか？浮気調査をお願いします！<br />
                                     <span>浮気調査の事例</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                                     <div className='case-content'>
@@ -116,7 +116,7 @@ const jirei = () => {
                                             <dt>調査結果</dt>
                                             <dd>先月退職した40代の元従業員は駅近くの家電量販店に勤めており、パソコン売り場にて販売員をしています。愛想がよく人当たりは良いと評判ですが、驚きの事実が発覚。<br />
                                                 スタッフの聞き込みによれば、現在の職場でも大事な書類が紛失し、社内で捜索中だと分かりました。対象者は周囲の人に将来、オンラインショップを立ち上げると話しているそうです。<br />
-                                                今の仕事を辞めたらオンラインショップでパソコン販売をする計画があるようなので、顧客帳を持っている可能背が高いです。</dd>
+                                                今の仕事を辞めたらオンラインショップでパソコン販売をする計画があるようなので、顧客帳を持っている可能性が高いです。</dd>
                                             </dl>
                                             <div className="comment">
                                             <div className="requester sec">

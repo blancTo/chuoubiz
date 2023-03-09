@@ -962,6 +962,9 @@ p.link.full a span::after{
 	line-height: 34px;
 	display: inline-block;
 	padding: 0 15px 0 40px;
+	@media only screen and (max-width: 768px) {
+		font-size: 14px;
+	}
 }
 .investigation_case .box .info .hito span.target {
 	background-color: #005e9c;
@@ -1259,7 +1262,7 @@ ol.no_maru li:before {
 	}
 	#top_menu .head h2 {
 		margin-top: 5px;
-		font-size: 18px;
+		font-size: 18px!important;
 		line-height: 1.3;
 	}
 	#top_menu dt {		
@@ -2061,22 +2064,31 @@ ol.no_maru li:before {
 	}
 }
 
-#top_shimane::before {
-	background: url("../img/shimane/bg_about.jpg") no-repeat center top / cover;
-}
-
-#top_shimane h3 {
-    background: url("../img/top/clover.png") no-repeat left top 15px;
-    background-size: 92px auto;
-    font-size: 37px;
-    border-top: 2px solid #005e9c;
-    color: #005e9c;
-    padding: 20px 0 30px 110px;
+#top_shimane {
+	&::before {
+		background: url("../img/shimane/bg_about.jpg") no-repeat center top / cover;
+	}
+	h3 {
+		background: url("../img/top/clover.png") no-repeat left top 15px;
+		background-size: 92px auto;
+		font-size: 37px;
+		border-top: 2px solid #005e9c;
+		color: #005e9c;
+		padding: 20px 0 30px 110px;
+		@media only screen and (max-width: 768px) {
+			font-size: 20px;
+			background-size: 70px auto;
+			padding: 20px 0 20px 80px;
+		}
+	}
 }
 
 #top_shimane .wrap, #top_shimane .wrap .img {
 	display: flex;
 	justify-content: space-between;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+	}
 }
 
 #top_shimane .photo li {
@@ -2099,25 +2111,35 @@ ol.no_maru li:before {
 
 #shimane_point {
 	margin-bottom: 50px;
-}
-#shimane_point::before {
-	background: url("../img/shimane/bg_point.jpg") no-repeat center top;
-	background-size: 100% auto;
-	-webkit-background-size: 100% auto;
-}
-#shimane_point h3 {
-	margin-bottom: 30px;
-	color: #fff;
-	font-size: 37px;
-	text-align: center;
-	text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-}
-#shimane_point .in {
-	padding: 40px 20px;
-	background: #fff;
-	color: #005E9C;
-	font-size: 110%;
-	line-height: 2.1;
+	&::before {
+		background: url("../img/shimane/bg_point.jpg") no-repeat center top;
+		background-size: 100% auto;
+		@media only screen and (max-width: 768px) {
+			background: url("../img/shimane/bg_point_sp.jpg") no-repeat center top;
+			background-size: auto 300px;
+		}
+	}
+	h3 {
+		margin-bottom: 30px;
+		color: #fff;
+		font-size: 37px;
+		text-align: center;
+		text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+		@media only screen and (max-width: 768px) {
+			font-size: 22px;
+			text-align: left;
+		}
+	}
+	.in {
+		padding: 40px 20px;
+		background: #fff;
+		color: #005E9C;
+		font-size: 110%;
+		line-height: 2.1;
+		@media only screen and (max-width: 768px) {
+			padding: 20px;
+		}
+	}
 }
 
 #about_sub {
@@ -2169,18 +2191,26 @@ ol.no_maru li:before {
 /*yamaguchi*/
 #yamaguchi_point {
 	margin-bottom: 50px;
+	&::before {
+		background: url("../img/yamaguchi/bg_point.jpg") no-repeat center top;
+		background-size: 100% auto;
+		@media only screen and (max-width: 768px) {
+			background-size: auto 50%;
+		}
+	}
+	h3 {
+		margin-bottom: 30px;
+		color: #fff;
+		font-size: 37px;
+		text-align: center;
+		@media only screen and (max-width: 768px) {
+			font-size: 24px;
+		}
+	}
 }
-#yamaguchi_point::before,#yamaguchi_txt::before {
-	background: url("../img/yamaguchi/bg_point.jpg") no-repeat center top;
-	background-size: 100% auto;
-	-webkit-background-size: 100% auto;
-}
-#yamaguchi_point h3 {
-	margin-bottom: 30px;
-	color: #fff;
-	font-size: 37px;
-	text-align: center;
-}
+
+
+
 #yamaguchi_point .in {
     padding: 40px 20px;
     background: #fff;
@@ -2197,7 +2227,18 @@ ol.no_maru li:before {
     font-weight: 700;
     text-shadow: 0 0 5px rgb(0 0 0 / 20%);
     line-height: 2;
+	@media only screen and (max-width: 768px) {
+		font-size: 100%!important;
+	}
+	&::before {
+		background: url("../img/yamaguchi/bg_txt.jpg") no-repeat center top;
+		background-size: 100% auto;
+		@media only screen and (max-width: 768px) {
+			background-size: auto 100%;
+		}
+	}
 }
+
 #about.yamaguchi .bg_wide::before {
 	background: #dcf2f9 url("../img/okayama/about/bg.jpg") no-repeat center bottom;
 	background-size: 100% auto;
@@ -2467,6 +2508,10 @@ ol.no_maru li:before {
     background: url("../img/okayama/bg_msg.jpg") no-repeat center top / cover;
 }
 
+#top_menu.shimane:before {
+	background: url("../img/shimane/bg_msg.jpg") no-repeat center top / cover;
+}
+
 #top_hiroshima.yamaguchi .photo li {
 	list-style: none;
 }
@@ -2553,7 +2598,7 @@ ol.no_maru li:before {
 .case-label .fa-angle-down { color: #fff; display: inline-block; background-color: #14AAD5; font-size: 120%; border-radius: 100px; padding: 10px; position: absolute; right: 0; top: -10px; width: 25px; height: 25px; box-sizing: border-box;}
 
 @media only screen and (max-width: 768px) {
-	.case-label { padding-right: 30px; }
+	.case-label { padding-right: 30px; font-size: 100%; }
 	.case-label .fa-angle-down {  padding: 5px; width: 15px!important; height: 15px!important; top:50%; margin-top: -.5em; }
 }
 
@@ -3096,9 +3141,12 @@ ol.no_maru li:before {
 		position: relative;
 		margin-bottom: -25px;
 		font-size: 30px;
-		font-weight: bold;
+		font-weight: 900;
 		text-align: center;
-		text-shadow: 2px 2px 0 #fff;
+		text-shadow: 1px 1px 0 #fff;
+		@media only screen and (max-width: 640px){
+			margin-bottom: -18px;
+		}
 	}
 	dd {
 		padding: 35px;
@@ -3106,5 +3154,8 @@ ol.no_maru li:before {
 		color: #005E9C;
 		font-size: 20px;
 		font-weight: 700;
+		@media only screen and (max-width: 640px){
+			padding: 25px 15px 15px!important;
+		}
 	}
 }

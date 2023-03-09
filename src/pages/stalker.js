@@ -235,7 +235,7 @@ const stalker = ({data}) => {
                             <div className="head">
                               <p className="case serif">case01</p>
 
-                              <input id="case-check1" className="case-check1" type="checkbox" />
+                              <input id="case-check1" className="case-check1" type="checkbox" checked />
                               <label className="case-label" htmlFor="case-check1">近所の子供に注意した後に嫌がらせが加速！電磁波被害調査でわかった事実<br />
                               <span>最近、身体のあちこちがしびれるように痛くなったり、頭痛が止まらないとお悩みの方は電磁波の被害を受けている可能性があります。早速、最新の事例をご紹介しましょう。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                               <div className='case-content'>

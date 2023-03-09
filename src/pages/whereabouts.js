@@ -146,7 +146,7 @@ const whereabouts = () => {
                           <div className="bg">
                             <div className="head">
                               <p className="case serif">case01</p>
-                              <input id="case-check1" className="case-check1" type="checkbox" />
+                              <input id="case-check1" className="case-check1" type="checkbox" checked />
                               <label className="case-label" htmlFor="case-check1">夫婦喧嘩の後に夫が家を出て5日間帰宅せず…調査を依頼して居場所を確認したいです<br />
                               <span>夫婦の間でもこれだけは言ってはいけないというボーダーラインがあります。それを超えてしまうと‥。家出調査の事例をご紹介します。</span> <FontAwesomeIcon icon={faAngleDown} /></label>
                               <div className='case-content'>
